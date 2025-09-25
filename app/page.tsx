@@ -5,6 +5,7 @@ import dynamic from 'next/dynamic';
 import CityModal from '@/components/CityModal';
 import CompareView from '@/components/CompareView';
 import FloatingMessage from '@/components/FloatingMessage';
+import SearchBar from '@/components/SearchBar';
 import { Globe as GlobeIcon } from 'lucide-react';
 
 // Dynamically import Globe to avoid SSR issues
@@ -54,6 +55,7 @@ export default function Home() {
   const [isCompareOpen, setIsCompareOpen] = useState(false);
   const [floatingMessage, setFloatingMessage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [zoomToCity, setZoomToCity] = useState<City | null>(null);
 
   // Load cities data
   useEffect(() => {
@@ -119,6 +121,12 @@ export default function Home() {
     setFloatingMessage(null);
   };
 
+  const handleLocationSelect = (city: City) => {
+    setZoomToCity(city);
+    // Clear the zoom state after a short delay to allow for re-zooming to the same location
+    setTimeout(() => setZoomToCity(null), 100);
+  };
+
   // if (isLoading) {
   //   return (
   //     <div className="fixed inset-0 bg-black flex items-center justify-center">
@@ -132,8 +140,13 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
+      {/* Search Bar */}
+      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 w-full max-w-md px-4">
+        <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
+      </div>
+
       {/* Globe */}
-      <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} />
+      <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} zoomToCity={zoomToCity} />
       
       {/* Title Overlay */}
       {/* <div className="fixed top-6 left-6 z-30">

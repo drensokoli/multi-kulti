@@ -31,9 +31,10 @@ interface GlobeProps {
   cities: City[];
   onCityClick: (city: City) => void;
   selectedCity: City | null;
+  zoomToCity?: City | null;
 }
 
-const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
+const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomToCity }) => {
   const globeEl = useRef<any>();
   const globeInstance = useRef<any>();
   const [isGlobeReady, setIsGlobeReady] = useState(false);
@@ -272,6 +273,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
       // Configure globe appearance
       globe
         .globeImageUrl(isNightMode ? '//unpkg.com/three-globe/example/img/earth-night.jpg' : '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
+        .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
         .pointsData(cities)
         .pointAltitude(0.001)
         .pointRadius(0.3)
@@ -356,6 +358,25 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
   const toggleTheme = () => {
     setIsNightMode(!isNightMode);
   };
+
+  // Zoom to location function
+  const zoomToLocation = useCallback((city: City) => {
+    if (globeInstance.current) {
+      // Point the camera at the city's coordinates
+      globeInstance.current.pointOfView({
+        lat: city.lat,
+        lng: city.lng,
+        altitude: 0.8 // Zoom level (0.8 is closer zoom for better city view)
+      }, 1200); // Animation duration in milliseconds
+    }
+  }, []);
+
+  // Effect to handle zoom requests from parent
+  useEffect(() => {
+    if (zoomToCity && isGlobeReady) {
+      zoomToLocation(zoomToCity);
+    }
+  }, [zoomToCity, isGlobeReady, zoomToLocation]);
 
   return (
     <div className="fixed inset-0 z-0">
