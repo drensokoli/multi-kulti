@@ -1,19 +1,31 @@
 "use client";
 
 import React from 'react';
-import { X, Users, Utensils, Shield, Heart, ArrowLeftRight } from 'lucide-react';
+import { 
+  X, Users, Utensils, History, Shield, Building2, Mountain, GraduationCap, 
+  Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, ArrowLeftRight 
+} from 'lucide-react';
 
 interface City {
-  id: number;
+  id: string;
   name: string;
   country: string;
   lat: number;
   lng: number;
-  population: string;
   culture: string;
   food: string;
-  adversity: string;
-  cooperation: string;
+  history: string;
+  adversity_resilience: string;
+  economy_industry: string;
+  environment_geography: string;
+  education_innovation: string;
+  cooperation_global_ties: string;
+  tourism_attractions: string;
+  population_diversity: string;
+  arts_music_scene: string;
+  sports_recreation: string;
+  famous_people: string;
+  fun_fact: string;
 }
 
 interface CompareViewProps {
@@ -44,17 +56,77 @@ const CompareView: React.FC<CompareViewProps> = ({
       icon: Utensils, 
       color: 'text-green-400 border-green-500/20'
     },
+    {
+      key: 'history' as keyof City,
+      title: 'History',
+      icon: History,
+      color: 'text-yellow-400 border-yellow-500/20'
+    },
     { 
-      key: 'adversity' as keyof City, 
+      key: 'adversity_resilience' as keyof City, 
       title: 'Adversity & Resilience', 
       icon: Shield, 
       color: 'text-orange-400 border-orange-500/20'
     },
+    {
+      key: 'economy_industry' as keyof City,
+      title: 'Economy & Industry',
+      icon: Building2,
+      color: 'text-emerald-400 border-emerald-500/20'
+    },
+    {
+      key: 'environment_geography' as keyof City,
+      title: 'Environment & Geography',
+      icon: Mountain,
+      color: 'text-teal-400 border-teal-500/20'
+    },
+    {
+      key: 'education_innovation' as keyof City,
+      title: 'Education & Innovation',
+      icon: GraduationCap,
+      color: 'text-cyan-400 border-cyan-500/20'
+    },
     { 
-      key: 'cooperation' as keyof City, 
-      title: 'Cooperation & Connection', 
-      icon: Heart, 
+      key: 'cooperation_global_ties' as keyof City, 
+      title: 'Global Cooperation', 
+      icon: Globe2, 
       color: 'text-purple-400 border-purple-500/20'
+    },
+    {
+      key: 'tourism_attractions' as keyof City,
+      title: 'Tourism & Attractions',
+      icon: Landmark,
+      color: 'text-pink-400 border-pink-500/20'
+    },
+    {
+      key: 'population_diversity' as keyof City,
+      title: 'Population & Diversity',
+      icon: UsersRound,
+      color: 'text-indigo-400 border-indigo-500/20'
+    },
+    {
+      key: 'arts_music_scene' as keyof City,
+      title: 'Arts & Music Scene',
+      icon: Music2,
+      color: 'text-rose-400 border-rose-500/20'
+    },
+    {
+      key: 'sports_recreation' as keyof City,
+      title: 'Sports & Recreation',
+      icon: Trophy,
+      color: 'text-amber-400 border-amber-500/20'
+    },
+    {
+      key: 'famous_people' as keyof City,
+      title: 'Famous People',
+      icon: Star,
+      color: 'text-violet-400 border-violet-500/20'
+    },
+    {
+      key: 'fun_fact' as keyof City,
+      title: 'Fun Fact',
+      icon: Sparkles,
+      color: 'text-fuchsia-400 border-fuchsia-500/20'
     },
   ];
 
@@ -117,12 +189,12 @@ const CompareView: React.FC<CompareViewProps> = ({
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
                     <h2 className="text-2xl font-bold text-white mb-2">{city1.name}</h2>
                     <p className="text-gray-300 text-lg">{city1.country}</p>
-                    <p className="text-gray-400 text-sm mt-1">Population: {city1.population}</p>
+                    <p className="text-gray-400 text-sm mt-1">{city1.population_diversity || 'Population data coming soon'}</p>
                   </div>
                   <div className="bg-gray-800/50 rounded-xl p-6 border border-gray-700">
                     <h2 className="text-2xl font-bold text-white mb-2">{city2.name}</h2>
                     <p className="text-gray-300 text-lg">{city2.country}</p>
-                    <p className="text-gray-400 text-sm mt-1">Population: {city2.population}</p>
+                    <p className="text-gray-400 text-sm mt-1">{city2.population_diversity || 'Population data coming soon'}</p>
                   </div>
                 </div>
 

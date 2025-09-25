@@ -21,16 +21,25 @@ const Globe = dynamic(() => import('@/components/Globe'), {
 });
 
 interface City {
-  id: number;
+  id: string;
   name: string;
   country: string;
   lat: number;
   lng: number;
-  population: string;
   culture: string;
   food: string;
-  adversity: string;
-  cooperation: string;
+  history: string;
+  adversity_resilience: string;
+  economy_industry: string;
+  environment_geography: string;
+  education_innovation: string;
+  cooperation_global_ties: string;
+  tourism_attractions: string;
+  population_diversity: string;
+  arts_music_scene: string;
+  sports_recreation: string;
+  famous_people: string;
+  fun_fact: string;
 }
 
 export default function Home() {
@@ -50,7 +59,7 @@ export default function Home() {
       try {
         const response = await fetch('/data/cities.json');
         const data = await response.json();
-        setCities(data.cities);
+        setCities(data);
       } catch (error) {
         console.error('Error loading cities:', error);
       } finally {
