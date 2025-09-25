@@ -108,16 +108,16 @@ export default function Home() {
     setFloatingMessage(null);
   };
 
-  if (isLoading) {
-    return (
-      <div className="fixed inset-0 bg-black flex items-center justify-center">
-        <div className="text-center">
-          <GlobeIcon className="mx-auto text-white mb-4 animate-spin" size={48} />
-          <div className="text-white text-xl">Loading Cities Explorer...</div>
-        </div>
-      </div>
-    );
-  }
+  // if (isLoading) {
+  //   return (
+  //     <div className="fixed inset-0 bg-black flex items-center justify-center">
+  //       <div className="text-center">
+  //         <GlobeIcon className="mx-auto text-white mb-4 animate-spin" size={48} />
+  //         <div className="text-white text-xl">Loading Cities Explorer...</div>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
@@ -125,21 +125,21 @@ export default function Home() {
       <Globe cities={cities} onCityClick={handleCityClick} />
       
       {/* Title Overlay */}
-      <div className="fixed top-6 left-6 z-30">
+      {/* <div className="fixed top-6 left-6 z-30">
         <div className="bg-gray-900/80 backdrop-blur-lg rounded-lg px-6 py-4 border border-gray-700">
           <h1 className="text-2xl font-bold text-white mb-1">Cities Explorer</h1>
           <p className="text-gray-300 text-sm">Discover cultures around the world</p>
         </div>
-      </div>
+      </div> */}
 
       {/* Instructions */}
-      <div className="fixed bottom-6 left-6 z-30">
+      {/* <div className="fixed bottom-6 left-6 z-30">
         <div className="bg-gray-900/80 backdrop-blur-lg rounded-lg px-4 py-3 border border-gray-700 max-w-xs">
           <p className="text-gray-300 text-xs">
             Click on city markers or labels to explore their culture, food, and community bonds
           </p>
         </div>
-      </div>
+      </div> */}
 
       {/* City Panel */}
       <CityPanel

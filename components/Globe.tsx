@@ -33,7 +33,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick }) => {
       if (!globeEl.current) return;
       
       // Create globe instance
-      const globe = GlobeGL.default()(globeEl.current);
+      const globe = new GlobeGL.default(globeEl.current);
       globeInstance.current = globe;
     
       // Configure globe appearance
@@ -44,7 +44,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick }) => {
         .pointAltitude(0.01)
         .pointRadius(0.6)
         .pointColor(() => '#ff6b6b')
-        .pointLabel((d: City) => `
+        .pointLabel((d) => `
           <div style="
             background: rgba(0,0,0,0.9);
             padding: 12px;
@@ -54,16 +54,16 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick }) => {
             border: 1px solid #ff6b6b;
             max-width: 200px;
           ">
-            <div style="font-weight: bold; font-size: 16px; color: #ff6b6b;">${d.name}</div>
-            <div style="font-size: 14px; opacity: 0.8; margin-top: 4px;">${d.country}</div>
-            <div style="font-size: 12px; opacity: 0.7; margin-top: 4px;">Population: ${d.population}</div>
+            <div style="font-weight: bold; font-size: 16px; color: #ff6b6b;">${(d as City).name}</div>
+            <div style="font-size: 14px; opacity: 0.8; margin-top: 4px;">${(d as City).country}</div>
+            <div style="font-size: 12px; opacity: 0.7; margin-top: 4px;">Population: ${(d as City).population}</div>
             <div style="font-size: 11px; opacity: 0.6; margin-top: 8px;">Click to explore</div>
           </div>
         `)
-        .onPointClick((point: City) => {
-          onCityClick(point);
+        .onPointClick((point) => {
+          onCityClick(point as City);
           // Animate to clicked point
-          globe.pointOfView({ lat: point.lat, lng: point.lng, altitude: 2 }, 1000);
+          globe.pointOfView({ lat: (point as City).lat, lng: (point as City).lng, altitude: 2 }, 1000);
         })
         .width(window.innerWidth)
         .height(window.innerHeight);
@@ -71,16 +71,16 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick }) => {
       // Add text labels for cities
       globe
         .labelsData(cities)
-        .labelLat((d: City) => d.lat)
-        .labelLng((d: City) => d.lng)
-        .labelText((d: City) => d.name)
+        .labelLat((d) => (d as City).lat)
+        .labelLng((d) => (d as City).lng)
+        .labelText((d) => (d as City).name)
         .labelSize(1.2)
         .labelDotRadius(0.4)
         .labelColor(() => 'rgba(255, 255, 255, 0.8)')
         .labelResolution(2)
-        .onLabelClick((label: City) => {
-          onCityClick(label);
-          globe.pointOfView({ lat: label.lat, lng: label.lng, altitude: 2 }, 1000);
+        .onLabelClick((label) => {
+          onCityClick(label as City);
+          globe.pointOfView({ lat: (label as City).lat, lng: (label as City).lng, altitude: 2 }, 1000);
         });
 
       setIsGlobeReady(true);
