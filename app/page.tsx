@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
-import CityPanel from '@/components/CityPanel';
+import CityModal from '@/components/CityModal';
 import CompareView from '@/components/CompareView';
 import FloatingMessage from '@/components/FloatingMessage';
 import { Globe as GlobeIcon } from 'lucide-react';
@@ -24,8 +24,10 @@ interface City {
   id: string;
   name: string;
   country: string;
+  flag: string;
   lat: number;
   lng: number;
+  population_size: string;
   culture: string;
   food: string;
   history: string;
@@ -131,7 +133,7 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-black overflow-hidden">
       {/* Globe */}
-      <Globe cities={cities} onCityClick={handleCityClick} />
+      <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} />
       
       {/* Title Overlay */}
       {/* <div className="fixed top-6 left-6 z-30">
@@ -150,8 +152,8 @@ export default function Home() {
         </div>
       </div> */}
 
-      {/* City Panel */}
-      <CityPanel
+      {/* City Modal */}
+      <CityModal
         city={selectedCity}
         isOpen={isPanelOpen}
         onClose={handleClosePanel}

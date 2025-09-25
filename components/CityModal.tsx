@@ -1,7 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef, useState, useCallback } from 'react';
-import { Moon, Sun } from 'lucide-react';
+import React from 'react';
+import { 
+  X, Users, Utensils, History, Shield, Building2, Mountain, GraduationCap, 
+  Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, Heart 
+} from 'lucide-react';
 
 interface City {
   id: string;
@@ -27,22 +30,22 @@ interface City {
   fun_fact: string;
 }
 
-interface GlobeProps {
-  cities: City[];
-  onCityClick: (city: City) => void;
-  selectedCity: City | null;
+interface CityModalProps {
+  city: City | null;
+  isOpen: boolean;
+  onClose: () => void;
+  onCompare: (city: City) => void;
+  isCompareMode: boolean;
 }
 
-const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
-  const globeEl = useRef<any>();
-  const globeInstance = useRef<any>();
-  const [isGlobeReady, setIsGlobeReady] = useState(false);
-  const [isNightMode, setIsNightMode] = useState(false);
-
-  // Stable click handler to prevent globe re-initialization
-  const handleCityClick = useCallback((city: City) => {
-    onCityClick(city);
-  }, [onCityClick]);
+const CityModal: React.FC<CityModalProps> = ({ 
+  city, 
+  isOpen, 
+  onClose, 
+  onCompare,
+  isCompareMode 
+}) => {
+  if (!city) return null;
 
   // Helper function to format population numbers
   const formatPopulation = (population: string): string => {
@@ -53,13 +56,6 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
       return `${(num / 1000).toFixed(1)}K`;
     }
     return num.toString();
-  };
-
-  // Helper function to get first few words of fun fact
-  const getFunFactPreview = (funFact: string): string => {
-    if (!funFact || funFact.trim() === '') return '';
-    const words = funFact.trim().split(' ').slice(0, 15).join(' ');
-    return words.length < funFact.length ? `${words}...` : words;
   };
 
   // Helper function to get country flag emoji
@@ -99,6 +95,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
       'San Marino': '🇸🇲',
       'Vatican City': '🇻🇦',
       'Malta': '🇲🇹',
+      'Côte d\'Ivoire': '🇨🇮',
       'Cyprus': '🇨🇾',
       'Iceland': '🇮🇸',
       'Norway': '🇳🇴',
@@ -258,131 +255,171 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity }) => {
     return flagMap[country] || '🏳️';
   };
 
-  useEffect(() => {
-    if (!cities?.length) return;
-
-    // Dynamically import and initialize globe.gl
-    import('globe.gl').then((GlobeGL) => {
-      if (!globeEl.current) return;
-      
-      // Create globe instance
-      const globe = new GlobeGL.default(globeEl.current);
-      globeInstance.current = globe;
-    
-      // Configure globe appearance
-      globe
-        .globeImageUrl(isNightMode ? '//unpkg.com/three-globe/example/img/earth-night.jpg' : '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
-        .pointsData(cities)
-        .pointAltitude(0.001)
-        .pointRadius(0.3)
-        .pointResolution(48)
-        .pointColor(() => '#ff6b6b')
-        .pointLabel((d) => `
-          <div style="
-            background: rgba(255, 255, 255, 0.95) !important;
-            backdrop-filter: blur(20px);
-            padding: 16px 20px;
-            border-radius: 16px;
-            color: #1a1a1a;
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            max-width: 240px;
-            min-width: 180px;
-            transition: all 0.2s ease;
-            position: relative;
-            z-index: 1000;
-          ">
-            <div style="margin-bottom: 8px;">
-              <div style="font-weight: 600; font-size: 16px; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px;">${(d as City).name}</div>
-              <div style="display: flex; align-items: center; gap: 8px;">
-                <span style="font-size: 20px;">${getCountryFlag((d as City).country)}</span>
-                <span style="font-size: 15px; color: #666; font-weight: 500;">${(d as City).country}</span>
-              </div>
-            </div>
-            <div style="display: flex; align-items: center; gap: 6px; margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 0, 0, 0.1);">
-              <div style="width: 6px; height: 6px; background: #ff6b6b; border-radius: 50%;"></div>
-              <span style="font-size: 12px; color: #666; font-weight: 500;">${formatPopulation((d as City).population_size)} people</span>
-            </div>
-            ${getFunFactPreview((d as City).fun_fact) ? `
-              <div style="margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0, 0, 0, 0.1);">
-                <div style="font-size: 11px; color: #888; font-style: italic; line-height: 1.3;">"${getFunFactPreview((d as City).fun_fact)}"</div>
-              </div>
-            ` : ''}
-            <div style="font-size: 11px; color: #999; margin-top: 8px; text-align: center; font-style: italic;">Click to explore</div>
-          </div>
-        `)
-        .onPointClick((point) => {
-          handleCityClick(point as City);
-        })
-        .width(window.innerWidth)
-        .height(window.innerHeight);
-
-      // City name labels are hidden by default
-      // Uncomment the following lines to show city names on the map:
-      globe
-        .labelsData(cities)
-        .labelLat((d) => (d as City).lat)
-        .labelLng((d) => (d as City).lng)
-        .labelText((d) => (d as City).name)
-        .labelSize(0.5)
-        .labelDotRadius(0.2)
-        .labelAltitude(0.0001)
-        .labelColor(() => 'rgba(255, 255, 255, 0.8)')
-        .labelResolution(2)
-        .onLabelClick((label) => {
-          handleCityClick(label as City);
-        });
-
-      setIsGlobeReady(true);
-
-      // Handle window resize
-      const handleResize = () => {
-        globe.width(window.innerWidth).height(window.innerHeight);
-      };
-
-      window.addEventListener('resize', handleResize);
-    });
-
-    return () => {
-      if (globeInstance.current) {
-        window.removeEventListener('resize', () => {
-          globeInstance.current.width(window.innerWidth).height(window.innerHeight);
-        });
-      }
-    };
-  }, [cities, isNightMode]);
-
-  const toggleTheme = () => {
-    setIsNightMode(!isNightMode);
-  };
+  const sections = [
+    { 
+      key: 'culture', 
+      title: 'Culture', 
+      icon: Users, 
+      content: city.culture,
+      color: 'text-blue-400'
+    },
+    { 
+      key: 'food', 
+      title: 'Food', 
+      icon: Utensils, 
+      content: city.food,
+      color: 'text-green-400'
+    },
+    {
+      key: 'history',
+      title: 'History',
+      icon: History,
+      content: city.history,
+      color: 'text-yellow-400'
+    },
+    { 
+      key: 'adversity_resilience', 
+      title: 'Adversity & Resilience', 
+      icon: Shield, 
+      content: city.adversity_resilience,
+      color: 'text-orange-400'
+    },
+    {
+      key: 'economy_industry',
+      title: 'Economy & Industry',
+      icon: Building2,
+      content: city.economy_industry,
+      color: 'text-emerald-400'
+    },
+    {
+      key: 'environment_geography',
+      title: 'Environment & Geography',
+      icon: Mountain,
+      content: city.environment_geography,
+      color: 'text-teal-400'
+    },
+    {
+      key: 'education_innovation',
+      title: 'Education & Innovation',
+      icon: GraduationCap,
+      content: city.education_innovation,
+      color: 'text-cyan-400'
+    },
+    { 
+      key: 'cooperation_global_ties', 
+      title: 'Global Cooperation', 
+      icon: Globe2, 
+      content: city.cooperation_global_ties,
+      color: 'text-purple-400'
+    },
+    {
+      key: 'tourism_attractions',
+      title: 'Tourism & Attractions',
+      icon: Landmark,
+      content: city.tourism_attractions,
+      color: 'text-pink-400'
+    },
+    {
+      key: 'population_diversity',
+      title: 'Population & Diversity',
+      icon: UsersRound,
+      content: city.population_diversity,
+      color: 'text-indigo-400'
+    },
+    {
+      key: 'arts_music_scene',
+      title: 'Arts & Music Scene',
+      icon: Music2,
+      content: city.arts_music_scene,
+      color: 'text-rose-400'
+    },
+    {
+      key: 'sports_recreation',
+      title: 'Sports & Recreation',
+      icon: Trophy,
+      content: city.sports_recreation,
+      color: 'text-amber-400'
+    },
+    {
+      key: 'famous_people',
+      title: 'Famous People',
+      icon: Star,
+      content: city.famous_people,
+      color: 'text-violet-400'
+    },
+    {
+      key: 'fun_fact',
+      title: 'Fun Fact',
+      icon: Sparkles,
+      content: city.fun_fact,
+      color: 'text-fuchsia-400'
+    },
+  ];
 
   return (
-    <div className="fixed inset-0 z-0">
-      <div ref={globeEl} />
-      
-      {/* Theme Toggle */}
-      <div className="fixed top-6 right-6 z-30">
-        <button
-          onClick={toggleTheme}
-          className="bg-gray-900/80 backdrop-blur-lg rounded-full p-3 border border-gray-700 hover:bg-gray-800/90 transition-colors"
-          aria-label={isNightMode ? "Switch to day mode" : "Switch to night mode"}
-        >
-          {isNightMode ? (
-            <Sun className="w-6 h-6 text-yellow-400" />
-          ) : (
-            <Moon className="w-6 h-6 text-blue-300" />
-          )}
-        </button>
-      </div>
+    <>
+      {/* Modal */}
+      <div 
+        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-50 transition-all duration-500 ease-out ${
+          isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
+        }`}
+        onClick={(e) => e.stopPropagation()}
+      >
+        <div className="h-full max-h-[85vh] sm:max-h-[80vh] flex flex-col">
+          {/* Header */}
+          <div className="backdrop-blur-xl border-b border-white/10 p-4 sm:p-6 rounded-t-xl sm:rounded-t-2xl flex-shrink-0">``
+            <div className="flex items-start justify-between">
+              <div className="flex-1 min-w-0">
+                <h1 className="text-xl sm:text-2xl font-bold text-white mb-2 truncate">{city.name}</h1>
+                <div className="flex items-center gap-2 mb-2">
+                  <span className="text-base sm:text-lg">{getCountryFlag(city.country)}</span>
+                  <span className="text-gray-300 text-xs sm:text-sm truncate">{city.country}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="w-2 h-2 bg-red-400 rounded-full"></div>
+                  <span className="text-gray-400 text-xs">{formatPopulation(city.population_size)} people</span>
+                </div>
+              </div>
+              <div className="flex gap-2 ml-4">
+                {!isCompareMode && (
+                  <button
+                    onClick={() => onCompare(city)}
+                    className="px-2 sm:px-3 py-1 sm:py-1.5 bg-purple-600/80 hover:bg-purple-600 text-white rounded-lg transition-colors duration-200 text-xs font-medium backdrop-blur-sm"
+                  >
+                    Compare
+                  </button>
+                )}
+                <button
+                  onClick={onClose}
+                  className="p-1 sm:p-1.5 text-gray-400 hover:text-white hover:bg-white/10 rounded-lg transition-colors duration-200"
+                >
+                  <X size={16} className="sm:w-[18px] sm:h-[18px]" />
+                </button>
+              </div>
+            </div>
+          </div>
 
-      {!isGlobeReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black">
-          <div className="text-white text-xl">Loading Globe...</div>
+          {/* Content */}
+          <div className="flex-1 overflow-y-auto p-4 sm:p-6">
+            <div className="space-y-3 sm:space-y-4 pb-4">
+              {sections.map((section) => {
+                const IconComponent = section.icon;
+                return (
+                  <div key={section.key} className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                    <div className="flex items-center gap-2 sm:gap-3 mb-2 sm:mb-3">
+                      <IconComponent size={16} className={`sm:w-[18px] sm:h-[18px] ${section.color}`} />
+                      <h2 className="text-xs sm:text-sm font-semibold text-white">{section.title}</h2>
+                    </div>
+                    <p className="text-gray-300 text-xs leading-relaxed">{section.content || 'Information coming soon...'}</p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
-      )}
-    </div>
+      </div>
+    </>
   );
 };
 
-export default Globe;
+export default CityModal;
