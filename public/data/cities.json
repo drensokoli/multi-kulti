@@ -108,8 +108,8 @@
       "tallinn"
     ],
     "life_in": {
-      "cost_of_living": "Stockholm is known for its high quality of life, though this comes with a relatively high cost of living, with housing being a significant expense.",
-      "quality_of_living": "Residents enjoy excellent public services, a clean environment, and a vibrant cultural life, making Stockholm one of the world's most livable cities."
+      "cost_of_living": "Stockholm ranks 38th globally with a cost of living index of 72.1 (New York = 100), featuring rent index of 35.3 and purchasing power index of 122.8. Monthly rent for a one-bedroom apartment averages $1,200-1,800, while restaurant meals cost approximately $15-25. Groceries are moderately expensive with basic items costing 20-30% more than European averages.",
+      "quality_of_life": "Stockholm ranks 97th globally with a quality of life index of 177.5, scoring particularly well in climate (69.7) and low pollution (18.1), though safety index is moderate at 53.5. The city offers excellent healthcare, efficient public transportation, and strong environmental policies. Work-life balance is exceptional with generous parental leave policies and outdoor recreational opportunities throughout the archipelago."
     }
   },
   {
@@ -203,8 +203,8 @@
       "sarajevo"
     ],
     "life_in": {
-      "cost_of_living": "Prishtina offers an affordable cost of living compared to many European capitals, with a quality of life that's attracting a growing international community, drawn by its welcoming atmosphere and vibrant street life.",
-      "quality_of_living": "Life in Prishtina is characterized by a unique blend of old-world charm and new-world dynamism, with a strong sense of community, bustling markets, and green spaces offering a high quality of life amidst the city's rapid development."
+      "cost_of_living": "Pristina ranks 267th globally with a cost of living index of 27.0, making it one of Europe's most affordable capitals with rent index of 8.3 and local purchasing power index of 71.2. Monthly rent for apartments ranges $200-400, restaurant meals cost $5-12, and groceries are significantly cheaper than Western European standards. Utilities and transportation costs are particularly low.",
+      "quality_of_life": "Quality of life data for Pristina shows mixed results with developing infrastructure and healthcare systems. The city benefits from a young, dynamic population and growing tech sector. Air quality can be problematic during winter months, but the cost advantage allows for higher disposable income relative to local earnings for international workers."
     },
     "famous_people": [
       {
@@ -335,8 +335,8 @@
       "Coventry_UK"
     ],
     "life_in": {
-      "cost_of_living": "Sarajevo offers an affordable cost of living compared to many European cities. Housing, food, and transportation are reasonably priced, making it attractive for expats and locals alike.",
-      "quality_of_living": "Despite its tumultuous history, Sarajevo boasts a high quality of life. Its rich cultural scene, beautiful landscapes, and the warmth of its people make it a vibrant, welcoming place to live."
+      "cost_of_living": "Sarajevo ranks 192nd globally with a cost of living index of 39.2, offering affordable living with rent index of 11.0 and purchasing power index of 64.8. Monthly rent averages $250-450 for one-bedroom apartments, dining out costs $6-15 per meal, and groceries remain very affordable compared to Western standards. Public transportation is inexpensive but limited.",
+      "quality_of_life": "Sarajevo ranks 192nd with quality of life index of 126.3, featuring good safety (55.7) and healthcare (59.3), though economic opportunities remain limited with low purchasing power. The city offers rich cultural heritage, beautiful mountain surroundings, and a resilient community spirit. Infrastructure is improving but still developing after post-war reconstruction efforts."
     }
   },
   {
@@ -429,8 +429,8 @@
       "Turin_03"
     ],
     "life_in": {
-      "cost_of_living": "Living in Tirana offers an affordable lifestyle compared to many European capitals, with a cost of living that balances quality and accessibility.",
-      "quality_of_living": "Residents enjoy a vibrant city life complemented by green spaces, a rich cultural scene, and a welcoming community, contributing to a high quality of life."
+      "cost_of_living": "Tirana ranks 168th globally with cost of living index of 46.4, offering European living at affordable prices with rent index of 18.5 and purchasing power index of 46.5. Monthly rent ranges $200-500, restaurant meals cost $8-18, and grocery prices are 40-50% lower than Western European averages. Transportation and utilities are particularly economical.",
+      "quality_of_life": "Tirana ranks 235th with quality of life index of 97.3, showing challenges in infrastructure and economic development, though pollution index is concerning at 87.2 despite good climate conditions (86.4). The city is rapidly developing with new construction and improved services. Mediterranean climate and proximity to beaches and mountains offer lifestyle advantages despite economic limitations."
     },
     "famous_people": [
       {
@@ -542,8 +542,8 @@
       "moscow"
     ],
     "life_in": {
-      "cost_of_living": "Berlin offers a relatively affordable lifestyle compared to other global capitals, balancing a high quality of life with manageable living expenses.",
-      "quality_of_living": "With its abundant green spaces, efficient public transport, and rich cultural scene, Berlin ranks high in quality of life, drawing people from around the world."
+      "cost_of_living": "Berlin ranks 96th globally with cost of living index of 66.0, offering reasonable prices for a major European capital with rent index of 34.8 and strong purchasing power index of 134.1. Monthly rent averages $800-1,400, restaurant meals cost $12-25, and groceries are moderately priced. Public transportation is excellent value, and cultural activities offer good affordability for a world-class city.",
+      "quality_of_life": "Berlin ranks 97th globally with quality of life index of 178.2, balancing urban amenities with moderate costs, though safety index is modest at 55.4 with pollution concerns (38.4). The city excels in arts, culture, and nightlife while maintaining relatively affordable living costs. Work opportunities are strong, and the city offers excellent public services and healthcare."
     },
     "famous_people": [
       {
@@ -655,8 +655,8 @@
       "new-york-city-usa"
     ],
     "life_in": {
-      "cost_of_living": "Living in Paris is expensive, with costs significantly above the French and European averages, reflecting its status as a global city.",
-      "quality_of_living": "Despite its high cost of living, Paris offers an unparalleled quality of life, with access to world-class healthcare, education, and public services."
+      "cost_of_living": "Paris ranks 28th globally with cost of living index of 74.6, reflecting high expenses typical of major global cities, with rent index of 44.4 and purchasing power index of 116.8. Monthly rent averages $1,100-2,000 for one-bedroom apartments, restaurant meals cost $18-35, and groceries are expensive. Transportation costs are reasonable given the excellent metro system coverage.",
+      "quality_of_life": "Paris ranks 139th globally with quality of life index of 142.3, offering world-class culture and amenities despite challenges with safety (41.9) and pollution (63.8), balanced by excellent healthcare (76.9). The city provides unparalleled cultural experiences, culinary excellence, and architectural beauty. Healthcare and education systems are world-class, though housing costs remain a significant challenge."
     },
     "famous_people": [
       {
@@ -764,13 +764,13 @@
       }
     ],
     "sister_cities": [
-      "New York City",
+      "New York",
       "Berlin",
       "Tokyo"
     ],
     "life_in": {
-      "cost_of_living": "London's cost of living is among the highest in the world, reflecting its status as a global city. Housing, in particular, can be expensive, but healthcare and education are of high quality.",
-      "quality_of_living": "Despite its high costs, London offers a high quality of life. Its public transport system, cultural diversity, and abundance of green spaces and activities make it a vibrant place to live."
+      "cost_of_living": "London ranks 11th globally with cost of living index of 83.2, making it one of the world's most expensive cities with rent index of 71.0 but strong purchasing power of 99.7. Monthly rent averages $1,800-3,200, restaurant meals cost $15-35, and groceries are expensive. Transportation via Oyster card is costly but comprehensive across the vast metropolitan area.",
+      "quality_of_life": "London ranks 141st globally with quality of life index of 131.3, balancing world-class amenities with high costs and challenges including safety concerns (44.7) and pollution (58.1), offset by excellent healthcare (69.6). The city offers unmatched cultural diversity, career opportunities, and global connectivity. Despite high costs, income opportunities often compensate for international professionals."
     },
     "famous_people": [
       {
@@ -879,8 +879,8 @@
       "tokyo"
     ],
     "life_in": {
-      "cost_of_living": "Living in Rome combines the charm of ancient history with the cost of modern European life, making it moderately expensive but with options for every budget.",
-      "quality_of_living": "Life in Rome is a blend of bustling city life and serene moments in its many parks and historical sites, offering a high quality of life amidst its rich cultural tapestry."
+      "cost_of_living": "Rome ranks 150th globally with cost of living index of 56.7, offering moderate pricing for a major European capital with rent index of 31.6 and purchasing power index of 91.8. Monthly rent averages $700-1,300, restaurant meals cost $12-25, and groceries are reasonably priced. Transportation costs are low, and many cultural attractions offer free or affordable access.",
+      "quality_of_life": "Rome ranks 163rd globally with quality of life index of 149.9, offering incredible history and culture despite challenges with traffic (35.8) and some pollution concerns (50.3), though climate remains excellent (93.7). The city provides unparalleled historical and cultural experiences with Mediterranean climate benefits. Healthcare is good, though bureaucratic processes can be challenging for newcomers."
     },
     "famous_people": [
       {
@@ -1010,8 +1010,8 @@
       "tokyo"
     ],
     "life_in": {
-      "cost_of_living": "While Madrid offers a relatively high quality of life, its cost of living is also among the highest in Spain, though generally lower than in many Western European capitals.",
-      "quality_of_living": "Madridians enjoy a vibrant city life with excellent healthcare, a rich cultural scene, and an extensive public transport network, making it an attractive place to live and work."
+      "cost_of_living": "Madrid ranks 155th globally with cost of living index of 55.8, offering affordable living for a major European capital with rent index of 36.5 and purchasing power index of 101.4. Monthly rent ranges $600-1,200, restaurant meals cost $10-22, and groceries are reasonably priced. Public transportation is excellent value, and cultural activities are generally affordable.",
+      "quality_of_life": "Madrid ranks 85th globally with quality of life index of 180.6, offering excellent safety (71.5), outstanding healthcare (80.0), and superior climate (85.5) at moderate costs. The city provides vibrant nightlife, excellent cuisine, and strong cultural offerings. Work-life balance is good, and the healthcare system is among Europe's best while maintaining reasonable living costs."
     }
   },
   {
@@ -1021,7 +1021,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg",
     "lat": "55.7558",
     "lng": "37.6173",
-    "fun_fact": "Moscow's metro system doubles as an underground art museum, with stations featuring chandeliers, mosaics, and marble that Stalin called \"palaces for the people.\" The city has more billionaires than any other city except New York City, and the Kremlin walls contain 20 towers, each with its own unique history and architectural style dating back to the 15th century.",
+    "fun_fact": "Moscow's metro system doubles as an underground art museum, with stations featuring chandeliers, mosaics, and marble that Stalin called \"palaces for the people.\" The city has more billionaires than any other city except New York, and the Kremlin walls contain 20 towers, each with its own unique history and architectural style dating back to the 15th century.",
     "images": [
       "https://upload.wikimedia.org/wikipedia/commons/a/a3/Moscow-City_%282016%29.png",
       "https://upload.wikimedia.org/wikipedia/commons/1/12/Moscow_July_2011-4a.jpg",
@@ -1106,8 +1106,8 @@
       "chicago"
     ],
     "life_in": {
-      "cost_of_living": "Moscow's cost of living ranks among the highest in Russia, reflecting its status as a bustling global city with a wide array of services and amenities.",
-      "quality_of_living": "Despite the high costs, Moscow offers a high quality of life, with extensive public transportation, rich cultural experiences, and a vast array of dining and entertainment options."
+      "cost_of_living": "Moscow ranks 175th globally with cost of living index of 45.2, offering affordable living despite being Russia's capital, with rent index of 31.5 and purchasing power index of 87.8. Monthly rent averages $400-800, restaurant meals cost $8-20, and groceries are moderately priced. Transportation is very affordable with an excellent metro system covering the vast city efficiently.",
+      "quality_of_life": "Moscow ranks 140th globally with quality of life index of 129.4, featuring good safety (64.7) and healthcare (67.5), though climate challenges (55.8) and traffic issues (50.4) impact livability. The city offers rich cultural heritage, strong educational institutions, and extensive public services. Winter climate is challenging, but indoor cultural offerings are world-class."
     },
     "famous_people": [
       {
@@ -1134,7 +1134,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/en/9/9e/Flag_of_Japan.svg",
     "lat": "35.6895",
     "lng": "139.6917",
-    "fun_fact": "Tokyo has more Michelin-starred restaurants than Paris and New York City combined - over 400 establishments. The city's Tsukiji Fish Market handles 660,000 tons of seafood annually, and Tokyo Station has so many underground passages and exits that people regularly get lost for hours in what locals call the \"dungeon\" beneath the building.",
+    "fun_fact": "Tokyo has more Michelin-starred restaurants than Paris and New York combined - over 400 establishments. The city's Tsukiji Fish Market handles 660,000 tons of seafood annually, and Tokyo Station has so many underground passages and exits that people regularly get lost for hours in what locals call the \"dungeon\" beneath the building.",
     "images": [
       "https://upload.wikimedia.org/wikipedia/commons/5/5f/Tokyo_Skyline_%26_Mt_Fuji.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/a/a0/Shibuya_Scramble_Crossing_2018.jpg",
@@ -1234,8 +1234,8 @@
       "beijing"
     ],
     "life_in": {
-      "cost_of_living": "Living in Tokyo is costly, with housing, transportation, and food expenses among the highest in the world, reflecting its status as a global city.",
-      "quality_of_living": "Despite the high cost of living, Tokyo offers an unparalleled quality of life with its safe streets, efficient public transportation, and a blend of modern convenience with traditional charm."
+      "cost_of_living": "Tokyo ranks 156th globally with cost of living index of 56.4, surprisingly affordable for such a major global city, with rent index of 26.8 but excellent purchasing power index of 117.7. Monthly rent averages $700-1,500, restaurant meals cost $8-25, and groceries are moderately priced. Transportation is efficient and reasonably priced given the extensive coverage.",
+      "quality_of_life": "Tokyo ranks 100th globally with quality of life index of 175.6, excelling in safety (75.2), healthcare (79.2), and excellent climate (85.3), though traffic can be challenging (42.9). The city offers exceptional safety, cleanliness, and efficiency. Public transportation is world-class, healthcare is excellent, and cultural experiences are abundant while maintaining surprising affordability."
     }
   },
   {
@@ -1347,8 +1347,8 @@
       "BEI"
     ],
     "life_in": {
-      "cost_of_living": "Living in Seoul is a juxtaposition of high-rise luxury and affordable street markets. While the cost can be high, especially in housing, efficient public transport and a variety of dining options provide balance.",
-      "quality_of_living": "Seoul offers a high quality of life, with its advanced healthcare, extensive public transportation, and myriad cultural activities. Green spaces like the Hangang Park provide residents with a breath of fresh air amidst the urban landscape."
+      "cost_of_living": "Seoul ranks 64th globally with cost of living index of 69.0, offering reasonable prices with rent index of 27.1 and strong purchasing power index of 128.7. Monthly rent averages $500-1,200, restaurant meals cost $6-18, and groceries are moderately priced. Technology infrastructure is excellent and often included in housing costs at competitive rates.",
+      "quality_of_life": "Seoul ranks 161st globally with quality of life index of 157.3, featuring excellent safety (75.4), world-class healthcare (82.9), though pollution concerns (52.1) and traffic issues (41.4) present challenges. The city offers cutting-edge technology, efficient public transportation, and dynamic culture. Education and healthcare systems are top-tier, though air quality can be problematic during certain seasons."
     }
   },
   {
@@ -1446,8 +1446,8 @@
       "new_york"
     ],
     "life_in": {
-      "cost_of_living": "The cost of living in Delhi offers a spectrum from affordability to luxury, reflecting the city's diversity. While housing and essentials can be economical, the burgeoning middle class and elite have access to the opulence of global standards.",
-      "quality_of_living": "Delhi's quality of living is a tale of two cities: one of burgeoning infrastructure and amenities catering to a growing middle class, and another grappling with challenges of pollution and congestion, making it a city of contrasts."
+      "cost_of_living": "Delhi ranks 285th globally with cost of living index of 21.5, making it extremely affordable with rent index of 6.3 and purchasing power index of 88.8. Monthly rent ranges $150-400, restaurant meals cost $2-8, and groceries are among the world's most affordable. Transportation and utilities are very inexpensive, allowing for comfortable living on modest budgets.",
+      "quality_of_life": "Delhi ranks 249th globally with quality of life index of 98.9, facing significant challenges with pollution (90.2) and traffic (57.8), though healthcare (65.8) and purchasing power remain reasonable. The city offers rich cultural heritage and growing economic opportunities, but air quality and traffic congestion are serious concerns. Healthcare facilities vary widely in quality and accessibility."
     },
     "famous_people": [
       {
@@ -1556,8 +1556,8 @@
       "732"
     ],
     "life_in": {
-      "cost_of_living": "Bangkok offers a compelling mix of affordability and luxury. While expats can enjoy a high standard of living at reasonable prices, the city also caters to those seeking opulence and extravagance.",
-      "quality_of_living": "Despite its bustling urban environment, Bangkok boasts a high quality of life with its vast array of culinary delights, cultural experiences, and green spaces, providing a unique balance of excitement and serenity."
+      "cost_of_living": "Bangkok ranks 204th globally with cost of living index of 37.7, offering excellent value with rent index of 18.1 and purchasing power index of 56.9. Monthly rent averages $300-800, restaurant meals cost $2-12, and groceries are very affordable. Street food offers exceptional value, and transportation costs are minimal for extensive coverage.",
+      "quality_of_life": "Bangkok ranks 247th globally with quality of life index of 100.1, balancing excellent healthcare (77.2) and climate (58.4) against significant pollution (77.8) and traffic challenges (45.1). The city offers vibrant culture, excellent food scene, and affordable healthcare. However, air quality and traffic congestion are major concerns affecting daily life quality."
     },
     "famous_people": [
       {
@@ -1579,7 +1579,7 @@
   },
   {
     "id": "new-york",
-    "name": "New York City",
+    "name": "New York",
     "country": "United States",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
     "lat": "40.7128",
@@ -1597,7 +1597,7 @@
     },
     "city_size": "783.8",
     "population_size": "8,336,817",
-    "population_diversity": "New York City's tapestry is woven with threads of every hue, from the historic enclaves of Chinatown and Little Italy to the vibrant diasporas of Harlem and Jackson Heights.",
+    "population_diversity": "New York's tapestry is woven with threads of every hue, from the historic enclaves of Chinatown and Little Italy to the vibrant diasporas of Harlem and Jackson Heights.",
     "languages": [
       "English"
     ],
@@ -1610,8 +1610,8 @@
     ],
     "culture": {
       "traditional_arts": "The city's streets are a canvas, where the Metropolitan Museum and street graffiti artists alike tell a tale of vibrant cultural expression.",
-      "traditional_music": "From the jazz clubs of Harlem to the Broadway musicals that echo through the night, New York City's heartbeat is a symphony of diverse melodies.",
-      "traditional_clothing": "Fashion in New York City is as diverse as its people, ranging from the haute couture of Fifth Avenue to the vibrant streetwear influenced by the city's melting pot of cultures.",
+      "traditional_music": "From the jazz clubs of Harlem to the Broadway musicals that echo through the night, New York's heartbeat is a symphony of diverse melodies.",
+      "traditional_clothing": "Fashion in New York is as diverse as its people, ranging from the haute couture of Fifth Avenue to the vibrant streetwear influenced by the city's melting pot of cultures.",
       "traditional_beliefs": "New Yorkers share a belief in the American Dream, the idea that anyone, regardless of their background, can make it in the city if they work hard enough."
     },
     "traditional_foods": [
@@ -1639,12 +1639,12 @@
       },
       {
         "name": "Egg Cream",
-        "description": "A curious concoction of milk, seltzer, and chocolate syrup, the Egg Cream is a fizzy taste of New York City's soda fountain history.",
+        "description": "A curious concoction of milk, seltzer, and chocolate syrup, the Egg Cream is a fizzy taste of New York's soda fountain history.",
         "image": "TO_BE_REPLACED"
       }
     ],
     "history": "From its origins as a Dutch trading post named New Amsterdam in 1624, to the bustling metropolis it is today, New York City's history is a saga of dreams, diversity, and dynamism. It's a city that has welcomed millions of immigrants, each adding a distinct thread to the rich tapestry of its cultural heritage.",
-    "adversity_resilience": "New York City has faced its share of challenges, from the Great Depression to the tragedy of 9/11, and most recently, the COVID-19 pandemic. Each time, New York Cityers have shown an indomitable spirit, rising from adversity with resilience and unity, embodying the phrase 'New York Strong.'",
+    "adversity_resilience": "New York has faced its share of challenges, from the Great Depression to the tragedy of 9/11, and most recently, the COVID-19 pandemic. Each time, New Yorkers have shown an indomitable spirit, rising from adversity with resilience and unity, embodying the phrase 'New York Strong.'",
     "famous_people": [
       {
         "name": "Jay-Z",
@@ -1658,7 +1658,7 @@
       },
       {
         "name": "Robert De Niro",
-        "description": "An iconic figure in American cinema, Robert De Niro's performances have captivated audiences worldwide, showcasing the depth of New York City's talent.",
+        "description": "An iconic figure in American cinema, Robert De Niro's performances have captivated audiences worldwide, showcasing the depth of New York's talent.",
         "image": "TO_BE_REPLACED"
       }
     ],
@@ -1667,17 +1667,17 @@
     "landmarks": [
       {
         "name": "Statue of Liberty",
-        "description": "A beacon of freedom and democracy, the Statue of Liberty stands tall, welcoming visitors to New York City Harbor.",
+        "description": "A beacon of freedom and democracy, the Statue of Liberty stands tall, welcoming visitors to New York Harbor.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Statue_of_Liberty_7.jpg"
       },
       {
         "name": "Empire State Building",
-        "description": "Soaring above the city skyline, the Empire State Building offers breathtaking views and a poignant slice of New York City's architectural majesty.",
+        "description": "Soaring above the city skyline, the Empire State Building offers breathtaking views and a poignant slice of New York's architectural majesty.",
         "image": "TO_BE_REPLACED"
       },
       {
         "name": "Brooklyn Bridge",
-        "description": "Connecting Manhattan and Brooklyn, the Brooklyn Bridge is a marvel of engineering and a symbol of New York City's unity and strength.",
+        "description": "Connecting Manhattan and Brooklyn, the Brooklyn Bridge is a marvel of engineering and a symbol of New York's unity and strength.",
         "image": "TO_BE_REPLACED"
       }
     ],
@@ -1687,8 +1687,8 @@
       "beijing"
     ],
     "life_in": {
-      "cost_of_living": "Living in New York City is expensive, with housing, food, and transportation costs significantly above the national average. Yet, many find the city's unparalleled energy and opportunities worth the expense.",
-      "quality_of_living": "Despite the high cost of living, New York City offers an exceptional quality of life, with access to world-class healthcare, education, and cultural experiences. The city's diverse neighborhoods offer a sense of community and belonging for everyone."
+      "cost_of_living": "New York ranks 7th globally with cost of living index of 100.0 (the baseline), featuring rent index of 100.0 and purchasing power index of 100.0. Monthly rent averages $2,500-4,500, restaurant meals cost $15-45, and groceries are expensive. Transportation costs are moderate given comprehensive coverage, but housing remains the primary expense challenge.",
+      "quality_of_life": "New York ranks 145th globally with quality of life index of 132.3, offering unparalleled opportunities despite challenges with safety (49.0) and high costs, balanced by good healthcare access (62.6). The city provides world-class cultural amenities, career opportunities, and diversity. Despite high costs, income potential often compensates, and public services are comprehensive."
     }
   },
   {
@@ -1801,8 +1801,8 @@
       "mumbai"
     ],
     "life_in": {
-      "cost_of_living": "Living in Los Angeles requires a higher budget than many U.S. cities, with housing being the largest expense. Yet, the city's diverse neighborhoods offer options for a range of lifestyles.",
-      "quality_of_living": "Despite its challenges, Los Angeles offers an unparalleled quality of life, with access to world-class amenities, cultural diversity, and natural beauty from beaches to mountains."
+      "cost_of_living": "Los Angeles ranks 26th globally with cost of living index of 76.3, reflecting high California costs with rent index of 63.2 and purchasing power index of 125.6. Monthly rent averages $1,800-3,200, restaurant meals cost $12-30, and groceries are expensive. Car ownership is nearly essential, adding transportation costs, but income opportunities are strong.",
+      "quality_of_life": "Los Angeles ranks 138th globally with quality of life index of 142.8, offering excellent climate (95.5) despite challenges with traffic (56.8), pollution (68.0), and moderate safety concerns (46.1). The city provides year-round outdoor activities, entertainment industry opportunities, and diverse culture. Traffic and air quality remain significant challenges affecting daily life."
     }
   },
   {
@@ -1917,8 +1917,8 @@
       "Haifa"
     ],
     "life_in": {
-      "cost_of_living": "San Francisco is known for its high cost of living, with housing being particularly expensive, reflecting the city's desirability and the impact of the tech industry.",
-      "quality_of_living": "Despite its costs, San Francisco offers a high quality of life with its vibrant cultural scene, natural beauty, and commitment to inclusivity and innovation."
+      "cost_of_living": "San Francisco ranks 10th globally with cost of living index of 90.7, among the world's most expensive cities with rent index of 78.4 but exceptional purchasing power of 171.9. Monthly rent averages $2,800-4,500, restaurant meals cost $15-40, and groceries are very expensive. Public transportation is good but housing costs dominate expenses.",
+      "quality_of_life": "San Francisco ranks 103rd globally with quality of life index of 176.3, featuring outstanding purchasing power (180.1) and excellent climate (97.3), though safety concerns (39.1) and traffic issues (49.5) present challenges. The city offers tech industry opportunities, cultural diversity, and beautiful scenery. High income potential helps offset extreme housing costs for many residents."
     }
   },
   {
@@ -2032,8 +2032,8 @@
       "milan"
     ],
     "life_in": {
-      "cost_of_living": "Toronto is known for its high quality of life, albeit with a cost of living to match. Housing, in particular, can be pricey, but the city's healthcare, education, and public services are top-notch.",
-      "quality_of_living": "Regularly ranked among the world's most livable cities, Toronto offers a clean environment, safety, and a multicultural society that welcomes all. Its parks, waterfront, and community-centric neighborhoods provide a high quality of life."
+      "cost_of_living": "Toronto ranks 78th globally with cost of living index of 63.8, offering reasonable pricing for a major North American city with rent index of 42.8 and purchasing power index of 115.9. Monthly rent averages $1,200-2,200, restaurant meals cost $12-25, and groceries are moderately expensive. Healthcare is covered, and public transportation offers good value.",
+      "quality_of_life": "Toronto ranks 131st globally with quality of life index of 160.8, offering good healthcare (74.0) and safety (56.3), though traffic challenges (44.6) and climate considerations (65.3) affect livability. The city provides multicultural diversity, strong healthcare system, and economic opportunities. Winter weather is challenging, but summer activities and cultural amenities are excellent."
     }
   },
   {
@@ -2145,8 +2145,8 @@
       "USA-LAX"
     ],
     "life_in": {
-      "cost_of_living": "Mexico City offers an affordable lifestyle compared to many Western cities, with accessible healthcare, housing, and a rich cultural life, making it an attractive destination for expats and locals alike.",
-      "quality_of_living": "Despite its bustling urban environment, Mexico City boasts numerous parks, art galleries, and world-class cuisine, offering a high quality of life with a blend of tradition and modernity."
+      "cost_of_living": "Mexico City ranks 185th globally with cost of living index of 41.8, offering affordable living with rent index of 24.3 and purchasing power index of 49.4. Monthly rent averages $350-800, restaurant meals cost $4-15, and groceries are very affordable. Transportation is inexpensive, and cultural activities are generally accessible at low costs.",
+      "quality_of_life": "Mexico City ranks 241st globally with quality of life index of 92.6, facing challenges with safety (33.0) and pollution (80.7), though offering excellent climate (92.4) and decent healthcare (66.1). The city provides rich cultural heritage, excellent food scene, and affordable living costs. However, air quality and safety concerns require careful neighborhood selection and lifestyle adjustments."
     }
   },
   {
@@ -2242,8 +2242,8 @@
       "birmingham"
     ],
     "life_in": {
-      "cost_of_living": "Chicago offers a cost of living that's high but more affordable compared to other major US cities, with a diverse range of neighborhoods catering to different budgets.",
-      "quality_of_living": "The quality of life in Chicago is enriched by its vast green spaces, world-renowned educational institutions, cutting-edge healthcare, and a bustling cultural scene, making it a vibrant place to live and work."
+      "cost_of_living": "Chicago ranks 59th globally with cost of living index of 71.7, offering reasonable pricing for a major US city with rent index of 55.3 and strong purchasing power index of 161.3. Monthly rent averages $1,200-2,400, restaurant meals cost $12-28, and groceries are moderately priced. Public transportation is affordable and comprehensive, reducing car ownership necessity.",
+      "quality_of_life": "Chicago ranks 123rd globally with quality of life index of 168.0, featuring excellent purchasing power (168.5) balanced against safety concerns (33.9) and pollution challenges (50.5). The city offers world-class architecture, cultural institutions, and food scene. Economic opportunities are strong, though winter weather and safety in certain areas require consideration."
     },
     "famous_people": [
       {
@@ -2355,8 +2355,8 @@
       "tel_aviv"
     ],
     "life_in": {
-      "cost_of_living": "While Buenos Aires offers a relatively lower cost of living compared to many Western cities, inflation can impact expenses significantly. However, its vibrant culture and extensive amenities provide a compelling quality of life.",
-      "quality_of_living": "Despite economic challenges, Buenos Aires boasts a high quality of life, with access to excellent healthcare, education, and a rich cultural scene. The city's parks, cafes, and theaters offer a lifestyle that is both dynamic and relaxed."
+      "cost_of_living": "Buenos Aires ranks 178th globally with cost of living index of 43.7, offering very affordable living with rent index of 15.0 and purchasing power index of 47.4. Monthly rent averages $200-500, restaurant meals cost $5-15, and groceries are extremely affordable. Transportation costs are minimal, and cultural activities are generally accessible to all income levels.",
+      "quality_of_life": "Buenos Aires ranks 191st globally with quality of life index of 118.2, offering excellent climate (98.3) and decent healthcare (68.3), though economic instability affects purchasing power and safety concerns (36.9) exist. The city provides vibrant culture, excellent food and wine, and European architecture. Economic volatility creates challenges, but cultural richness and affordability make it attractive for many expats."
     },
     "famous_people": [
       {
@@ -2484,8 +2484,8 @@
       "los_angeles"
     ],
     "life_in": {
-      "cost_of_living": "Lima offers a relatively affordable lifestyle compared to other global cities, with a cost of living that allows residents to enjoy its rich culture and cuisine without breaking the bank.",
-      "quality_of_living": "Despite its challenges, Lima boasts a high quality of life, with access to excellent cuisine, diverse cultural experiences, and beautiful landscapes, all contributing to the well-being of its inhabitants."
+      "cost_of_living": "Lima ranks 252nd globally with cost of living index of 32.7, offering affordable living with rent index of 13.0 and purchasing power index of 44.5. Monthly rent averages $250-600, restaurant meals cost $3-12, and groceries are very affordable. Public transportation is inexpensive, though quality varies significantly across different service levels.",
+      "quality_of_life": "Lima ranks 253rd globally with quality of life index of 88.2, facing challenges with safety (29.9) and pollution (84.4), though climate conditions are favorable (97.7). The city offers rich cultural heritage, growing food scene, and coastal location. However, safety concerns and air quality issues require careful consideration when choosing residential areas."
     }
   },
   {
@@ -2576,12 +2576,12 @@
     ],
     "sister_cities": [
       "Madrid",
-      "New York City",
+      "New York",
       "Seoul"
     ],
     "life_in": {
-      "cost_of_living": "Bogota offers an affordable lifestyle compared to other global capitals. Housing, transportation, and dining out remain accessible, though prices can vary widely by neighborhood.",
-      "quality_of_living": "With its vast array of cultural activities, green spaces, and public services, Bogota provides a high quality of life. Challenges such as traffic congestion and air quality are actively addressed by the city's innovative urban policies."
+      "cost_of_living": "Bogotá ranks 272nd globally with cost of living index of 29.1, making it very affordable with rent index of 11.2 and purchasing power index of 36.5. Monthly rent averages $200-500, restaurant meals cost $3-10, and groceries are among the most affordable globally. Transportation and utilities are extremely inexpensive, allowing comfortable living on modest budgets.",
+      "quality_of_life": "Bogotá ranks 250th globally with quality of life index of 94.8, featuring excellent climate (97.1) but facing challenges with safety (33.4) and traffic congestion (51.6). The city offers year-round spring-like weather, growing cultural scene, and increasing business opportunities. However, traffic, safety, and altitude adjustment are considerations for newcomers."
     },
     "famous_people": [
       {
@@ -2693,8 +2693,8 @@
       "madrid_spain"
     ],
     "life_in": {
-      "cost_of_living": "Santiago offers a relatively high cost of living compared to other Latin American cities, but with a quality of life to match, featuring accessible healthcare, a robust public transport system, and a vibrant cultural scene.",
-      "quality_of_living": "Residents enjoy a dynamic mix of modern amenities and natural beauty, with the Andes offering a stunning backdrop to a city rich in parks, cultural activities, and diverse cuisine."
+      "cost_of_living": "Santiago ranks 191st globally with cost of living index of 39.4, offering reasonable affordability with rent index of 13.8 and purchasing power index of 59.1. Monthly rent averages $300-700, restaurant meals cost $6-18, and groceries are moderately affordable. Public transportation is efficient and inexpensive, with modern metro system covering most areas.",
+      "quality_of_life": "Santiago ranks 218th globally with quality of life index of 110.2, offering good climate (90.2) and healthcare access (65.8), though pollution (70.8) and traffic (37.3) present urban challenges. The city provides mountain and ocean proximity, stable economy, and growing cultural scene. Air quality can be problematic due to geographic location, but economic opportunities are strong."
     },
     "famous_people": [
       {
@@ -2804,8 +2804,8 @@
       "beijing"
     ],
     "life_in": {
-      "cost_of_living": "Cairo presents an affordable lifestyle compared to many global cities, with diverse living options that cater to a range of budgets, making daily life vibrant yet accessible.",
-      "quality_of_living": "Life in Cairo is a tapestry of contrasts, where ancient history and modernity converge. Amidst its bustling streets, Cairo offers a rich cultural life, warm hospitality, and a resilient community spirit, although challenges in traffic and pollution persist."
+      "cost_of_living": "Cairo ranks 287th globally with cost of living index of 20.2, making it extremely affordable with rent index of 5.0 and purchasing power index of 25.1. Monthly rent averages $100-300, restaurant meals cost $2-8, and groceries are among the world's most affordable. Transportation and utilities are very inexpensive, though service quality varies significantly.",
+      "quality_of_life": "Cairo ranks 276th globally with quality of life index of 75.4, facing significant challenges with pollution (91.0) and traffic (49.8), though climate conditions are generally favorable (88.5). The city offers incredible historical heritage and cultural experiences at minimal costs. However, infrastructure challenges, air quality, and traffic congestion significantly impact daily life quality."
     },
     "famous_people": [
       {
@@ -2939,8 +2939,8 @@
       "BRLN"
     ],
     "life_in": {
-      "cost_of_living": "Johannesburg, while more affordable than other global cities, still requires a discerning budget for housing and amenities, reflecting the economic disparities within the city.",
-      "quality_of_living": "Despite its challenges, Johannesburg offers a high quality of life with its vibrant cultural scene, extensive green spaces, and a generally temperate climate, making it a dynamic place to live."
+      "cost_of_living": "Johannesburg ranks 234th globally with cost of living index of 35.1, offering affordable living with rent index of 12.2 and purchasing power index of 111.9. Monthly rent averages $300-700, restaurant meals cost $5-15, and groceries are reasonably priced. Domestic services and healthcare are particularly affordable compared to developed countries.",
+      "quality_of_life": "Johannesburg ranks 137th globally with quality of life index of 141.9, featuring excellent climate (91.4) and strong purchasing power (114.7), though significant safety concerns (19.2) affect livability. The city offers economic opportunities, pleasant year-round weather, and cultural diversity. However, crime rates require security precautions and impact residential and lifestyle choices significantly."
     }
   },
   {
@@ -3036,8 +3036,8 @@
       "Addis Ababa"
     ],
     "life_in": {
-      "cost_of_living": "Nairobi offers a varied cost of living, accommodating both luxury lifestyles and more modest budgets, making it a city of contrasts and opportunities.",
-      "quality_of_living": "Despite challenges like traffic and urbanization, Nairobi boasts a high quality of life with its vibrant culture, green spaces, and thriving social scene, offering a unique urban experience."
+      "cost_of_living": "Nairobi ranks 255th globally with cost of living index of 31.3, offering very affordable living with rent index of 10.7 and purchasing power index of 34.9. Monthly rent averages $200-600, restaurant meals cost $3-12, and groceries are affordable. Transportation is inexpensive, though traffic congestion affects commuting times significantly.",
+      "quality_of_life": "Nairobi ranks 254th globally with quality of life index of 90.0, featuring excellent climate (99.8) but challenges with safety (40.4), pollution (79.8), and traffic (53.7). The city offers gateway access to safari destinations, growing tech sector, and year-round pleasant weather. However, infrastructure limitations and security concerns require careful planning."
     },
     "famous_people": [
       {
@@ -3168,8 +3168,8 @@
       "beirut"
     ],
     "life_in": {
-      "cost_of_living": "Living in Lagos can be expensive, especially in upscale areas, but the city also offers a range of options to suit different budgets, from housing to dining.",
-      "quality_of_living": "Despite its challenges, including traffic and infrastructure, Lagos offers a vibrant lifestyle with access to diverse cultural experiences, international cuisine, and an evolving arts scene."
+      "cost_of_living": "Lagos ranks 274th globally with cost of living index of 28.9, making it very affordable with rent index of 28.3 and extremely low purchasing power index of 10.3. Monthly rent averages $200-800 depending on area, restaurant meals cost $2-10, and basic groceries are affordable. However, imported goods and quality housing can be expensive relative to local incomes.",
+      "quality_of_life": "Lagos ranks 286th globally with quality of life index of 8.2, facing significant challenges across all categories with particularly low safety (31.6) and very poor purchasing power (10.9). The city offers dynamic business opportunities and cultural vibrancy in Africa's most populous urban area. However, infrastructure limitations, traffic congestion, and security concerns significantly impact quality of life."
     }
   },
   {
@@ -3282,8 +3282,8 @@
       "shanghai"
     ],
     "life_in": {
-      "cost_of_living": "Casablanca offers a relatively affordable lifestyle compared to other major cities globally, with a cost of living that reflects the balance between modernity and tradition.",
-      "quality_of_living": "The quality of life in Casablanca is a blend of its Mediterranean climate, vibrant culture, and growing infrastructure, making it an attractive place for both locals and expatriates."
+      "cost_of_living": "Casablanca ranks 231st globally with cost of living index of 34.7, offering affordable living with rent index of 13.1 and purchasing power index of 43.0. Monthly rent averages $250-600, restaurant meals cost $4-12, and groceries are reasonably priced. Transportation is inexpensive, and local services are generally affordable for international standards.",
+      "quality_of_life": "Casablanca ranks 251st globally with quality of life index of 94.2, offering excellent climate (98.1) but facing challenges with pollution (82.1) and moderate safety concerns (44.8). The city provides coastal location, French cultural influences, and growing business sector. However, air quality and urban infrastructure limitations affect overall livability."
     }
   },
   {
@@ -3293,7 +3293,7 @@
     "flag": "https://upload.wikimedia.org/wikipedia/commons/8/88/Flag_of_Australia_%28converted%29.svg",
     "lat": "-33.8688",
     "lng": "151.2093",
-    "fun_fact": "Sydney Harbour Bridge is nicknamed \"The Coathanger\" and contains 6 million rivets, while the Sydney Opera House's distinctive shell design was inspired by orange segments. The city has over 100 beaches within its metropolitan area, and its harbor is deeper than New York City's, making it one of the world's finest natural harbors with more waterfront than San Francisco, Hong Kong, and New York City combined.",
+    "fun_fact": "Sydney Harbour Bridge is nicknamed \"The Coathanger\" and contains 6 million rivets, while the Sydney Opera House's distinctive shell design was inspired by orange segments. The city has over 100 beaches within its metropolitan area, and its harbor is deeper than New York's, making it one of the world's finest natural harbors with more waterfront than San Francisco, Hong Kong, and New York combined.",
     "images": [
       "https://upload.wikimedia.org/wikipedia/commons/e/eb/Sydney_Opera_House_Sails.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/a/a0/Sydney_harbour_bridge_new_south_wales.jpg",
@@ -3396,8 +3396,8 @@
       "GZD"
     ],
     "life_in": {
-      "cost_of_living": "Sydney is known for its high quality of life, albeit with a cost of living to match. It frequently ranks among the most expensive cities in the world, with housing as the largest expense.",
-      "quality_of_living": "Despite the high cost of living, Sydney offers a superb quality of life, with excellent healthcare, education, and a plethora of outdoor activities, cultural events, and natural beauty."
+      "cost_of_living": "Sydney ranks 49th globally with cost of living index of 69.3, reflecting high Australian costs with rent index of 52.5 and purchasing power index of 129.0. Monthly rent averages $1,400-2,800, restaurant meals cost $15-35, and groceries are expensive. Transportation costs are moderate, but housing dominates expense considerations for most residents.",
+      "quality_of_life": "Sydney ranks 65th globally with quality of life index of 188.4, featuring excellent climate (97.1), good healthcare (74.7), and strong safety (65.8), though traffic (43.3) and high costs present challenges. The city offers beautiful harbor setting, excellent beaches, and high-quality healthcare. Strong economy provides good income opportunities to offset high living costs."
     }
   },
   {
@@ -3510,8 +3510,8 @@
       "boston"
     ],
     "life_in": {
-      "cost_of_living": "Living in Melbourne comes with a high price tag, ranking among the most expensive cities in Australia, but its quality of life and vibrant culture often justify the expense.",
-      "quality_of_living": "Melbourne frequently tops lists for quality of living, thanks to its excellent healthcare, education, and public transportation, alongside its rich cultural tapestry and green spaces."
+      "cost_of_living": "Melbourne ranks 90th globally with cost of living index of 65.4, offering reasonable pricing for a major Australian city with rent index of 38.1 and strong purchasing power index of 151.4. Monthly rent averages $1,000-2,200, restaurant meals cost $12-30, and groceries are moderately expensive. Public transportation offers good value with extensive tram and train networks.",
+      "quality_of_life": "Melbourne ranks 29th globally with quality of life index of 198.3, featuring excellent purchasing power (157.1), outstanding climate (94.3), and good healthcare (73.3). The city offers world-renowned coffee culture, arts scene, and sporting events. Consistently rated among the world's most livable cities with excellent balance of amenities and lifestyle opportunities."
     }
   },
   {
@@ -3621,8 +3621,8 @@
       "London"
     ],
     "life_in": {
-      "cost_of_living": "The cost of living in Addis Ababa offers a balance between affordability and quality, appealing to both locals and expatriates alike.",
-      "quality_of_living": "Despite its rapid urbanization, Addis Ababa retains a sense of community and tradition, offering a quality of life enriched by Ethiopian culture and hospitality."
+      "cost_of_living": "Addis Ababa ranks 182nd globally with cost of living index of 42.7, offering affordable living with rent index of 19.6 and extremely low purchasing power index of 12.0. Monthly rent averages $200-600, restaurant meals cost $3-10, and groceries are very affordable by international standards. However, quality goods and services can be expensive relative to local income levels.",
+      "quality_of_life": "Quality of life data for Addis Ababa shows developing infrastructure with altitude considerations (8,000+ feet elevation). The city serves as diplomatic capital of Africa with international presence. Healthcare and educational facilities are improving but vary significantly in quality and accessibility across different areas."
     }
   },
   {
@@ -3717,8 +3717,8 @@
       "beijing"
     ],
     "life_in": {
-      "cost_of_living": "Life in Dakar offers an affordable option for many, with a cost of living that balances between moderate housing prices and the expense of imported goods, creating a nuanced financial landscape for its residents.",
-      "quality_of_living": "Dakar boasts a vibrant community life, rich cultural experiences, and a warm climate year-round. However, challenges such as traffic congestion and infrastructure strains are part of the urban experience."
+      "cost_of_living": "Cost of living in Dakar is moderate for West Africa, with monthly rent averaging $300-800, restaurant meals costing $4-15, and groceries reasonably priced. Transportation is affordable, though imported goods can be expensive. The city offers coastal location benefits but infrastructure varies widely.",
+      "quality_of_life": "Dakar provides coastal advantages with Atlantic Ocean access and serves as a major West African hub. The city offers growing cultural scene and business opportunities, though infrastructure limitations and seasonal weather patterns affect comfort levels. Healthcare facilities are improving but remain limited compared to developed nations."
     },
     "famous_people": [
       {
@@ -3830,8 +3830,8 @@
       "brussels"
     ],
     "life_in": {
-      "cost_of_living": "Living in Kinshasa can be expensive, particularly for housing and imported goods. However, local markets offer affordable food and daily necessities.",
-      "quality_of_living": "Despite challenges, Kinshasa's residents benefit from a strong sense of community, vibrant cultural life, and the natural beauty surrounding the city. Efforts to improve infrastructure and public services continue to enhance quality of life."
+      "cost_of_living": "Kinshasa presents complex pricing with basic local goods being affordable ($100-400 monthly rent, $2-8 meals) while imported items and quality housing are expensive relative to local incomes. Transportation costs are minimal for local services, but infrastructure limitations affect accessibility and reliability.",
+      "quality_of_life": "Quality of life faces significant challenges with infrastructure limitations, though the city offers vibrant culture and music scene. As the world's largest French-speaking city, it provides linguistic advantages for French speakers. However, utilities, healthcare access, and transportation reliability present ongoing challenges."
     },
     "famous_people": [
       {
@@ -3959,8 +3959,8 @@
       "TOK"
     ],
     "life_in": {
-      "cost_of_living": "Istanbul offers a vibrant lifestyle with a cost of living that varies greatly between its diverse neighborhoods, balancing modernity with tradition.",
-      "quality_of_living": "Despite its bustling nature, Istanbul provides a high quality of life, with its rich history, cultural diversity, and dynamic social scene."
+      "cost_of_living": "Istanbul ranks 186th globally with cost of living index of 41.4, offering affordable living with rent index of 21.5 and purchasing power index of 57.2. Monthly rent averages $300-800, restaurant meals cost $4-12, and groceries are reasonably priced. Public transportation is excellent value with comprehensive coverage across the massive metropolitan area.",
+      "quality_of_life": "Istanbul ranks 195th globally with quality of life index of 122.0, balancing excellent climate (93.0) and decent healthcare (70.0) against challenges with traffic (51.3) and pollution (67.7). The city offers unique European-Asian location, rich history, and vibrant culture. However, traffic congestion and economic volatility affect daily life quality."
     }
   },
   {
@@ -4052,8 +4052,8 @@
       "frankfurt"
     ],
     "life_in": {
-      "cost_of_living": "Dubai is known for its high cost of living, with housing, education, and entertainment expenses reflecting its luxurious lifestyle.",
-      "quality_of_living": "Despite the cost, life in Dubai offers a high quality of living with world-class amenities, safety, and a vibrant cultural scene that caters to a diverse population."
+      "cost_of_living": "Dubai ranks 148th globally with cost of living index of 58.4, offering tax-free living with rent index of 56.8 and strong purchasing power index of 132.7. Monthly rent averages $800-2,500, restaurant meals cost $8-25, and groceries are moderately priced. No income tax significantly improves net purchasing power for most international residents.",
+      "quality_of_life": "Dubai ranks 95th globally with quality of life index of 178.5, featuring exceptional safety (83.9), good healthcare (69.7), though climate challenges (50.3) during summer months affect outdoor activities. The city offers tax-free income, modern infrastructure, and international business opportunities. Summer heat is intense, but world-class amenities and strategic location provide significant advantages."
     },
     "famous_people": [
       {
@@ -4162,8 +4162,8 @@
       "new_delhi"
     ],
     "life_in": {
-      "cost_of_living": "Riyadh offers a high standard of living, though it can be expensive. Housing, education, and entertainment reflect the city's status as a regional leader, yet many find the cost manageable due to tax-free income.",
-      "quality_of_living": "Life in Riyadh is a blend of modern conveniences and traditional values. The city's infrastructure, healthcare, and education systems are of high quality, making it a desirable place for both locals and expatriates."
+      "cost_of_living": "Riyadh ranks 170th globally with cost of living index of 47.1, offering reasonable pricing with rent index of 25.2 and strong purchasing power index of 124.5. Monthly rent averages $400-1,200, restaurant meals cost $5-20, and groceries are affordable due to government subsidies. Fuel costs are extremely low, though imported goods can be expensive.",
+      "quality_of_life": "Riyadh ranks 133rd globally with quality of life index of 162.1, featuring excellent safety (75.1) and strong purchasing power (128.9), though extreme climate conditions (44.4) and pollution (63.4) present challenges. The city offers tax-free income, modern infrastructure development, and significant business opportunities. However, extreme summer heat and cultural restrictions require lifestyle adjustments."
     },
     "famous_people": [
       {
@@ -4272,8 +4272,8 @@
       "moscow"
     ],
     "life_in": {
-      "cost_of_living": "Life in Tehran offers a unique contrast of affordability in global standards, yet it holds the challenge of fluctuating economic conditions for locals, making financial planning a pivotal aspect of daily life.",
-      "quality_of_living": "Despite its bustling urban atmosphere, Tehran boasts green spaces, a rich cultural scene, and a strong sense of community, offering a vibrant quality of life amidst its historical backdrop."
+      "cost_of_living": "Tehran’s cost of living is 65.5% lower than Berlin’s, with rent averaging 66% less. A 100m² apartment in the city center costs $12,500 per square meter to buy, while monthly rent for a 85m² furnished apartment in an expensive area is about $1,500. Groceries and transportation are affordable, but imported goods and cars are significantly more expensive due to import restrictions.",
+      "quality_of_life": "Tehran’s quality of life index is 91.45, with a moderate safety index of 44.05. While healthcare and education are accessible, air pollution and traffic congestion are major concerns. The city offers rich cultural heritage and vibrant markets, but economic instability and inflation impact daily life."
     },
     "famous_people": [
       {
@@ -4402,8 +4402,8 @@
       "paris"
     ],
     "life_in": {
-      "cost_of_living": "Beijing offers a juxtaposition of affordability and luxury, with living expenses varying widely between the city's diverse neighborhoods. From bustling markets to high-end shopping districts, there's something for every budget.",
-      "quality_of_living": "Residents enjoy a vibrant mix of cultural experiences, green spaces, and modern amenities. Despite challenges like pollution, the city's rich history, robust public transport, and community spirit make it a captivating place to live."
+      "cost_of_living": "Beijing is 62.9% less expensive than New York, with rent 76.1% lower. Monthly costs for a family of four are about $2,168, excluding rent. A 900 sqft furnished apartment in an expensive area costs around $1,500–$2,500. Groceries and dining out are affordable, but imported goods are pricier.",
+      "quality_of_life": "Beijing ranks 123rd globally for quality of life. It offers excellent healthcare and education, but air pollution and traffic are persistent issues. The city is culturally rich, with modern infrastructure and a dynamic expat community, though housing affordability remains a challenge."
     }
   },
   {
@@ -4515,8 +4515,8 @@
       "san_francisco"
     ],
     "life_in": {
-      "cost_of_living": "While Shanghai stands as one of the most expensive cities in China, its cost of living varies widely, offering options for lavish lifestyles as well as more modest living.",
-      "quality_of_living": "Shanghai offers a high quality of life, with its blend of modern conveniences, rich cultural experiences, and extensive public transportation network making it an attractive city for both locals and expatriates."
+      "cost_of_living": "Shanghai is 61% less expensive than New York, with rent 74% lower. A 480 sqft furnished studio in the city center costs about $1,000–$1,500 monthly. Groceries and dining are affordable, but real estate prices have fallen by over 40% recently. Monthly costs for a family of four are around $2,000, excluding rent.",
+      "quality_of_life": "Shanghai ranks 106th globally for quality of life. It boasts high safety (72.95) and healthcare (64.88) indices, but air pollution and traffic congestion are ongoing concerns. The city is a global financial hub with vibrant culture and excellent public transport."
     }
   },
   {
@@ -4616,8 +4616,8 @@
       "Yokohama_Japan"
     ],
     "life_in": {
-      "cost_of_living": "Living in Mumbai is a tale of two cities: it can be surprisingly affordable or staggeringly expensive, reflecting its vast economic disparities. Housing is the biggest expense, with costs varying widely depending on the area.",
-      "quality_of_living": "Despite its challenges, Mumbai offers a high quality of life for those who navigate its complexities. Its vibrant culture, economic opportunities, and the indefatigable spirit of its residents make it a city full of life and possibilities."
+      "cost_of_living": "Mumbai is 62.4% less expensive than Berlin, with rent 50.8% lower. Monthly costs for a family of four are about $1,240, excluding rent. A 1BHK apartment ranges from $80–$500, depending on location. Groceries and dining are affordable, but infrastructure and traffic are major challenges.",
+      "quality_of_life": "Mumbai ranks 158th globally for quality of life. While it offers diverse culture and economic opportunities, air pollution, traffic, and safety are significant issues. Healthcare and education are accessible but expensive, and housing affordability is a major concern."
     },
     "famous_people": [
       {
@@ -4746,8 +4746,8 @@
       "london"
     ],
     "life_in": {
-      "cost_of_living": "Warsaw offers a relatively affordable cost of living compared to other European capitals, with a variety of housing, services, and amenities accessible to a wide range of incomes.",
-      "quality_of_living": "Life in Warsaw is a blend of its historical past and modern conveniences, offering high standards of living, efficient public transportation, and a wealth of cultural and recreational activities."
+      "cost_of_living": "Warsaw’s cost of living is 40.8% lower than the US average. A 90m² apartment costs about $2,000–$2,500 monthly, with utilities adding $200–$300. Groceries and dining are affordable, and public transport is efficient. A single person’s monthly costs are around $843, excluding rent.",
+      "quality_of_life": "Warsaw ranks 78th globally for quality of life, with a high safety index (74.72) and good healthcare (58.43). The city is known for its green spaces, cultural scene, and strong public transport. Air quality is generally good, and the city is increasingly smart and sustainable."
     }
   },
   {
@@ -4842,8 +4842,8 @@
       "fes"
     ],
     "life_in": {
-      "cost_of_living": "Living in Jerusalem can be costly. Housing, in particular, is expensive, reflecting the city's status as a cultural and religious hub. However, local markets offer affordable fresh produce.",
-      "quality_of_living": "Despite its complexities, Jerusalem offers a high quality of life. The city is rich in history, culture, and spiritual significance, offering residents a unique living experience amidst ancient beauty and modern conveniences."
+      "cost_of_living": "Jerusalem’s cost of living is high, with rent for a 1-bedroom city center apartment averaging $1,500–$2,000 monthly. Groceries and dining are expensive, with a meal at a mid-range restaurant costing about $20–$30. Public transport is affordable, but imported goods and private schooling add to expenses. The city is 30% more expensive than Tel Aviv.",
+      "quality_of_life": "Jerusalem ranks moderately for quality of life, with strong healthcare and education but ongoing security concerns. The city is culturally rich, with historic sites and diverse communities. Air quality is generally good, but political tensions and high living costs impact daily life."
     },
     "famous_people": [
       {
@@ -4973,8 +4973,8 @@
       "tokyo"
     ],
     "life_in": {
-      "cost_of_living": "Living in Rio can be costly, especially in upscale neighborhoods, but it offers a quality of life that's rich with culture, beauty, and the vibrancy of its people.",
-      "quality_of_living": "Despite its challenges, Rio boasts a high quality of life, with its stunning natural beauty, warm climate, and the open, friendly nature of its inhabitants."
+      "cost_of_living": "Rio’s cost of living is 50% lower than New York’s, with rent averaging $500–$1,200 for a 1-bedroom city center apartment. Groceries and dining are affordable, but safety and infrastructure costs can be high. Public transport is cheap, but car ownership is expensive due to taxes and insurance.",
+      "quality_of_life": "Rio ranks moderately for quality of life, with vibrant culture, beaches, and nightlife. However, safety is a major concern, with high crime rates in some areas. Healthcare is accessible, but pollution and traffic congestion are persistent issues."
     }
   },
   {
@@ -5073,8 +5073,8 @@
       "shanghai"
     ],
     "life_in": {
-      "cost_of_living": "Karachi, while offering a relatively low cost of living compared to other global cities, presents a dynamic urban experience, where modern amenities coexist with traditional lifestyles.",
-      "quality_of_living": "Despite the challenges, life in Karachi is marked by a sense of community, vibrant street life, and a plethora of cultural experiences, making it a city full of life and diversity."
+      "cost_of_living": "Karachi is among the most affordable major cities globally, with rent for a 1-bedroom city center apartment averaging $150–$300. Groceries and dining are very cheap, but power outages and water shortages add hidden costs. Public transport is inexpensive but often unreliable.",
+      "quality_of_life": "Karachi’s quality of life is low due to pollution, traffic, and crime. Healthcare and education are underfunded, and infrastructure is strained. The city offers economic opportunities and cultural diversity, but safety and environmental issues are significant challenges."
     },
     "famous_people": [
       {
@@ -5206,8 +5206,8 @@
       "Copenhagen"
     ],
     "life_in": {
-      "cost_of_living": "Singapore ranks as one of the most expensive cities in the world, with high costs for housing, transportation, and dining out. However, its high standard of living, efficient public services, and cleanliness make it a desirable place to live.",
-      "quality_of_living": "Singapore offers an unparalleled quality of life, with top-notch healthcare, education, and public safety. Its green spaces, cleanliness, and well-planned urban infrastructure contribute to the well-being and satisfaction of its residents."
+      "cost_of_living": "Singapore is one of the world’s most expensive cities, with rent for a 1-bedroom city center apartment averaging $2,500–$4,000. Groceries and dining are costly, but public transport is efficient and affordable. Car ownership is prohibitively expensive due to high taxes.",
+      "quality_of_life": "Singapore ranks among the top globally for quality of life, with excellent healthcare, safety, and infrastructure. The city is clean, green, and well-planned, with world-class education and low crime. However, the high cost of living and work-life balance are common concerns."
     }
   },
   {
@@ -5302,8 +5302,8 @@
       "buenos_aires"
     ],
     "life_in": {
-      "cost_of_living": "Caracas offers a contrasting cost of living, with expenses varying widely by area. While some goods and services can be costly due to inflation, local markets and informal vendors offer affordable alternatives, reflecting the city's adaptability.",
-      "quality_of_living": "Life in Caracas is marked by its vibrant culture, warm people, and the challenges of urban living. Despite economic and political adversities, Caraqueños find joy in their city's dynamic atmosphere, rich traditions, and the stunning beauty of its natural surroundings."
+      "cost_of_living": "Caracas is extremely affordable for foreigners due to hyperinflation, with rent for a 1-bedroom city center apartment as low as $100–$300. However, shortages of basic goods and services make daily life difficult. Groceries and utilities are cheap in local currency but often unavailable.",
+      "quality_of_life": "Caracas has a very low quality of life due to political instability, crime, and economic crisis. Healthcare and infrastructure are deteriorating, and safety is a major concern. The city’s cultural vibrancy is overshadowed by daily struggles for basic needs."
     },
     "famous_people": [
       {
@@ -5413,8 +5413,8 @@
       "caracas"
     ],
     "life_in": {
-      "cost_of_living": "Havana presents a paradox of low-cost basic necessities against the backdrop of a dual currency system, making daily life affordable for locals but potentially expensive for foreigners.",
-      "quality_of_living": "Despite economic challenges, Havana boasts a high quality of life with access to education and healthcare, vibrant cultural scenes, and a strong sense of community and solidarity among its residents."
+      "cost_of_living": "Havana is affordable for tourists but challenging for locals. Rent for a 1-bedroom city center apartment is $200–$500, but salaries are very low. Groceries and dining are cheap in local currency, but shortages and dual currency systems complicate daily life.",
+      "quality_of_life": "Havana’s quality of life is impacted by economic constraints, limited healthcare, and infrastructure issues. The city is culturally rich, with vibrant arts and music scenes, but safety, pollution, and political restrictions are ongoing concerns."
     },
     "famous_people": [
       {
@@ -5540,8 +5540,8 @@
       "toronto"
     ],
     "life_in": {
-      "cost_of_living": "Kyiv offers an affordable urban experience, with a cost of living that's attractive to both locals and expats, balancing quality of life with accessibility.",
-      "quality_of_living": "Despite its bustling city life, Kyiv maintains a high quality of living, with abundant green spaces, a rich cultural scene, and a strong sense of community."
+      "cost_of_living": "Kyiv’s cost of living is 60% lower than New York’s, with rent for a 1-bedroom city center apartment averaging $400–$800. Groceries and dining are affordable, but ongoing conflict has increased some costs and reduced availability of certain goods.",
+      "quality_of_life": "Kyiv’s quality of life has been severely impacted by war, with safety and infrastructure the top concerns. The city offers strong cultural and educational institutions, but air raid alerts, displacement, and economic uncertainty dominate daily life."
     }
   },
   {
@@ -5637,8 +5637,8 @@
       "tel_aviv"
     ],
     "life_in": {
-      "cost_of_living": "Vienna offers a high quality of life, though it comes with a price tag that reflects its status as a European cultural capital. Housing, in particular, can be expensive, but efficient public services soften the blow.",
-      "quality_of_living": "Ranked consistently among the world's most livable cities, Vienna seduces residents with its blend of historic charm, green spaces, and unparalleled public services, from healthcare to education."
+      "cost_of_living": "Vienna’s cost of living is high, with rent for a 1-bedroom city center apartment averaging $1,200–$2,000. Groceries and dining are moderately priced, but healthcare and education are heavily subsidized. Public transport is efficient and affordable.",
+      "quality_of_life": "Vienna consistently ranks among the world’s best for quality of life, with excellent healthcare, safety, and infrastructure. The city is clean, green, and culturally rich, with low pollution and high standards of living. Housing affordability is a growing concern."
     },
     "famous_people": [
       {

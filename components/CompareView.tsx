@@ -148,7 +148,17 @@ const CompareView: React.FC<CompareViewProps> = ({
                             <p className="text-gray-200 leading-relaxed text-sm">
                               {section.key === 'culture' 
                                 ? Object.values(city1.culture).join(' | ')
-                                : city1[section.key]}
+                                : section.key === 'history'
+                                ? city1.history
+                                : section.key === 'adversity_resilience'
+                                ? city1.adversity_resilience
+                                : section.key === 'economy_industry'
+                                ? city1.economy_industry
+                                : section.key === 'tourism_attractions'
+                                ? city1.tourism_attractions
+                                : section.key === 'population_diversity'
+                                ? city1.population_diversity
+                                : 'Information not available'}
                             </p>
                           </div>
                           <div className="lg:border-l lg:pl-6 border-gray-600">
@@ -156,7 +166,17 @@ const CompareView: React.FC<CompareViewProps> = ({
                             <p className="text-gray-200 leading-relaxed text-sm">
                               {section.key === 'culture'
                                 ? Object.values(city2.culture).join(' | ')
-                                : city2[section.key]}
+                                : section.key === 'history'
+                                ? city2.history
+                                : section.key === 'adversity_resilience'
+                                ? city2.adversity_resilience
+                                : section.key === 'economy_industry'
+                                ? city2.economy_industry
+                                : section.key === 'tourism_attractions'
+                                ? city2.tourism_attractions
+                                : section.key === 'population_diversity'
+                                ? city2.population_diversity
+                                : 'Information not available'}
                             </p>
                           </div>
                         </div>

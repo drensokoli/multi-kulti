@@ -30,7 +30,7 @@ export interface Currency {
 
 export interface LifeIn {
   cost_of_living: string;
-  quality_of_living: string;
+  quality_of_life: string;
 }
 
 export interface City {

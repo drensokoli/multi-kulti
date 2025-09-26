@@ -218,7 +218,7 @@ const CityModal: React.FC<CityModalProps> = ({
           </div>
           <div>
             <h3 className="text-sm font-medium mb-1">Quality of Life</h3>
-            <p>{city.life_in?.quality_of_living || 'Information not available'}</p>
+            <p>{city.life_in?.quality_of_life || 'Information not available'}</p>
           </div>
         </div>
       ),

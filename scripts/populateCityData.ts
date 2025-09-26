@@ -36,7 +36,7 @@ interface Landmark {
 
 interface LifeIn {
   cost_of_living: string;
-  quality_of_living: string;
+  quality_of_life: string;
 }
 
 interface CityData {
@@ -174,7 +174,7 @@ async function generateCityData(cityName: string): Promise<CityData> {
   "sister_cities": ["", "", ""],
   "life_in": {
     "cost_of_living": "",
-    "quality_of_living": ""
+    "quality_of_life": ""
   }
 }
 
