@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { 
   X, Users, Utensils, History, Shield, Building2, Mountain, GraduationCap, 
   Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, Heart 
@@ -256,14 +257,17 @@ const CityModal: React.FC<CityModalProps> = ({
   ];
 
   return (
-    <>
-      {/* Modal */}
-      <div
-        data-modal
-        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 mt-10 h-[70vh] md:mt-0 md:h-full transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 transition-all duration-500 ease-out no-select ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
-          }`}
-        onClick={(e) => e.stopPropagation()}
-      >
+    <AnimatePresence>
+      {isOpen && (
+        <motion.div
+          data-modal
+          className="fixed left-2 sm:left-4 md:left-6 mt-24 h-[70vh] md:h-full transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 no-select"
+          initial={{ opacity: 0, x: -400 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -400 }}
+          transition={{ duration: 0.3, ease: "easeInOut" }}
+          onClick={(e) => e.stopPropagation()}
+        >
         <div className="h-full max-h-[85vh] sm:max-h-[80vh] flex flex-col">
           {/* Header */}
           <div className="backdrop-blur-xl border-b border-white/10 p-4 sm:p-6 rounded-t-xl sm:rounded-t-2xl flex-shrink-0">``
@@ -366,8 +370,9 @@ const CityModal: React.FC<CityModalProps> = ({
             </div>
           </div>
         </div>
-      </div>
-    </>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 };
 

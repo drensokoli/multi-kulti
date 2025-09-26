@@ -112,7 +112,6 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
             transition: all 0.2s ease;
             position: relative;
             z-index: 30;
-            margin-top: 120px;
           ">
             <div style="margin-bottom: 8px;">
               <div style="font-weight: 600; font-size: 16px; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px;">${(d as City).name}</div>
