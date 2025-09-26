@@ -167,10 +167,20 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
         });
       }
     };
-  }, [cities, isNightMode, isMobile]);
+  }, [cities, isMobile]);
 
   const toggleTheme = () => {
-    setIsNightMode(!isNightMode);
+    const newTheme = !isNightMode;
+    setIsNightMode(newTheme);
+    
+    // Update globe texture without reinitializing
+    if (globeInstance.current) {
+      globeInstance.current.globeImageUrl(
+        newTheme 
+          ? '//unpkg.com/three-globe/example/img/earth-night.jpg' 
+          : '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+      );
+    }
   };
 
   // Zoom to location function

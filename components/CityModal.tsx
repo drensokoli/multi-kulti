@@ -27,21 +27,6 @@ const CityModal: React.FC<CityModalProps> = ({
 }) => {
   if (!city) return null;
 
-  // Handle click outside
-  React.useEffect(() => {
-    const handleClickOutside = (event: MouseEvent) => {
-      const target = event.target as HTMLElement;
-      // Check if the click is outside the modal and not on another city marker
-      if (isOpen && !target.closest('[data-modal]') && !target.closest('[data-city-marker]')) {
-        onClose();
-      }
-    };
-
-    document.addEventListener('mousedown', handleClickOutside);
-    return () => {
-      document.removeEventListener('mousedown', handleClickOutside);
-    };
-  }, [isOpen, onClose]);
 
   // Helper function to format population numbers
   const formatPopulation = (population: string): string => {
@@ -270,7 +255,7 @@ const CityModal: React.FC<CityModalProps> = ({
         >
         <div className="h-full max-h-[85vh] sm:max-h-[80vh] flex flex-col">
           {/* Header */}
-          <div className="backdrop-blur-xl border-b border-white/10 p-4 sm:p-6 rounded-t-xl sm:rounded-t-2xl flex-shrink-0">``
+          <div className="backdrop-blur-xl border-b border-white/10 p-4 sm:p-6 rounded-t-xl sm:rounded-t-2xl flex-shrink-0">
             <div className="flex items-start justify-between">
               <div className="flex-1 min-w-0">
                 <h1 className="text-xl sm:text-2xl font-bold text-white mb-2 truncate">{city.name}</h1>
@@ -352,6 +337,17 @@ const CityModal: React.FC<CityModalProps> = ({
                       </svg>
                     </div>
                   </a>
+                </div>
+              )}
+
+              {/* City Image */}
+              {Array.isArray(city.images) && city.images.length > 0 && city.images[0] && (
+                <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg sm:rounded-xl overflow-hidden">
+                  <img 
+                    src={city.images[0]} 
+                    alt={`${city.name} city view`}
+                    className="w-full h-48 sm:h-56 object-cover"
+                  />
                 </div>
               )}
               

@@ -2,7 +2,7 @@ import './globals.css';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Cities Explorer - Discover World Cultures',
+  title: 'Multi Kulti - Discover World Cultures',
   description: 'An interactive 3D globe showcasing world cities through culture, food, adversity, and cooperation',
 };
 

@@ -63,9 +63,15 @@ export default function Home() {
       // Same city clicked, show message
       setFloatingMessage("Please select a different city to compare");
     } else {
-      // Normal city selection
-      setSelectedCity(city);
-      setIsPanelOpen(true);
+      // Close any open modals first
+      setIsPanelOpen(false);
+      setSelectedCity(null);
+      setIsCompareOpen(false);
+      setCompareCity1(null);
+      setCompareCity2(null);
+      
+      // Normal city selection - use same behavior as search bar
+      handleLocationSelect(city);
       setIsCompareMode(false);
     }
   };
@@ -100,6 +106,19 @@ export default function Home() {
   };
 
   const handleLocationSelect = (city: City) => {
+    // Close current modal if open
+    if (isPanelOpen) {
+      setIsPanelOpen(false);
+      setSelectedCity(null);
+    }
+    
+    // Close compare modal if open
+    if (isCompareOpen) {
+      setIsCompareOpen(false);
+      setCompareCity1(null);
+      setCompareCity2(null);
+    }
+    
     setZoomToCity(city);
     // Clear the zoom state after a short delay to allow for re-zooming to the same location
     setTimeout(() => setZoomToCity(null), 100);
@@ -119,23 +138,6 @@ export default function Home() {
 
       {/* Globe */}
       <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} zoomToCity={zoomToCity} />
-      
-      {/* Title Overlay */}
-      {/* <div className="fixed top-6 left-6 z-30">
-        <div className="bg-gray-900/80 backdrop-blur-lg rounded-lg px-6 py-4 border border-gray-700">
-          <h1 className="text-2xl font-bold text-white mb-1">Cities Explorer</h1>
-          <p className="text-gray-300 text-sm">Discover cultures around the world</p>
-        </div>
-      </div> */}
-
-      {/* Instructions */}
-      {/* <div className="fixed bottom-6 left-6 z-30">
-        <div className="bg-gray-900/80 backdrop-blur-lg rounded-lg px-4 py-3 border border-gray-700 max-w-xs">
-          <p className="text-gray-300 text-xs">
-            Click on city markers or labels to explore their culture, food, and community bonds
-          </p>
-        </div>
-      </div> */}
 
       {/* City Modal */}
       <CityModal
