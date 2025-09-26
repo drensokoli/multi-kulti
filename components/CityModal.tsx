@@ -27,6 +27,30 @@ const CityModal: React.FC<CityModalProps> = ({
 }) => {
   if (!city) return null;
 
+  // Helper function to create Google search link
+  const createGoogleSearchLink = (query: string) => {
+    const encodedQuery = encodeURIComponent(`${query} ${city.name} ${city.country}`);
+    return `https://www.google.com/search?q=${encodedQuery}`;
+  };
+
+  // Helper function to wrap content with search link
+  const withSearchLink = (title: string, searchQuery: string, content: React.ReactNode) => (
+    <div className="group relative">
+      <div className="flex items-center justify-between">
+        <h3 className="text-sm font-medium mb-1">{title}</h3>
+        <a 
+          href={createGoogleSearchLink(searchQuery)} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-gray-400 hover:text-blue-400"
+        >
+          Learn more
+        </a>
+      </div>
+      {content}
+    </div>
+  );
+
 
   // Helper function to format population numbers
   const formatPopulation = (population: string): string => {
@@ -84,22 +108,26 @@ const CityModal: React.FC<CityModalProps> = ({
         <div className="space-y-2">
           {city.culture ? (
             <>
-              <div>
-                <h3 className="text-sm font-medium mb-1">Traditional Arts</h3>
+              {withSearchLink(
+                "Traditional Arts",
+                "traditional arts culture",
                 <p className="text-gray-300 text-sm leading-relaxed">{city.culture.traditional_arts}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-medium mb-1">Music</h3>
+              )}
+              {withSearchLink(
+                "Music",
+                "traditional music culture",
                 <p className="text-gray-300 text-sm leading-relaxed">{city.culture.traditional_music}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-medium mb-1">Clothing</h3>
+              )}
+              {withSearchLink(
+                "Clothing",
+                "traditional clothing culture",
                 <p className="text-gray-300 text-sm leading-relaxed">{city.culture.traditional_clothing}</p>
-              </div>
-              <div>
-                <h3 className="text-sm font-medium mb-1">Beliefs</h3>
+              )}
+              {withSearchLink(
+                "Beliefs",
+                "traditional beliefs culture",
                 <p className="text-gray-300 text-sm leading-relaxed">{city.culture.traditional_beliefs}</p>
-              </div>
+              )}
             </>
           ) : (
             <p className="text-gray-500 italic">Cultural information not available</p>
@@ -118,9 +146,19 @@ const CityModal: React.FC<CityModalProps> = ({
             <h3 className="text-sm font-medium mb-2">Traditional Foods</h3>
             <div className="space-y-3">
               {Array.isArray(city.traditional_foods) ? city.traditional_foods.map((food, index) => (
-                <div key={index} className="bg-white/5 rounded-lg p-3">
-                  <h4 className="font-medium mb-1">{food.name}</h4>
-                  <p className="text-gray-300 text-sm">{food.description}</p>
+                <div key={index} className="bg-white/5 rounded-lg p-3 group">
+              <div className="flex items-center justify-between">
+                <h4 className="font-medium">{food.name}</h4>
+                <a 
+                  href={createGoogleSearchLink(`${food.name} food`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-gray-400 hover:text-blue-400"
+                >
+                  Learn more
+                </a>
+              </div>
+                  <p className="text-gray-300 text-sm mt-1">{food.description}</p>
                 </div>
               )) : <p className="text-gray-500 italic">No traditional foods available</p>}
             </div>
@@ -129,9 +167,19 @@ const CityModal: React.FC<CityModalProps> = ({
             <h3 className="text-sm font-medium mb-2">Traditional Drinks</h3>
             <div className="space-y-3">
               {Array.isArray(city.traditional_drinks) ? city.traditional_drinks.map((drink, index) => (
-                <div key={index} className="bg-white/5 rounded-lg p-3">
-                  <h4 className="font-medium mb-1">{drink.name}</h4>
-                  <p className="text-gray-300 text-sm">{drink.description}</p>
+                <div key={index} className="bg-white/5 rounded-lg p-3 group">
+              <div className="flex items-center justify-between">
+                <h4 className="font-medium">{drink.name}</h4>
+                <a 
+                  href={createGoogleSearchLink(`${drink.name} drink`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-gray-400 hover:text-blue-400"
+                >
+                  Learn more
+                </a>
+              </div>
+                  <p className="text-gray-300 text-sm mt-1">{drink.description}</p>
                 </div>
               )) : <p className="text-gray-500 italic">No traditional drinks available</p>}
             </div>
@@ -146,14 +194,16 @@ const CityModal: React.FC<CityModalProps> = ({
       icon: History,
       content: (
         <div className="space-y-3">
-          <div>
-            <h3 className="text-sm font-medium mb-1">History</h3>
+          {withSearchLink(
+            "History",
+            "history",
             <p>{city.history || 'Information not available'}</p>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium mb-1">Adversity & Resilience</h3>
+          )}
+          {withSearchLink(
+            "Adversity & Resilience",
+            "history resilience",
             <p>{city.adversity_resilience || 'Information not available'}</p>
-          </div>
+          )}
         </div>
       ),
       color: 'text-yellow-400'
@@ -165,9 +215,19 @@ const CityModal: React.FC<CityModalProps> = ({
       content: (
         <div className="space-y-3">
           {Array.isArray(city.famous_people) ? city.famous_people.map((person, index) => (
-            <div key={index} className="bg-white/5 rounded-lg p-3">
-              <h4 className="font-medium mb-1">{person.name}</h4>
-              <p className="text-gray-300 text-sm">{person.description}</p>
+            <div key={index} className="bg-white/5 rounded-lg p-3 group">
+              <div className="flex items-center justify-between">
+                <h4 className="font-medium">{person.name}</h4>
+                <a 
+                  href={createGoogleSearchLink(person.name)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-gray-400 hover:text-blue-400"
+                >
+                  Learn more
+                </a>
+              </div>
+              <p className="text-gray-300 text-sm mt-1">{person.description}</p>
             </div>
           )) : <p className="text-gray-500 italic">No famous people information available</p>}
         </div>
@@ -180,14 +240,16 @@ const CityModal: React.FC<CityModalProps> = ({
       icon: Building2,
       content: (
         <div className="space-y-3">
-          <div>
-            <h3 className="text-sm font-medium mb-1">Economy & Industry</h3>
+          {withSearchLink(
+            "Economy & Industry",
+            "economy industry business",
             <p>{city.economy_industry || 'Information not available'}</p>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium mb-1">Tourism</h3>
+          )}
+          {withSearchLink(
+            "Tourism",
+            "tourism attractions",
             <p>{city.tourism_attractions || 'Information not available'}</p>
-          </div>
+          )}
         </div>
       ),
       color: 'text-emerald-400'
@@ -199,9 +261,19 @@ const CityModal: React.FC<CityModalProps> = ({
       content: (
         <div className="space-y-3">
           {Array.isArray(city.landmarks) ? city.landmarks.map((landmark, index) => (
-            <div key={index} className="bg-white/5 rounded-lg p-3">
-              <h4 className="font-medium mb-1">{landmark.name}</h4>
-              <p className="text-gray-300 text-sm">{landmark.description}</p>
+            <div key={index} className="bg-white/5 rounded-lg p-3 group">
+              <div className="flex items-center justify-between">
+                <h4 className="font-medium">{landmark.name}</h4>
+                <a 
+                  href={createGoogleSearchLink(`${landmark.name} landmark`)} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-xs text-gray-400 hover:text-blue-400"
+                >
+                  Learn more
+                </a>
+              </div>
+              <p className="text-gray-300 text-sm mt-1">{landmark.description}</p>
             </div>
           )) : <p className="text-gray-500 italic">No landmarks information available</p>}
         </div>
@@ -214,14 +286,16 @@ const CityModal: React.FC<CityModalProps> = ({
       icon: Heart,
       content: (
         <div className="space-y-3">
-          <div>
-            <h3 className="text-sm font-medium mb-1">Cost of Living</h3>
+          {withSearchLink(
+            "Cost of Living",
+            "cost of living",
             <p>{city.life_in?.cost_of_living || 'Information not available'}</p>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium mb-1">Quality of Life</h3>
+          )}
+          {withSearchLink(
+            "Quality of Life",
+            "quality of life",
             <p>{city.life_in?.quality_of_life || 'Information not available'}</p>
-          </div>
+          )}
         </div>
       ),
       color: 'text-rose-400'
