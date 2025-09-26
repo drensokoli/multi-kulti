@@ -4,29 +4,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { Search, X } from 'lucide-react';
 import { getCountryFlag } from '@/lib/utils';
 
-interface City {
-  id: string;
-  name: string;
-  country: string;
-  flag: string;
-  lat: number;
-  lng: number;
-  population_size: string;
-  culture: string;
-  food: string;
-  history: string;
-  adversity_resilience: string;
-  economy_industry: string;
-  environment_geography: string;
-  education_innovation: string;
-  cooperation_global_ties: string;
-  tourism_attractions: string;
-  population_diversity: string;
-  arts_music_scene: string;
-  sports_recreation: string;
-  famous_people: string;
-  fun_fact: string;
-}
+import type { City } from '@/types';
 
 interface SearchResult {
   city: City;
@@ -229,7 +207,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ cities, onLocationSelect }) => {
                       <div className="text-white text-sm font-medium truncate">
                         {result.city.name}
                       </div>
-                      <div className="text-gray-400 text-xs truncate">
+                      <div className="text-gray-200 text-xs truncate">
                         {result.city.country}
                       </div>
                     </>
@@ -238,13 +216,13 @@ const SearchBar: React.FC<SearchBarProps> = ({ cities, onLocationSelect }) => {
                       <div className="text-white text-sm font-medium truncate">
                         {result.city.country}
                       </div>
-                      <div className="text-gray-400 text-xs">
+                      <div className="text-gray-200 text-xs">
                         Country
                       </div>
                     </>
                   )}
                 </div>
-                <div className="text-gray-500 text-xs">
+                <div className="text-gray-200 text-xs">
                   {result.type === 'city' ? 'City' : 'Country'}
                 </div>
               </div>

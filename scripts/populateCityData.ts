@@ -319,7 +319,7 @@ async function main() {
     "Seoul",
     "Delhi",
     "Bangkok",
-    "New York",
+    "New York City",
     "Los Angeles",
     "San Francisco",
     "Toronto",
@@ -358,7 +358,7 @@ async function main() {
     "Stockholm"
   ];
 
-  const outputPath = path.join(process.cwd(), 'public/data/cities_v2.json');
+  const outputPath = path.join(process.cwd(), 'public/data/cities.json');
   let existingData = await loadExistingData(outputPath);
   const processedCities = new Set(existingData.map(city => city.name));
 

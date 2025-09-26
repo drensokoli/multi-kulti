@@ -5,70 +5,9 @@ import {
   X, Users, Utensils, History, Shield, Building2, Mountain, GraduationCap, 
   Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, Heart 
 } from 'lucide-react';
+import type { City } from '@/types';
 import { getCountryFlag } from '@/lib/utils';
 
-interface FoodDrink {
-  name: string;
-  description: string;
-  image: string;
-}
-
-interface Culture {
-  traditional_arts: string;
-  traditional_music: string;
-  traditional_clothing: string;
-  traditional_beliefs: string;
-}
-
-interface FamousPerson {
-  name: string;
-  description: string;
-  image: string;
-}
-
-interface Landmark {
-  name: string;
-  description: string;
-  image: string;
-}
-
-interface Currency {
-  name: string;
-  symbol: string;
-}
-
-interface LifeIn {
-  cost_of_living: string;
-  quality_of_living: string;
-}
-
-interface City {
-  id: string;
-  name: string;
-  country: string;
-  flag: string;
-  lat: string;
-  lng: string;
-  images: string[];
-  timezones: string[];
-  currency: Currency;
-  city_size: string;
-  population_size: string;
-  population_diversity: string;
-  languages: string[];
-  religions: string[];
-  culture: Culture;
-  traditional_foods: FoodDrink[];
-  traditional_drinks: FoodDrink[];
-  history: string;
-  adversity_resilience: string;
-  famous_people: FamousPerson[];
-  economy_industry: string;
-  tourism_attractions: string;
-  landmarks: Landmark[];
-  sister_cities: string[];
-  life_in: LifeIn;
-}
 
 interface CityModalProps {
   city: City | null;
@@ -278,12 +217,25 @@ const CityModal: React.FC<CityModalProps> = ({
             <p>{city.life_in?.cost_of_living || 'Information not available'}</p>
           </div>
           <div>
-            <h3 className="text-sm font-medium mb-1">Quality of Living</h3>
+            <h3 className="text-sm font-medium mb-1">Quality of Life</h3>
             <p>{city.life_in?.quality_of_living || 'Information not available'}</p>
           </div>
         </div>
       ),
       color: 'text-rose-400'
+    },
+    {
+      key: 'fun_fact',
+      title: 'Fun Fact',
+      icon: Sparkles,
+      content: (
+        <div className="space-y-2">
+          <p className="text-gray-300 text-sm leading-relaxed italic">
+            {city.fun_fact || 'No fun fact available for this city.'}
+          </p>
+        </div>
+      ),
+      color: 'text-fuchsia-400'
     },
   ];
 

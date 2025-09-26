@@ -3,36 +3,20 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { getCountryFlag } from '@/lib/utils';
-
-interface City {
-  id: string;
-  name: string;
-  country: string;
-  flag: string;
-  lat: number;
-  lng: number;
-  population_size: string;
-  culture: string;
-  food: string;
-  history: string;
-  adversity_resilience: string;
-  economy_industry: string;
-  environment_geography: string;
-  education_innovation: string;
-  cooperation_global_ties: string;
-  tourism_attractions: string;
-  population_diversity: string;
-  arts_music_scene: string;
-  sports_recreation: string;
-  famous_people: string;
-  fun_fact: string;
-}
+import type { City } from '@/types';
 
 interface GlobeProps {
-  cities: City[];
-  onCityClick: (city: City) => void;
-  selectedCity: City | null;
-  zoomToCity?: City | null;
+  cities: Array<{
+    id: string;
+    name: string;
+    country: string;
+    lat: string;
+    lng: string;
+    population_size: string;
+  }>;
+  onCityClick: (city: any) => void;
+  selectedCity: any | null;
+  zoomToCity?: any | null;
 }
 
 const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomToCity }) => {
@@ -136,8 +120,8 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
       // Uncomment the following lines to show city names on the map:
       globe
         .labelsData(cities)
-        .labelLat((d) => (d as City).lat)
-        .labelLng((d) => (d as City).lng)
+        .labelLat((d) => parseFloat((d as City).lat))
+        .labelLng((d) => parseFloat((d as City).lng))
         .labelText((d) => (d as City).name)
         .labelSize(0.5)
         .labelDotRadius(0.2)
@@ -173,11 +157,11 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
 
   // Zoom to location function
   const zoomToLocation = useCallback((city: City) => {
-    if (globeInstance.current) {
-      // Point the camera at the city's coordinates
-      globeInstance.current.pointOfView({
-        lat: city.lat,
-        lng: city.lng,
+      if (globeInstance.current) {
+        // Point the camera at the city's coordinates
+        globeInstance.current.pointOfView({
+          lat: parseFloat(city.lat),
+          lng: parseFloat(city.lng),
         altitude: 0.8 // Zoom level (0.8 is closer zoom for better city view)
       }, 1200); // Animation duration in milliseconds
     }
@@ -218,4 +202,5 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
   );
 };
 
+export type { GlobeProps };
 export default Globe;

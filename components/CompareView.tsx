@@ -6,27 +6,8 @@ import {
   Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, ArrowLeftRight 
 } from 'lucide-react';
 
-interface City {
-  id: string;
-  name: string;
-  country: string;
-  lat: number;
-  lng: number;
-  culture: string;
-  food: string;
-  history: string;
-  adversity_resilience: string;
-  economy_industry: string;
-  environment_geography: string;
-  education_innovation: string;
-  cooperation_global_ties: string;
-  tourism_attractions: string;
-  population_diversity: string;
-  arts_music_scene: string;
-  sports_recreation: string;
-  famous_people: string;
-  fun_fact: string;
-}
+import type { City } from '@/types';
+import { ComparisonSection, getCityComparison } from '@/types/comparison';
 
 interface CompareViewProps {
   city1: City;
@@ -45,89 +26,41 @@ const CompareView: React.FC<CompareViewProps> = ({
 }) => {
   const sections = [
     { 
-      key: 'culture' as keyof City, 
+      key: 'culture',
       title: 'Culture', 
       icon: Users, 
       color: 'text-blue-400 border-blue-500/20'
     },
-    { 
-      key: 'food' as keyof City, 
-      title: 'Food', 
-      icon: Utensils, 
-      color: 'text-green-400 border-green-500/20'
-    },
     {
-      key: 'history' as keyof City,
+      key: 'history',
       title: 'History',
       icon: History,
       color: 'text-yellow-400 border-yellow-500/20'
     },
     { 
-      key: 'adversity_resilience' as keyof City, 
+      key: 'adversity_resilience',
       title: 'Adversity & Resilience', 
       icon: Shield, 
       color: 'text-orange-400 border-orange-500/20'
     },
     {
-      key: 'economy_industry' as keyof City,
+      key: 'economy_industry',
       title: 'Economy & Industry',
       icon: Building2,
       color: 'text-emerald-400 border-emerald-500/20'
     },
     {
-      key: 'environment_geography' as keyof City,
-      title: 'Environment & Geography',
-      icon: Mountain,
-      color: 'text-teal-400 border-teal-500/20'
-    },
-    {
-      key: 'education_innovation' as keyof City,
-      title: 'Education & Innovation',
-      icon: GraduationCap,
-      color: 'text-cyan-400 border-cyan-500/20'
-    },
-    { 
-      key: 'cooperation_global_ties' as keyof City, 
-      title: 'Global Cooperation', 
-      icon: Globe2, 
-      color: 'text-purple-400 border-purple-500/20'
-    },
-    {
-      key: 'tourism_attractions' as keyof City,
+      key: 'tourism_attractions',
       title: 'Tourism & Attractions',
       icon: Landmark,
       color: 'text-pink-400 border-pink-500/20'
     },
     {
-      key: 'population_diversity' as keyof City,
+      key: 'population_diversity',
       title: 'Population & Diversity',
       icon: UsersRound,
       color: 'text-indigo-400 border-indigo-500/20'
-    },
-    {
-      key: 'arts_music_scene' as keyof City,
-      title: 'Arts & Music Scene',
-      icon: Music2,
-      color: 'text-rose-400 border-rose-500/20'
-    },
-    {
-      key: 'sports_recreation' as keyof City,
-      title: 'Sports & Recreation',
-      icon: Trophy,
-      color: 'text-amber-400 border-amber-500/20'
-    },
-    {
-      key: 'famous_people' as keyof City,
-      title: 'Famous People',
-      icon: Star,
-      color: 'text-violet-400 border-violet-500/20'
-    },
-    {
-      key: 'fun_fact' as keyof City,
-      title: 'Fun Fact',
-      icon: Sparkles,
-      color: 'text-fuchsia-400 border-fuchsia-500/20'
-    },
+    }
   ];
 
   React.useEffect(() => {
@@ -213,13 +146,17 @@ const CompareView: React.FC<CompareViewProps> = ({
                           <div>
                             <h4 className="font-medium text-white mb-3 opacity-75">{city1.name}</h4>
                             <p className="text-gray-200 leading-relaxed text-sm">
-                              {city1[section.key] as string}
+                              {section.key === 'culture' 
+                                ? Object.values(city1.culture).join(' | ')
+                                : city1[section.key]}
                             </p>
                           </div>
                           <div className="lg:border-l lg:pl-6 border-gray-600">
                             <h4 className="font-medium text-white mb-3 opacity-75">{city2.name}</h4>
                             <p className="text-gray-200 leading-relaxed text-sm">
-                              {city2[section.key] as string}
+                              {section.key === 'culture'
+                                ? Object.values(city2.culture).join(' | ')
+                                : city2[section.key]}
                             </p>
                           </div>
                         </div>

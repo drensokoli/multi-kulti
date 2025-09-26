@@ -8,7 +8,7 @@ export function cn(...inputs: ClassValue[]) {
 export const getCountryFlag = (country: string): string => {
   const flagMap: { [key: string]: string } = {
     'Kosovo': '🇽🇰',
-    'Bosnia & Herzegovina': '🇧🇦',
+    'Bosnia and Herzegovina': '🇧🇦',
     'Albania': '🇦🇱',
     'North Macedonia': '🇲🇰',
     'Montenegro': '🇲🇪',

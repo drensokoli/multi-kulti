@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
+import type { City } from '@/types';
 import CityModal from '@/components/CityModal';
 import CompareView from '@/components/CompareView';
 import FloatingMessage from '@/components/FloatingMessage';
@@ -21,29 +22,6 @@ const Globe = dynamic(() => import('@/components/Globe'), {
   ),
 });
 
-interface City {
-  id: string;
-  name: string;
-  country: string;
-  flag: string;
-  lat: number;
-  lng: number;
-  population_size: string;
-  culture: string;
-  food: string;
-  history: string;
-  adversity_resilience: string;
-  economy_industry: string;
-  environment_geography: string;
-  education_innovation: string;
-  cooperation_global_ties: string;
-  tourism_attractions: string;
-  population_diversity: string;
-  arts_music_scene: string;
-  sports_recreation: string;
-  famous_people: string;
-  fun_fact: string;
-}
 
 export default function Home() {
   const [cities, setCities] = useState<City[]>([]);
@@ -61,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     const loadCities = async () => {
       try {
-        const response = await fetch('/data/cities_v2.json');
+        const response = await fetch('/data/cities.json');
         const data = await response.json();
         setCities(data);
       } catch (error) {
