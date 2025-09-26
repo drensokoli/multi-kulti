@@ -4,6 +4,7 @@ import React, { useEffect, useRef, useState, useCallback } from 'react';
 import { Moon, Sun } from 'lucide-react';
 import { getCountryFlag } from '@/lib/utils';
 import type { City } from '@/types';
+import { Globe as GlobeIcon } from 'lucide-react';
 
 interface GlobeProps {
   cities: Array<{
@@ -24,6 +25,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
   const globeInstance = useRef<any>();
   const [isGlobeReady, setIsGlobeReady] = useState(false);
   const [isNightMode, setIsNightMode] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   // Stable click handler to prevent globe re-initialization
   const handleCityClick = useCallback((city: City) => {
@@ -55,17 +57,29 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
 
   // Helper function to get country flag emoji
 
+  // Mobile detection
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768 || /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   useEffect(() => {
     if (!cities?.length) return;
 
     // Dynamically import and initialize globe.gl
     import('globe.gl').then((GlobeGL) => {
       if (!globeEl.current) return;
-      
+
       // Create globe instance
       const globe = new GlobeGL.default(globeEl.current);
       globeInstance.current = globe;
-    
+
       // Configure globe appearance
       globe
         .globeImageUrl(isNightMode ? '//unpkg.com/three-globe/example/img/earth-night.jpg' : '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg')
@@ -75,7 +89,15 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
         .pointRadius(0.3)
         .pointResolution(48)
         .pointColor(() => '#ff6b6b')
-        .pointLabel((d) => `
+        .onPointClick((point) => {
+          handleCityClick(point as City);
+        })
+        .width(window.innerWidth)
+        .height(window.innerHeight);
+
+      // Only add point labels on desktop
+      if (!isMobile) {
+        globe.pointLabel((d) => `
           <div style="
             background: rgba(255, 255, 255, 0.95) !important;
             backdrop-filter: blur(20px);
@@ -89,7 +111,8 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
             min-width: 180px;
             transition: all 0.2s ease;
             position: relative;
-            z-index: 1000;
+            z-index: 30;
+            margin-top: 120px;
           ">
             <div style="margin-bottom: 8px;">
               <div style="font-weight: 600; font-size: 16px; color: #1a1a1a; line-height: 1.2; margin-bottom: 4px;">${(d as City).name}</div>
@@ -109,12 +132,8 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
             ` : ''}
             <div style="font-size: 11px; color: #999; margin-top: 8px; text-align: center; font-style: italic;">Click to explore</div>
           </div>
-        `)
-        .onPointClick((point) => {
-          handleCityClick(point as City);
-        })
-        .width(window.innerWidth)
-        .height(window.innerHeight);
+        `);
+      }
 
       // City name labels are hidden by default
       // Uncomment the following lines to show city names on the map:
@@ -149,7 +168,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
         });
       }
     };
-  }, [cities, isNightMode]);
+  }, [cities, isNightMode, isMobile]);
 
   const toggleTheme = () => {
     setIsNightMode(!isNightMode);
@@ -157,11 +176,11 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
 
   // Zoom to location function
   const zoomToLocation = useCallback((city: City) => {
-      if (globeInstance.current) {
-        // Point the camera at the city's coordinates
-        globeInstance.current.pointOfView({
-          lat: parseFloat(city.lat),
-          lng: parseFloat(city.lng),
+    if (globeInstance.current) {
+      // Point the camera at the city's coordinates
+      globeInstance.current.pointOfView({
+        lat: parseFloat(city.lat),
+        lng: parseFloat(city.lng),
         altitude: 0.8 // Zoom level (0.8 is closer zoom for better city view)
       }, 1200); // Animation duration in milliseconds
     }
@@ -175,11 +194,11 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
   }, [zoomToCity, isGlobeReady, zoomToLocation]);
 
   return (
-    <div className="fixed inset-0 z-0">
-      <div ref={globeEl} />
-      
+    <div className="fixed inset-0 z-0 no-select">
+      <div ref={globeEl} className="no-select" />
+
       {/* Theme Toggle */}
-      <div className="fixed top-6 right-6 z-30">
+      <div className="fixed md:top-6 bottom-6 right-6 z-30">
         <button
           onClick={toggleTheme}
           className="bg-gray-900/80 backdrop-blur-lg rounded-full p-3 border border-gray-700 hover:bg-gray-800/90 transition-colors"
@@ -194,9 +213,14 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
       </div>
 
       {!isGlobeReady && (
-        <div className="absolute inset-0 flex items-center justify-center bg-black">
-          <div className="text-white text-xl">Loading Globe...</div>
+
+        <div className="fixed inset-0 bg-black flex items-center justify-center">
+          <div className="text-center">
+            <GlobeIcon className="mx-auto text-white mb-4 animate-spin" size={48} />
+            <div className="text-white text-xl">Loading Interactive Globe...</div>
+          </div>
         </div>
+
       )}
     </div>
   );

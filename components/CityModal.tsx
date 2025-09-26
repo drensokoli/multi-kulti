@@ -260,7 +260,7 @@ const CityModal: React.FC<CityModalProps> = ({
       {/* Modal */}
       <div
         data-modal
-        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 mt-4 transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 transition-all duration-500 ease-out no-select ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
+        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 mt-10 h-[70vh] md:mt-0 md:h-full transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 transition-all duration-500 ease-out no-select ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
           }`}
         onClick={(e) => e.stopPropagation()}
       >

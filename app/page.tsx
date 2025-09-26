@@ -14,10 +14,10 @@ const Globe = dynamic(() => import('@/components/Globe'), {
   ssr: false,
   loading: () => (
     <div className="fixed inset-0 bg-black flex items-center justify-center">
-      <div className="text-center">
+      {/* <div className="text-center">
         <GlobeIcon className="mx-auto text-white mb-4 animate-spin" size={48} />
         <div className="text-white text-xl">Loading Interactive Globe...</div>
-      </div>
+      </div> */}
     </div>
   ),
 });
@@ -110,19 +110,8 @@ export default function Home() {
     }, 1300);
   };
 
-  // if (isLoading) {
-  //   return (
-  //     <div className="fixed inset-0 bg-black flex items-center justify-center">
-  //       <div className="text-center">
-  //         <GlobeIcon className="mx-auto text-white mb-4 animate-spin" size={48} />
-  //         <div className="text-white text-xl">Loading Cities Explorer...</div>
-  //       </div>
-  //     </div>
-  //   );
-  // }
-
   return (
-    <main className="relative min-h-screen bg-black overflow-hidden">
+    <main className="relative min-h-screen bg-black overflow-hidden no-select">
       {/* Search Bar */}
       <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 w-full max-w-md px-4">
         <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />

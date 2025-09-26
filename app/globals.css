@@ -88,3 +88,22 @@
   -ms-user-select: none;
   user-select: none;
 }
+
+/* Prevent text selection on specific interactive elements */
+.no-select, main, .globe-container, canvas, button, div[role="button"] {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Ensure inputs and textareas can still be selected and don't trigger keyboard issues */
+input, textarea, [contenteditable="true"], .search-input, .search-container input {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+  -webkit-touch-callout: default;
+}

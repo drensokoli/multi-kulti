@@ -187,7 +187,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ cities, onLocationSelect }) => {
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
           placeholder="Search cities and countries..."
-          className="w-full bg-black/50 backdrop-blur-xl border border-white/10 rounded-full py-3 pl-12 pr-20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/20 transition-all duration-200"
+          className="search-input w-full bg-black/50 backdrop-blur-xl border border-white/10 rounded-full py-3 pl-12 pr-20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/20 transition-all duration-200"
         />
         {/* Keyboard shortcut hint - desktop only */}
         {!query && (
