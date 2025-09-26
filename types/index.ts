@@ -60,4 +60,5 @@ export interface City {
   sister_cities: string[];
   life_in: LifeIn;
   fun_fact: string;
+  spotted_by_locals_link?: boolean;
 }

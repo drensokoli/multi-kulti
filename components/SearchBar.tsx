@@ -159,6 +159,20 @@ const SearchBar: React.FC<SearchBarProps> = ({ cities, onLocationSelect }) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
+  // Keyboard shortcut handler
+  useEffect(() => {
+    const handleKeyDown = (event: KeyboardEvent) => {
+      // Check for CMD+K (Mac) or Ctrl+K (Windows/Linux)
+      if ((event.metaKey || event.ctrlKey) && event.key === 'k') {
+        event.preventDefault();
+        inputRef.current?.focus();
+      }
+    };
+
+    document.addEventListener('keydown', handleKeyDown);
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  }, []);
+
   return (
     <div className="relative">
       {/* Search Input */}
@@ -173,8 +187,22 @@ const SearchBar: React.FC<SearchBarProps> = ({ cities, onLocationSelect }) => {
           onChange={handleInputChange}
           onKeyDown={handleKeyDown}
           placeholder="Search cities and countries..."
-          className="w-full bg-black/50 backdrop-blur-xl border border-white/10 rounded-full py-3 pl-12 pr-10 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/20 transition-all duration-200"
+          className="w-full bg-black/50 backdrop-blur-xl border border-white/10 rounded-full py-3 pl-12 pr-20 text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-white/20 focus:border-white/20 transition-all duration-200"
         />
+        {/* Keyboard shortcut hint - desktop only */}
+        {!query && (
+          <div className="absolute inset-y-0 right-0 pr-4 flex items-center pointer-events-none">
+            <div className="hidden sm:flex items-center gap-1 text-gray-500 text-xs">
+              <kbd className="px-1.5 py-0.5 bg-white/10 border border-white/20 rounded text-xs font-mono">
+                {navigator.platform.toLowerCase().includes('mac') ? '⌘' : 'Ctrl'}
+              </kbd>
+              <kbd className="px-1.5 py-0.5 bg-white/10 border border-white/20 rounded text-xs font-mono">
+                K
+              </kbd>
+            </div>
+          </div>
+        )}
+        
         {query && (
           <button
             onClick={handleClear}

@@ -66,23 +66,6 @@
     ],
     "history": "Stockholm's story begins in the 13th century as a strategic trade hub. It flourished under the Swedish Empire, witnessing profound historical events, including the Stockholm Bloodbath, which paved the way for Sweden's Vasa dynasty and its transformation into a modern city.",
     "adversity_resilience": "Throughout history, Stockholm faced adversity, notably the Black Death and numerous sieges. Its resilience shines through its recovery and growth, evolving into a city of innovation and cultural richness, while preserving its historical heritage.",
-    "famous_people": [
-      {
-        "name": "Alfred Nobel",
-        "description": "The inventor of dynamite and founder of the Nobel Prize, Nobel's legacy is deeply interwoven with Stockholm's culture of innovation and peace.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Greta Garbo",
-        "description": "One of the greatest actresses of the 20th century, Garbo rose from humble beginnings in Stockholm to become a Hollywood legend.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Avicii",
-        "description": "Tim Bergling, known professionally as Avicii, was a world-renowned DJ and music producer from Stockholm who left an indelible mark on the electronic music scene.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Stockholm's economy thrives on a strong foundation of technology, finance, and green innovation. It's the birthplace of global companies like Spotify and Skype, showcasing its position as a leading tech hub in Europe.",
     "tourism_attractions": "From the cobblestone streets of Gamla Stan to the scenic archipelago, Stockholm offers a compelling blend of history, natural beauty, and modern design.",
     "landmarks": [
@@ -108,9 +91,27 @@
       "tallinn"
     ],
     "life_in": {
-      "cost_of_living": "Stockholm ranks 38th globally with a cost of living index of 72.1 (New York = 100), featuring rent index of 35.3 and purchasing power index of 122.8. Monthly rent for a one-bedroom apartment averages $1,200-1,800, while restaurant meals cost approximately $15-25. Groceries are moderately expensive with basic items costing 20-30% more than European averages.",
+      "cost_of_living": "Stockholm ranks 38th globally with a cost of living index of 72.1, featuring rent index of 35.3 and purchasing power index of 122.8. Monthly rent for a one-bedroom apartment averages $1,200-1,800, while restaurant meals cost approximately $15-25. Groceries are moderately expensive with basic items costing 20-30% more than European averages.",
       "quality_of_life": "Stockholm ranks 97th globally with a quality of life index of 177.5, scoring particularly well in climate (69.7) and low pollution (18.1), though safety index is moderate at 53.5. The city offers excellent healthcare, efficient public transportation, and strong environmental policies. Work-life balance is exceptional with generous parental leave policies and outdoor recreational opportunities throughout the archipelago."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Alfred Nobel",
+        "description": "The inventor of dynamite and founder of the Nobel Prize, Nobel's legacy is deeply interwoven with Stockholm's culture of innovation and peace.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Greta Garbo",
+        "description": "One of the greatest actresses of the 20th century, Garbo rose from humble beginnings in Stockholm to become a Hollywood legend.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Avicii",
+        "description": "Tim Bergling, known professionally as Avicii, was a world-renowned DJ and music producer from Stockholm who left an indelible mark on the electronic music scene.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "prishtina",
@@ -208,21 +209,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Lorik Cana",
+        "description": "Former professional football player, known for his career in European football leagues.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Aida Baraku",
+        "description": "Albanian singer, composer, journalist, and producer.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Ibrahim Kodra",
+        "description": "Famous Albanian painter, known for his modernist artworks.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "sarajevo",
@@ -293,23 +295,6 @@
     ],
     "history": "Sarajevo, founded by the Ottomans in the 15th century, has been a crossroads of civilizations for centuries. It's witnessed the assassination of Archduke Franz Ferdinand in 1914, sparking World War I, and endured a brutal siege in the 1990s. Yet, it has emerged resilient, retaining its rich cultural tapestry.",
     "adversity_resilience": "The Siege of Sarajevo, from 1992 to 1996, was a period of unimaginable hardship, yet the city's spirit remained unbroken. Citizens showed remarkable resilience, maintaining cultural and artistic activities amidst the chaos, symbolizing their defiance and hope for the future.",
-    "famous_people": [
-      {
-        "name": "Vedran Smailović",
-        "description": "Known as the 'Cellist of Sarajevo,' Smailović played his cello in ruined buildings during the siege, a powerful act of artistic resistance.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Zlatan Ibrahimović",
-        "description": "Although born in Sweden, Ibrahimović's roots are in Bosnia. He's one of the most celebrated footballers of his generation, known for his incredible skill and charismatic personality.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Ivo Andrić",
-        "description": "Nobel Prize-winning author Ivo Andrić wrote many of his masterpieces with Sarajevo and the Bosnian experience as a backdrop, capturing the region's complex history and culture.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Sarajevo's economy has transformed significantly since the end of the Bosnian War. It's now a service-oriented economy, with tourism playing a vital role. The city's historical sites, cultural events, and natural beauty attract visitors from around the globe, contributing to its economic revival.",
     "tourism_attractions": "From strolling through the Ottoman-era Baščaršija bazaar to exploring the Sarajevo Tunnel Museum, the city offers a unique blend of historical, cultural, and natural attractions. The surrounding Dinaric Alps provide stunning landscapes and outdoor adventures year-round.",
     "landmarks": [
@@ -337,7 +322,25 @@
     "life_in": {
       "cost_of_living": "Sarajevo ranks 192nd globally with a cost of living index of 39.2, offering affordable living with rent index of 11.0 and purchasing power index of 64.8. Monthly rent averages $250-450 for one-bedroom apartments, dining out costs $6-15 per meal, and groceries remain very affordable compared to Western standards. Public transportation is inexpensive but limited.",
       "quality_of_life": "Sarajevo ranks 192nd with quality of life index of 126.3, featuring good safety (55.7) and healthcare (59.3), though economic opportunities remain limited with low purchasing power. The city offers rich cultural heritage, beautiful mountain surroundings, and a resilient community spirit. Infrastructure is improving but still developing after post-war reconstruction efforts."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Vedran Smailović",
+        "description": "Known as the 'Cellist of Sarajevo,' Smailović played his cello in ruined buildings during the siege, a powerful act of artistic resistance.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Zlatan Ibrahimović",
+        "description": "Although born in Sweden, Ibrahimović's roots are in Bosnia. He's one of the most celebrated footballers of his generation, known for his incredible skill and charismatic personality.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Ivo Andrić",
+        "description": "Nobel Prize-winning author Ivo Andrić wrote many of his masterpieces with Sarajevo and the Bosnian experience as a backdrop, capturing the region's complex history and culture.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "tirana",
@@ -434,21 +437,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Pope Francis (Jorge Mario Bergoglio)",
+        "description": "The 266th Pope of the Catholic Church, first Jesuit pope, and first pope from the Americas.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Inva Mula",
+        "description": "Albanian operatic soprano, renowned for her powerful voice and interpretation of classic opera arias.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Saimir Pirgu",
+        "description": "Albanian tenor and opera singer, known for his powerful voice and performances in classic operas.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "berlin",
@@ -537,7 +541,7 @@
       }
     ],
     "sister_cities": [
-      "los_angeles",
+      "los-angeles",
       "paris",
       "moscow"
     ],
@@ -547,21 +551,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Marlene Dietrich",
+        "description": "Iconic German actress and singer, famous for her roles in Hollywood films and her androgynous image.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Albert Einstein",
+        "description": "Nobel Prize-winning physicist, known for developing the theory of relativity.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "David Bowie",
+        "description": "Legendary musician and actor, known for his innovative music and daring fashion.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "paris",
@@ -652,7 +657,7 @@
     "sister_cities": [
       "rome-italy",
       "tokyo-japan",
-      "new-york-city-usa"
+      "new-york"
     ],
     "life_in": {
       "cost_of_living": "Paris ranks 28th globally with cost of living index of 74.6, reflecting high expenses typical of major global cities, with rent index of 44.4 and purchasing power index of 116.8. Monthly rent averages $1,100-2,000 for one-bedroom apartments, restaurant meals cost $18-35, and groceries are expensive. Transportation costs are reasonable given the excellent metro system coverage.",
@@ -660,21 +665,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Edith Piaf",
+        "description": "Legendary French singer, known as \"La Môme Piaf,\" famous for songs like \"La Vie en rose.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Claude Monet",
+        "description": "Founder of Impressionism, famous for paintings like \"Water Lilies\" and \"Sunrise.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Napoleon Bonaparte",
+        "description": "French military and political leader, Emperor of the French, known for his conquests and reforms.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "london",
@@ -774,21 +780,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "William Shakespeare",
+        "description": "Renowned playwright and poet, author of classics like \"Romeo and Juliet\" and \"Hamlet.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "David Bowie",
+        "description": "Iconic musician and actor, known for his innovative music and daring fashion.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Emma Watson",
+        "description": "Actress and activist, famous for her role as Hermione Granger in the Harry Potter series.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "rome",
@@ -898,7 +905,8 @@
         "description": "Cicero was a Roman statesman, orator, and writer who significantly influenced the Latin language and Roman thought, bridging the gap between Greek philosophy and Roman culture.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "madrid",
@@ -968,23 +976,6 @@
     ],
     "history": "Madrid's story unfolds from a Moorish outpost in the 9th century to Spain's grand capital. Its journey through the Habsburg and Bourbon dynasties has left a rich tapestry of architectural and cultural landmarks, making it a city where history breathes through its cobblestone streets.",
     "adversity_resilience": "From the devastations of war to economic crises, Madrid has shown remarkable resilience. The city's rebirth post-Spanish Civil War and its dynamic response to the 21st-century challenges highlight its enduring spirit and capacity for renewal.",
-    "famous_people": [
-      {
-        "name": "Penélope Cruz",
-        "description": "Born in Madrid, she is an internationally acclaimed actress and the first Spanish actress to win an Academy Award.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Plácido Domingo",
-        "description": "One of the most versatile and influential tenors in the history of opera, Domingo's roots are firmly planted in the cultural soil of Madrid.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Pedro Almodóvar",
-        "description": "A native of Madrid, Almodóvar has become a globally celebrated filmmaker, known for his vibrant, passionate films that often explore Spanish identity.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Madrid is not just Spain's political capital but also its economic heart. A hub for international business, finance, and innovation, the city boasts a vibrant startup ecosystem alongside traditional industries such as fashion, food, and manufacturing.",
     "tourism_attractions": "From the bustling Gran Vía to the serene Retiro Park, Madrid offers an endless array of attractions. Art lovers, history buffs, and food enthusiasts alike find their haven in this city, where each corner tells a story.",
     "landmarks": [
@@ -1012,7 +1003,25 @@
     "life_in": {
       "cost_of_living": "Madrid ranks 155th globally with cost of living index of 55.8, offering affordable living for a major European capital with rent index of 36.5 and purchasing power index of 101.4. Monthly rent ranges $600-1,200, restaurant meals cost $10-22, and groceries are reasonably priced. Public transportation is excellent value, and cultural activities are generally affordable.",
       "quality_of_life": "Madrid ranks 85th globally with quality of life index of 180.6, offering excellent safety (71.5), outstanding healthcare (80.0), and superior climate (85.5) at moderate costs. The city provides vibrant nightlife, excellent cuisine, and strong cultural offerings. Work-life balance is good, and the healthcare system is among Europe's best while maintaining reasonable living costs."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Penélope Cruz",
+        "description": "Born in Madrid, she is an internationally acclaimed actress and the first Spanish actress to win an Academy Award.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Plácido Domingo",
+        "description": "One of the most versatile and influential tenors in the history of opera, Domingo's roots are firmly planted in the cultural soil of Madrid.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Pedro Almodóvar",
+        "description": "A native of Madrid, Almodóvar has become a globally celebrated filmmaker, known for his vibrant, passionate films that often explore Spanish identity.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "moscow",
@@ -1111,21 +1120,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Leo Tolstoy",
+        "description": "Renowned Russian writer, author of \"War and Peace\" and \"Anna Karenina.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Sergey Brin",
+        "description": "Co-founder of Google, one of the most influential tech entrepreneurs in the world.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Konstantin Stanislavski",
+        "description": "Theatre practitioner, co-founder of the Moscow Art Theatre, and developer of the Stanislavski system of acting.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "tokyo",
@@ -1192,23 +1202,6 @@
     ],
     "history": "From a small fishing village named Edo, Tokyo's transformation into a bustling metropolis is a tale of resilience, innovation, and cultural amalgamation. Surviving earthquakes, wars, and fires, Tokyo has emerged as a global center of commerce, technology, and culture.",
     "adversity_resilience": "Tokyo's history is marked by overcoming adversity, from the Great Kanto Earthquake of 1923 to the air raids of World War II. Each time, the city rebuilt with incredible resolve, symbolizing the indomitable spirit of its people.",
-    "famous_people": [
-      {
-        "name": "Hayao Miyazaki",
-        "description": "Co-founder of Studio Ghibli, Miyazaki's animated films, rich with imagination and poignant messages, have earned him global acclaim.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Haruki Murakami",
-        "description": "One of Japan's most celebrated authors, Murakami's novels blend the surreal with the everyday, resonating with readers worldwide.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Marie Kondo",
-        "description": "Kondo's philosophy of tidying up has inspired people around the globe to declutter their homes and lives, sparking joy in simplicity.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Tokyo, a financial powerhouse, leads in sectors like technology, manufacturing, and fashion. It's home to global giants and innovative startups, driving Japan's economy forward with its blend of tradition and innovation.",
     "tourism_attractions": "From the neon lights of Akihabara to the serene beauty of the Meiji Shrine, Tokyo offers a unique blend of modernity and tradition, making it a fascinating city for visitors from all walks of life.",
     "landmarks": [
@@ -1236,7 +1229,25 @@
     "life_in": {
       "cost_of_living": "Tokyo ranks 156th globally with cost of living index of 56.4, surprisingly affordable for such a major global city, with rent index of 26.8 but excellent purchasing power index of 117.7. Monthly rent averages $700-1,500, restaurant meals cost $8-25, and groceries are moderately priced. Transportation is efficient and reasonably priced given the extensive coverage.",
       "quality_of_life": "Tokyo ranks 100th globally with quality of life index of 175.6, excelling in safety (75.2), healthcare (79.2), and excellent climate (85.3), though traffic can be challenging (42.9). The city offers exceptional safety, cleanliness, and efficiency. Public transportation is world-class, healthcare is excellent, and cultural experiences are abundant while maintaining surprising affordability."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Hayao Miyazaki",
+        "description": "Co-founder of Studio Ghibli, Miyazaki's animated films, rich with imagination and poignant messages, have earned him global acclaim.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Haruki Murakami",
+        "description": "One of Japan's most celebrated authors, Murakami's novels blend the surreal with the everyday, resonating with readers worldwide.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Marie Kondo",
+        "description": "Kondo's philosophy of tidying up has inspired people around the globe to declutter their homes and lives, sparking joy in simplicity.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "seoul",
@@ -1305,23 +1316,6 @@
     ],
     "history": "Seoul's story is one of resilience and transformation. From its early days as the Joseon Dynasty capital to its destruction during the Korean War, and its rebirth into a global megacity, Seoul has preserved its history while embracing modernity.",
     "adversity_resilience": "Seoul has weathered invasions, occupations, and the Korean War's devastation. Each time, it rebuilt itself with determination. Today, it stands as a testament to resilience, balancing rapid technological advancement with deep cultural roots.",
-    "famous_people": [
-      {
-        "name": "Ban Ki-moon",
-        "description": "Ban Ki-moon, the eighth Secretary-General of the United Nations, hails from Seoul. His career is a testament to Seoul's role in producing global leaders.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "PSY",
-        "description": "PSY, a Seoul-born singer, songwriter, and rapper, catapulted to international fame with his hit song 'Gangnam Style.' His success highlights Seoul's vibrant pop culture scene.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Kim Yuna",
-        "description": "Kim Yuna, the figure skating queen, has brought glory to Seoul with her Olympic gold medal. Her grace and skill on ice have made her a beloved figure in her hometown.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Seoul, the economic powerhouse of South Korea, thrives on technology, manufacturing, and finance. It's home to global giants like Samsung and Hyundai, showcasing a dynamic blend of innovation and traditional markets.",
     "tourism_attractions": "From the majestic Gyeongbokgung Palace to the bustling streets of Myeong-dong and the serene beauty of the Han River, Seoul offers a unique blend of history, culture, and modernity.",
     "landmarks": [
@@ -1349,7 +1343,25 @@
     "life_in": {
       "cost_of_living": "Seoul ranks 64th globally with cost of living index of 69.0, offering reasonable prices with rent index of 27.1 and strong purchasing power index of 128.7. Monthly rent averages $500-1,200, restaurant meals cost $6-18, and groceries are moderately priced. Technology infrastructure is excellent and often included in housing costs at competitive rates.",
       "quality_of_life": "Seoul ranks 161st globally with quality of life index of 157.3, featuring excellent safety (75.4), world-class healthcare (82.9), though pollution concerns (52.1) and traffic issues (41.4) present challenges. The city offers cutting-edge technology, efficient public transportation, and dynamic culture. Education and healthcare systems are top-tier, though air quality can be problematic during certain seasons."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Ban Ki-moon",
+        "description": "Ban Ki-moon, the eighth Secretary-General of the United Nations, hails from Seoul. His career is a testament to Seoul's role in producing global leaders.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "PSY",
+        "description": "PSY, a Seoul-born singer, songwriter, and rapper, catapulted to international fame with his hit song 'Gangnam Style.' His success highlights Seoul's vibrant pop culture scene.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Kim Yuna",
+        "description": "Kim Yuna, the figure skating queen, has brought glory to Seoul with her Olympic gold medal. Her grace and skill on ice have made her a beloved figure in her hometown.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "delhi",
@@ -1451,21 +1463,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Shah Rukh Khan",
+        "description": "Bollywood superstar, known as the \"King of Bollywood,\" famous for his acting and charisma.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Indira Gandhi",
+        "description": "Former Prime Minister of India, known for her leadership and political influence.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Virat Kohli",
+        "description": "World-renowned cricketer, former captain of the Indian national cricket team.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "bangkok",
@@ -1561,30 +1574,31 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Tony Jaa",
+        "description": "Martial artist and actor, famous for his roles in action films like \"Ong-Bak.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Mario Maurer",
+        "description": "Thai model and actor, known for his roles in films like \"The Love of Siam\" and \"Crazy Little Thing Called Love.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Davika Hoorne",
+        "description": "Thai actress, known for her roles in popular Thai dramas and films.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "new-york",
     "name": "New York",
-    "country": "United States",
+    "country": "United States of America",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
     "lat": "40.7128",
     "lng": "-74.0060",
-    "fun_fact": "New York City's Central Park is larger than the principality of Monaco and was entirely man-made, requiring the relocation of 1,600 residents. The city has over 13,000 yellow taxis, and its subway system never closes - it's one of only four metro systems worldwide that operates 24/7. More languages are spoken in Queens than anywhere else on Earth.",
+    "fun_fact": "New York's Central Park is larger than the principality of Monaco and was entirely man-made, requiring the relocation of 1,600 residents. The city has over 13,000 yellow taxis, and its subway system never closes - it's one of only four metro systems worldwide that operates 24/7. More languages are spoken in Queens than anywhere else on Earth.",
     "images": [
       "https://upload.wikimedia.org/wikipedia/commons/f/f7/Lower_Manhattan_skyline_-_June_2017.jpg",
       "https://upload.wikimedia.org/wikipedia/commons/4/47/New_York_City_at_night_HDR.jpg",
@@ -1643,26 +1657,9 @@
         "image": "TO_BE_REPLACED"
       }
     ],
-    "history": "From its origins as a Dutch trading post named New Amsterdam in 1624, to the bustling metropolis it is today, New York City's history is a saga of dreams, diversity, and dynamism. It's a city that has welcomed millions of immigrants, each adding a distinct thread to the rich tapestry of its cultural heritage.",
+    "history": "From its origins as a Dutch trading post named New Amsterdam in 1624, to the bustling metropolis it is today, New York's history is a saga of dreams, diversity, and dynamism. It's a city that has welcomed millions of immigrants, each adding a distinct thread to the rich tapestry of its cultural heritage.",
     "adversity_resilience": "New York has faced its share of challenges, from the Great Depression to the tragedy of 9/11, and most recently, the COVID-19 pandemic. Each time, New Yorkers have shown an indomitable spirit, rising from adversity with resilience and unity, embodying the phrase 'New York Strong.'",
-    "famous_people": [
-      {
-        "name": "Jay-Z",
-        "description": "Born Shawn Corey Carter in Brooklyn, Jay-Z has transcended his beginnings to become a global hip-hop mogul.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Eleanor Roosevelt",
-        "description": "A former First Lady and relentless advocate for human rights, Eleanor Roosevelt's legacy is a testament to her formidable spirit and compassion.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Robert De Niro",
-        "description": "An iconic figure in American cinema, Robert De Niro's performances have captivated audiences worldwide, showcasing the depth of New York's talent.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
-    "economy_industry": "New York City is an economic powerhouse, with Wall Street at its heart. It's a global hub for finance, media, art, and fashion, where Fortune 500 companies and startups alike dream big. The city's economy is a vibrant ecosystem that thrives on innovation and diversity.",
+    "economy_industry": "New York is an economic powerhouse, with Wall Street at its heart. It's a global hub for finance, media, art, and fashion, where Fortune 500 companies and startups alike dream big. The city's economy is a vibrant ecosystem that thrives on innovation and diversity.",
     "tourism_attractions": "From the neon lights of Times Square to the serene expanses of Central Park, the city offers an endless array of attractions. Museums, theaters, skyscrapers, and historic neighborhoods invite exploration and discovery.",
     "landmarks": [
       {
@@ -1689,12 +1686,30 @@
     "life_in": {
       "cost_of_living": "New York ranks 7th globally with cost of living index of 100.0 (the baseline), featuring rent index of 100.0 and purchasing power index of 100.0. Monthly rent averages $2,500-4,500, restaurant meals cost $15-45, and groceries are expensive. Transportation costs are moderate given comprehensive coverage, but housing remains the primary expense challenge.",
       "quality_of_life": "New York ranks 145th globally with quality of life index of 132.3, offering unparalleled opportunities despite challenges with safety (49.0) and high costs, balanced by good healthcare access (62.6). The city provides world-class cultural amenities, career opportunities, and diversity. Despite high costs, income potential often compensates, and public services are comprehensive."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Jay-Z",
+        "description": "Born Shawn Corey Carter in Brooklyn, Jay-Z has transcended his beginnings to become a global hip-hop mogul.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Eleanor Roosevelt",
+        "description": "A former First Lady and relentless advocate for human rights, Eleanor Roosevelt's legacy is a testament to her formidable spirit and compassion.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Robert De Niro",
+        "description": "An iconic figure in American cinema, Robert De Niro's performances have captivated audiences worldwide, showcasing the depth of New York's talent.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "los-angeles",
     "name": "Los Angeles",
-    "country": "United States",
+    "country": "United States of America",
     "flag": "https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg",
     "lat": "34.0522",
     "lng": "-118.2437",
@@ -1759,23 +1774,6 @@
     ],
     "history": "Founded in 1781 by Spanish governor Felipe de Neve, Los Angeles was a small settlement that grew into a major global metropolis. From the gold rush era to Hollywood's golden age, and through periods of economic boom and social struggle, LA's history is a story of dreams, innovation, and resilience.",
     "adversity_resilience": "Los Angeles has faced its share of challenges, from natural disasters like earthquakes and wildfires to social unrest and economic downturns. Yet, the city's spirit of innovation and its diverse communities have always come together to rebuild and re-envision a better future.",
-    "famous_people": [
-      {
-        "name": "Kobe Bryant",
-        "description": "An iconic figure in Los Angeles, Kobe Bryant was not just a legendary Laker but also a beloved community leader whose legacy extends beyond basketball.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Marilyn Monroe",
-        "description": "One of Hollywood's most enduring icons, Marilyn Monroe rose to fame in the 1950s, embodying the glamour and complexity of Los Angeles.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Elon Musk",
-        "description": "A visionary entrepreneur, Elon Musk's ventures in electric cars, space travel, and innovative technology have made significant impacts in Los Angeles and beyond.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Los Angeles's economy is as diverse as its population, anchored by entertainment, technology, international trade, and manufacturing. Hollywood's film and television industry is a global powerhouse, while Silicon Beach is a burgeoning hub for tech startups.",
     "tourism_attractions": "From the iconic Hollywood sign and Walk of Fame to the serene beaches of Malibu and the bustling streets of Downtown LA, the city offers an endless array of attractions for every taste.",
     "landmarks": [
@@ -1803,12 +1801,30 @@
     "life_in": {
       "cost_of_living": "Los Angeles ranks 26th globally with cost of living index of 76.3, reflecting high California costs with rent index of 63.2 and purchasing power index of 125.6. Monthly rent averages $1,800-3,200, restaurant meals cost $12-30, and groceries are expensive. Car ownership is nearly essential, adding transportation costs, but income opportunities are strong.",
       "quality_of_life": "Los Angeles ranks 138th globally with quality of life index of 142.8, offering excellent climate (95.5) despite challenges with traffic (56.8), pollution (68.0), and moderate safety concerns (46.1). The city provides year-round outdoor activities, entertainment industry opportunities, and diverse culture. Traffic and air quality remain significant challenges affecting daily life."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Kobe Bryant",
+        "description": "An iconic figure in Los Angeles, Kobe Bryant was not just a legendary Laker but also a beloved community leader whose legacy extends beyond basketball.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Marilyn Monroe",
+        "description": "One of Hollywood's most enduring icons, Marilyn Monroe rose to fame in the 1950s, embodying the glamour and complexity of Los Angeles.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Elon Musk",
+        "description": "A visionary entrepreneur, Elon Musk's ventures in electric cars, space travel, and innovative technology have made significant impacts in Los Angeles and beyond.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
-    "id": "sanfrancisco",
-    "name": "SanFrancisco",
-    "country": "United States",
+    "id": "san-francisco",
+    "name": "San Francisco",
+    "country": "United States of America",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Flag_of_San_Francisco.svg",
     "lat": "37.7749",
     "lng": "-122.4194",
@@ -1875,23 +1891,6 @@
     ],
     "history": "San Francisco's story is one of transformation and resilience, from its early days as a Spanish mission to the frenzy of the Gold Rush, evolving into a beacon of cultural freedom and technological innovation.",
     "adversity_resilience": "Through earthquakes and fires, San Francisco has rebuilt itself with unwavering spirit. The 1906 earthquake and fire reshaped the city, but its people's resolve turned disaster into an opportunity for rebirth and innovation.",
-    "famous_people": [
-      {
-        "name": "Robin Williams",
-        "description": "A comedic genius who called San Francisco home, Williams left an indelible mark on the city's cultural landscape, embodying its eclectic and open-hearted character.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Dianne Feinstein",
-        "description": "As the first female mayor of San Francisco, Feinstein's leadership through challenging times has left a lasting legacy on the city's political and social fabric.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Steve Jobs",
-        "description": "Though not a native, Jobs's influence on the city through the tech boom has helped shape San Francisco into a global hub of innovation and creativity.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "San Francisco stands at the forefront of the tech industry, hosting headquarters of giants like Twitter and Salesforce. Yet, it also retains a diverse economy with strong finance, tourism, and culinary sectors.",
     "tourism_attractions": "From the iconic Golden Gate Bridge to the historic Alcatraz Island, San Francisco offers a plethora of sights. Its hills provide stunning city views, while neighborhoods like Chinatown invite cultural explorations.",
     "landmarks": [
@@ -1919,7 +1918,25 @@
     "life_in": {
       "cost_of_living": "San Francisco ranks 10th globally with cost of living index of 90.7, among the world's most expensive cities with rent index of 78.4 but exceptional purchasing power of 171.9. Monthly rent averages $2,800-4,500, restaurant meals cost $15-40, and groceries are very expensive. Public transportation is good but housing costs dominate expenses.",
       "quality_of_life": "San Francisco ranks 103rd globally with quality of life index of 176.3, featuring outstanding purchasing power (180.1) and excellent climate (97.3), though safety concerns (39.1) and traffic issues (49.5) present challenges. The city offers tech industry opportunities, cultural diversity, and beautiful scenery. High income potential helps offset extreme housing costs for many residents."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Robin Williams",
+        "description": "A comedic genius who called San Francisco home, Williams left an indelible mark on the city's cultural landscape, embodying its eclectic and open-hearted character.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Dianne Feinstein",
+        "description": "As the first female mayor of San Francisco, Feinstein's leadership through challenging times has left a lasting legacy on the city's political and social fabric.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Steve Jobs",
+        "description": "Though not a native, Jobs's influence on the city through the tech boom has helped shape San Francisco into a global hub of innovation and creativity.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "toronto",
@@ -1990,23 +2007,6 @@
     ],
     "history": "From its early days as a British colonial outpost named York, Toronto has grown into Canada's largest city. Its history is a tale of transformation, marked by the arrival of immigrants, industrialization, and the resilience that helped it rebound from events like the Great Toronto Fire of 1904 and Hurricane Hazel in 1954.",
     "adversity_resilience": "Toronto has faced its share of challenges, from the devastating effects of the 1918 Spanish Flu to the economic downturns of the 1930s. Yet, through each trial, Toronto has emerged stronger, driven by a community spirit that values diversity, innovation, and solidarity.",
-    "famous_people": [
-      {
-        "name": "Drake",
-        "description": "Aubrey Drake Graham, known mononymously as Drake, is a Toronto-born rapper, singer, and actor. He has played a pivotal role in putting Toronto's music scene on the global map.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Margaret Atwood",
-        "description": "A literary icon, Margaret Atwood was born in Ottawa but has spent much of her life in Toronto. Her works, including 'The Handmaid's Tale,' have garnered international acclaim and reflect the intellectual spirit of the city.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Norman Bethune",
-        "description": "A hero in China and a notable figure in Canadian history, Norman Bethune was a Toronto-born doctor and medical innovator. His legacy of humanitarian work continues to inspire.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Toronto's economy is a dynamic mix of financial services, technology startups, and cultural industries. It's the banking and stock exchange heart of Canada, while also fostering a rapidly growing tech sector, earning it the nickname 'Silicon Valley North.'",
     "tourism_attractions": "From the iconic CN Tower offering breathtaking city views, to the Royal Ontario Museum's world-class exhibits, Toronto caters to every type of traveler. Its lively waterfront, bustling markets, and diverse culinary scene are not to be missed.",
     "landmarks": [
@@ -2034,7 +2034,25 @@
     "life_in": {
       "cost_of_living": "Toronto ranks 78th globally with cost of living index of 63.8, offering reasonable pricing for a major North American city with rent index of 42.8 and purchasing power index of 115.9. Monthly rent averages $1,200-2,200, restaurant meals cost $12-25, and groceries are moderately expensive. Healthcare is covered, and public transportation offers good value.",
       "quality_of_life": "Toronto ranks 131st globally with quality of life index of 160.8, offering good healthcare (74.0) and safety (56.3), though traffic challenges (44.6) and climate considerations (65.3) affect livability. The city provides multicultural diversity, strong healthcare system, and economic opportunities. Winter weather is challenging, but summer activities and cultural amenities are excellent."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Drake",
+        "description": "Aubrey Drake Graham, known mononymously as Drake, is a Toronto-born rapper, singer, and actor. He has played a pivotal role in putting Toronto's music scene on the global map.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Margaret Atwood",
+        "description": "A literary icon, Margaret Atwood was born in Ottawa but has spent much of her life in Toronto. Her works, including 'The Handmaid's Tale,' have garnered international acclaim and reflect the intellectual spirit of the city.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Norman Bethune",
+        "description": "A hero in China and a notable figure in Canadian history, Norman Bethune was a Toronto-born doctor and medical innovator. His legacy of humanitarian work continues to inspire.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "mexico-city",
@@ -2103,23 +2121,6 @@
     ],
     "history": "From the mighty Aztec capital of Tenochtitlán, conquered by the Spanish in 1521, to a vibrant metropolis, Mexico City's history is a rich tapestry of triumph, tragedy, and transformation. It tells the story of indigenous resilience, colonial ambition, and the unyielding spirit of its people.",
     "adversity_resilience": "Mexico City has faced and overcome numerous challenges, from devastating earthquakes to political upheavals. The resilience of its people is mirrored in the city's recovery and rebirth, preserving its historical heritage while embracing modernity.",
-    "famous_people": [
-      {
-        "name": "Frida Kahlo",
-        "description": "An iconic figure of Mexican art, Frida Kahlo's self-portraits reflect her deep emotional pain and vibrant spirit, capturing the heart of Mexico's cultural identity.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Octavio Paz",
-        "description": "Nobel Laureate Octavio Paz was a poet and essayist whose works delve into the Mexican psyche, blending political, existential, and cultural themes.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Carlos Slim",
-        "description": "One of the richest individuals in the world, Carlos Slim Helú, a telecommunications magnate, has significantly influenced Mexico City's economic landscape and philanthropy.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "As the economic powerhouse of Mexico, Mexico City thrives on a diverse economy. Finance, telecommunications, and manufacturing are pillars, alongside a burgeoning tech scene and vibrant cultural tourism, showcasing the city's dynamic blend of tradition and innovation.",
     "tourism_attractions": "From the ancient ruins of Templo Mayor to the bustling streets of Zocalo and the panoramic views from Chapultepec Castle, Mexico City offers a journey through time and culture, inviting visitors to explore its rich history and contemporary vibrancy.",
     "landmarks": [
@@ -2147,12 +2148,30 @@
     "life_in": {
       "cost_of_living": "Mexico City ranks 185th globally with cost of living index of 41.8, offering affordable living with rent index of 24.3 and purchasing power index of 49.4. Monthly rent averages $350-800, restaurant meals cost $4-15, and groceries are very affordable. Transportation is inexpensive, and cultural activities are generally accessible at low costs.",
       "quality_of_life": "Mexico City ranks 241st globally with quality of life index of 92.6, facing challenges with safety (33.0) and pollution (80.7), though offering excellent climate (92.4) and decent healthcare (66.1). The city provides rich cultural heritage, excellent food scene, and affordable living costs. However, air quality and safety concerns require careful neighborhood selection and lifestyle adjustments."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Frida Kahlo",
+        "description": "An iconic figure of Mexican art, Frida Kahlo's self-portraits reflect her deep emotional pain and vibrant spirit, capturing the heart of Mexico's cultural identity.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Octavio Paz",
+        "description": "Nobel Laureate Octavio Paz was a poet and essayist whose works delve into the Mexican psyche, blending political, existential, and cultural themes.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Carlos Slim",
+        "description": "One of the richest individuals in the world, Carlos Slim Helú, a telecommunications magnate, has significantly influenced Mexico City's economic landscape and philanthropy.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "chicago",
     "name": "Chicago",
-    "country": "United States",
+    "country": "United States of America",
     "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg",
     "lat": "41.8781",
     "lng": "-87.6298",
@@ -2247,21 +2266,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Oprah Winfrey",
+        "description": "Media mogul, talk show host, and philanthropist, known for \"The Oprah Winfrey Show.\"",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Michael Jordan",
+        "description": "Legendary basketball player, considered one of the greatest athletes of all time.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Harrison Ford",
+        "description": "Iconic actor, famous for his roles in \"Star Wars\" and \"Indiana Jones.\"",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "buenos-aires",
@@ -2360,21 +2380,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Pope Francis (Jorge Mario Bergoglio)",
+        "description": "The 266th Pope of the Catholic Church, first Jesuit pope, and first pope from the Americas.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Diego Maradona",
+        "description": "Legendary football player, considered one of the greatest in the history of the sport.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Jorge Luis Borges",
+        "description": "Renowned writer and poet, known for his short stories and contributions to literature.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "lima",
@@ -2442,23 +2463,6 @@
     ],
     "history": "Founded by Spanish conquistador Francisco Pizarro in 1535, Lima served as the capital of the Vice royalty of Peru, becoming a major political, administrative, and religious center of the Spanish colonies in South America. Its rich history is a tapestry of pre-Columbian civilizations, colonial conquests, and the fight for independence, shaping it into a cultural powerhouse.",
     "adversity_resilience": "Throughout its history, Lima has faced earthquakes, tsunamis, and political turmoil. Yet, its people have shown remarkable resilience, rebuilding the city each time. This enduring spirit is a testament to the city's ability to rise from adversity, shaping its identity and strength.",
-    "famous_people": [
-      {
-        "name": "Mario Vargas Llosa",
-        "description": "A Nobel Prize-winning author, Vargas Llosa has explored the complexities of Peruvian society and politics through his literature, becoming one of Latin America's most significant novelists.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Susana Baca",
-        "description": "A Grammy-winning singer and composer, Baca has been pivotal in bringing Afro-Peruvian music to the world stage, celebrating the rich cultural heritage of her country.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Gaston Acurio",
-        "description": "A chef and ambassador of Peruvian cuisine, Acurio has played a crucial role in popularizing dishes such as ceviche globally, earning Lima a reputation as a top food destination.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Lima is the financial and industrial heart of Peru, with a dynamic economy based on services, commerce, tourism, and manufacturing. Its port, Callao, is a critical hub for maritime trade, contributing to Lima's role as a vital link in South America's economic landscape.",
     "tourism_attractions": "From the historic center's colonial architecture and museums to the vibrant Miraflores district and the ancient ruins of Pachacamac, Lima offers a rich tapestry of attractions that blend the past with the present.",
     "landmarks": [
@@ -2481,12 +2485,30 @@
     "sister_cities": [
       "akita",
       "bordeaux",
-      "los_angeles"
+      "los-angeles"
     ],
     "life_in": {
       "cost_of_living": "Lima ranks 252nd globally with cost of living index of 32.7, offering affordable living with rent index of 13.0 and purchasing power index of 44.5. Monthly rent averages $250-600, restaurant meals cost $3-12, and groceries are very affordable. Public transportation is inexpensive, though quality varies significantly across different service levels.",
       "quality_of_life": "Lima ranks 253rd globally with quality of life index of 88.2, facing challenges with safety (29.9) and pollution (84.4), though climate conditions are favorable (97.7). The city offers rich cultural heritage, growing food scene, and coastal location. However, safety concerns and air quality issues require careful consideration when choosing residential areas."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Mario Vargas Llosa",
+        "description": "A Nobel Prize-winning author, Vargas Llosa has explored the complexities of Peruvian society and politics through his literature, becoming one of Latin America's most significant novelists.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Susana Baca",
+        "description": "A Grammy-winning singer and composer, Baca has been pivotal in bringing Afro-Peruvian music to the world stage, celebrating the rich cultural heritage of her country.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Gaston Acurio",
+        "description": "A chef and ambassador of Peruvian cuisine, Acurio has played a crucial role in popularizing dishes such as ceviche globally, earning Lima a reputation as a top food destination.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "bogota",
@@ -2585,21 +2607,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Shakira",
+        "description": "Global pop superstar, known for hits like 'Hips Don’t Lie' and 'Waka Waka (This Time for Africa)'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Gabriel García Márquez",
+        "description": "Nobel Prize-winning author of 'One Hundred Years of Solitude'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Juan Pablo Montoya",
+        "description": "Formula 1 and NASCAR driver, one of the most successful Colombian racers.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "santiago",
@@ -2698,21 +2721,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Pablo Neruda",
+        "description": "Nobel Prize-winning poet, author of 'Twenty Love Poems and a Song of Despair'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Pedro Pascal",
+        "description": "Actor, famous for roles in 'The Last of Us' and 'Game of Thrones'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Michelle Bachelet",
+        "description": "First female President of Chile and former UN High Commissioner for Human Rights.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "cairo",
@@ -2809,21 +2833,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Naguib Mahfouz",
+        "description": "Nobel Prize-winning author of 'The Cairo Trilogy'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Amr Diab",
+        "description": "Iconic pop singer, known as the 'Father of Mediterranean Music'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Omar Sharif",
+        "description": "Oscar-nominated actor, famous for 'Lawrence of Arabia' and 'Doctor Zhivago'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "johannesburg",
@@ -2897,23 +2922,6 @@
     ],
     "history": "Founded in 1886 following the discovery of gold, Johannesburg's history is a tumultuous tale of wealth, struggle, and resilience. From the gold rush that shaped its early days to the apartheid era struggles and its rebirth as a vibrant city post-apartheid, Johannesburg's story is a testament to the indomitable spirit of its people.",
     "adversity_resilience": "Johannesburg has faced numerous challenges, including the harsh realities of apartheid and significant urbanization issues. Its resilience is seen in the vibrant Soweto township, once the heart of anti-apartheid movements, and in the city's ongoing transformation into a hub of art, culture, and commerce.",
-    "famous_people": [
-      {
-        "name": "Nelson Mandela",
-        "description": "Nobel Peace Prize laureate and the first black President of South Africa, Mandela lived in Johannesburg, where he fought against apartheid and became a symbol of freedom.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nelson_Mandela-2008_%28edit%29.jpg"
-      },
-      {
-        "name": "Desmond Tutu",
-        "description": "A Nobel laureate and anti-apartheid activist, Archbishop Desmond Tutu's influential speeches and writings contributed significantly to the moral and spiritual landscape of Johannesburg.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Charlize Theron",
-        "description": "An Academy Award-winning actress, Theron was born and raised in South Africa before making her mark in Hollywood, embodying the global reach and talent emerging from Johannesburg.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Johannesburg, the economic powerhouse of South Africa, boasts a diverse economy ranging from mining (historically gold, now also diamonds, platinum) to finance, manufacturing, and the creative industries. Its stock exchange is among the top 20 in the world, reflecting the city's pivotal role in the African economy.",
     "tourism_attractions": "From the historic Apartheid Museum and the bustling Neighbourgoods Market to the tranquil Johannesburg Botanical Gardens and the wildlife-rich Lion Park, Johannesburg offers a unique blend of educational, culinary, and natural experiences.",
     "landmarks": [
@@ -2941,7 +2949,25 @@
     "life_in": {
       "cost_of_living": "Johannesburg ranks 234th globally with cost of living index of 35.1, offering affordable living with rent index of 12.2 and purchasing power index of 111.9. Monthly rent averages $300-700, restaurant meals cost $5-15, and groceries are reasonably priced. Domestic services and healthcare are particularly affordable compared to developed countries.",
       "quality_of_life": "Johannesburg ranks 137th globally with quality of life index of 141.9, featuring excellent climate (91.4) and strong purchasing power (114.7), though significant safety concerns (19.2) affect livability. The city offers economic opportunities, pleasant year-round weather, and cultural diversity. However, crime rates require security precautions and impact residential and lifestyle choices significantly."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Nelson Mandela",
+        "description": "Nobel Peace Prize laureate and the first black President of South Africa, Mandela lived in Johannesburg, where he fought against apartheid and became a symbol of freedom.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Nelson_Mandela-2008_%28edit%29.jpg"
+      },
+      {
+        "name": "Desmond Tutu",
+        "description": "A Nobel laureate and anti-apartheid activist, Archbishop Desmond Tutu's influential speeches and writings contributed significantly to the moral and spiritual landscape of Johannesburg.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Charlize Theron",
+        "description": "An Academy Award-winning actress, Theron was born and raised in South Africa before making her mark in Hollywood, embodying the global reach and talent emerging from Johannesburg.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "nairobi",
@@ -3041,21 +3067,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Wangari Maathai",
+        "description": "Nobel Peace Prize winner, founder of the Green Belt Movement.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Lupita Nyong’o",
+        "description": "Oscar-winning actress, known for '12 Years a Slave' and 'Black Panther'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Ngũgĩ wa Thiong’o",
+        "description": "Influential author and academic, known for 'Weep Not, Child' and 'Petals of Blood'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "lagos",
@@ -3126,23 +3153,6 @@
     ],
     "history": "Lagos, with its origins as a Yoruba port city, evolved under Portuguese influence in the late 15th century. Its name, derived from the Portuguese for 'lakes', hints at its coastal nature. Lagos became a significant hub for the slave trade before transitioning into a bustling colonial capital under British rule. Post-independence, it has grown into one of Africa's foremost economic powerhouses, despite its challenges.",
     "adversity_resilience": "Lagosians have shown remarkable resilience in the face of adversity. From the struggle for independence to navigating the complexities of urbanization and economic disparities, the city’s inhabitants have a storied history of overcoming obstacles through community, innovation, and an indomitable spirit.",
-    "famous_people": [
-      {
-        "name": "Fela Kuti",
-        "description": "A legendary Afrobeat pioneer, Fela Kuti's music was a blend of jazz, funk, and African rhythm. His legacy extends beyond music to political activism, challenging military regimes and advocating for social change.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Chimamanda Ngozi Adichie",
-        "description": "An influential author whose works explore themes of identity, feminism, and post-colonialism, Chimamanda has brought global attention to Nigerian culture and narratives.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Wole Soyinka",
-        "description": "A Nobel Laureate in Literature, Wole Soyinka is a prolific playwright, poet, and essayist whose works delve deeply into the complexities of African and Nigerian society.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Lagos, Nigeria's financial hub, boasts a dynamic economy with bustling markets, a thriving tech scene dubbed 'Yabacon Valley', and a significant presence of multinational corporations. Its ports are the gateway to Nigeria’s economy, handling a vast majority of the country’s imports and exports.",
     "tourism_attractions": "From the historic Badagry town, offering a glimpse into the transatlantic slave trade, to the contemporary art scene of Lagos Island and the stunning beaches of Lekki and Eko Atlantic, Lagos pulsates with attractions.",
     "landmarks": [
@@ -3170,7 +3180,25 @@
     "life_in": {
       "cost_of_living": "Lagos ranks 274th globally with cost of living index of 28.9, making it very affordable with rent index of 28.3 and extremely low purchasing power index of 10.3. Monthly rent averages $200-800 depending on area, restaurant meals cost $2-10, and basic groceries are affordable. However, imported goods and quality housing can be expensive relative to local incomes.",
       "quality_of_life": "Lagos ranks 286th globally with quality of life index of 8.2, facing significant challenges across all categories with particularly low safety (31.6) and very poor purchasing power (10.9). The city offers dynamic business opportunities and cultural vibrancy in Africa's most populous urban area. However, infrastructure limitations, traffic congestion, and security concerns significantly impact quality of life."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Fela Kuti",
+        "description": "A legendary Afrobeat pioneer, Fela Kuti's music was a blend of jazz, funk, and African rhythm. His legacy extends beyond music to political activism, challenging military regimes and advocating for social change.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Chimamanda Ngozi Adichie",
+        "description": "An influential author whose works explore themes of identity, feminism, and post-colonialism, Chimamanda has brought global attention to Nigerian culture and narratives.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Wole Soyinka",
+        "description": "A Nobel Laureate in Literature, Wole Soyinka is a prolific playwright, poet, and essayist whose works delve deeply into the complexities of African and Nigerian society.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "casablanca",
@@ -3240,23 +3268,6 @@
     ],
     "history": "Casablanca, a city with roots reaching back to the 7th century as a small Berber settlement, has grown through the ages under various rulers - from the Merenids to the Portuguese, only to emerge as Morocco's largest city. It's a place where history breathes through the walls of the Old Medina, the Art Deco facades of the New Town, and the grandeur of the Hassan II Mosque.",
     "adversity_resilience": "Casablanca has faced its share of challenges, from the devastating earthquake of 1755 to the political upheavals of the 20th century. Its resilience is embodied in its people's spirit and the city's phoenix-like rise, evolving into a vibrant economic hub and a beacon of multiculturalism and progress.",
-    "famous_people": [
-      {
-        "name": "Abderrahmane Youssoufi",
-        "description": "A revered figure in Moroccan politics, Abderrahmane Youssoufi served as Prime Minister, hailed for his dedication to democracy and human rights.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "French Montana",
-        "description": "Karim Kharbouch, known by his stage name French Montana, is a Moroccan-American rapper who grew up in Casablanca before moving to the US, embodying the city's blend of cultures.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Laila Lalami",
-        "description": "Born in Casablanca, Laila Lalami is an award-winning author whose works explore the intricacies of identity, migration, and belonging, drawing from her Moroccan roots.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Casablanca stands as Morocco's economic powerhouse, a dynamic blend of traditional markets and modern industries. It's the heart of Moroccan commerce, with the bustling Port of Casablanca, thriving textile and fashion sectors, and a burgeoning tech startup scene, painting a picture of a city firmly rooted in its rich history while reaching for the future.",
     "tourism_attractions": "From the awe-inspiring Hassan II Mosque, perched on the edge of the Atlantic, to the labyrinthine alleys of the Old Medina, and the Art Deco elegance of the city center, Casablanca offers a tapestry of experiences that intrigue and delight.",
     "landmarks": [
@@ -3284,7 +3295,25 @@
     "life_in": {
       "cost_of_living": "Casablanca ranks 231st globally with cost of living index of 34.7, offering affordable living with rent index of 13.1 and purchasing power index of 43.0. Monthly rent averages $250-600, restaurant meals cost $4-12, and groceries are reasonably priced. Transportation is inexpensive, and local services are generally affordable for international standards.",
       "quality_of_life": "Casablanca ranks 251st globally with quality of life index of 94.2, offering excellent climate (98.1) but facing challenges with pollution (82.1) and moderate safety concerns (44.8). The city provides coastal location, French cultural influences, and growing business sector. However, air quality and urban infrastructure limitations affect overall livability."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Abderrahmane Youssoufi",
+        "description": "A revered figure in Moroccan politics, Abderrahmane Youssoufi served as Prime Minister, hailed for his dedication to democracy and human rights.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "French Montana",
+        "description": "Karim Kharbouch, known by his stage name French Montana, is a Moroccan-American rapper who grew up in Casablanca before moving to the US, embodying the city's blend of cultures.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Laila Lalami",
+        "description": "Born in Casablanca, Laila Lalami is an award-winning author whose works explore the intricacies of identity, migration, and belonging, drawing from her Moroccan roots.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "sydney",
@@ -3354,23 +3383,6 @@
     ],
     "history": "From its origins as a British penal colony established in 1788, Sydney has transformed into a bustling global city. Its rich history spans the ancient Aboriginal cultures, European settlement, and rapid growth during the gold rush era, evolving into the diverse and vibrant metropolis it is today.",
     "adversity_resilience": "Sydney has faced its share of challenges, from the early struggles of settlement through natural disasters like bushfires and floods. Its resilience is seen in the community's response to adversity, rebuilding and supporting each other through tough times, and emerging stronger.",
-    "famous_people": [
-      {
-        "name": "Nicole Kidman",
-        "description": "Born in Honolulu but raised in Sydney, Nicole Kidman is an Oscar-winning actress known for her versatility and compelling performances in film and television.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Hugh Jackman",
-        "description": "Hugh Jackman, a Sydney native, is a globally recognized actor famous for his roles in Broadway musicals and the Wolverine series in the X-Men movie franchise.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Cate Blanchett",
-        "description": "Cate Blanchett, another Oscar-winning actress from Sydney, is renowned for her deep character portrayals and has been influential in the arts both on and off the screen.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Sydney's economy is dynamic and diverse, leading in sectors such as finance, manufacturing, and tourism. It houses the headquarters of numerous multinational corporations and banks, making it a pivotal economic and financial hub in the Asia-Pacific region.",
     "tourism_attractions": "From the iconic Sydney Opera House and Harbour Bridge to the sun-kissed beaches of Bondi and Manly, Sydney offers a plethora of attractions that captivate visitors from around the globe.",
     "landmarks": [
@@ -3398,7 +3410,25 @@
     "life_in": {
       "cost_of_living": "Sydney ranks 49th globally with cost of living index of 69.3, reflecting high Australian costs with rent index of 52.5 and purchasing power index of 129.0. Monthly rent averages $1,400-2,800, restaurant meals cost $15-35, and groceries are expensive. Transportation costs are moderate, but housing dominates expense considerations for most residents.",
       "quality_of_life": "Sydney ranks 65th globally with quality of life index of 188.4, featuring excellent climate (97.1), good healthcare (74.7), and strong safety (65.8), though traffic (43.3) and high costs present challenges. The city offers beautiful harbor setting, excellent beaches, and high-quality healthcare. Strong economy provides good income opportunities to offset high living costs."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Nicole Kidman",
+        "description": "Born in Honolulu but raised in Sydney, Nicole Kidman is an Oscar-winning actress known for her versatility and compelling performances in film and television.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Hugh Jackman",
+        "description": "Hugh Jackman, a Sydney native, is a globally recognized actor famous for his roles in Broadway musicals and the Wolverine series in the X-Men movie franchise.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Cate Blanchett",
+        "description": "Cate Blanchett, another Oscar-winning actress from Sydney, is renowned for her deep character portrayals and has been influential in the arts both on and off the screen.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "melbourne",
@@ -3468,23 +3498,6 @@
     ],
     "history": "Founded in 1835, Melbourne has grown from a small settlement to Australia's bustling cultural capital. It played a pivotal role during the Victorian gold rush of the 1850s, which led to a boom in population and wealth, shaping the city's majestic architecture and vibrant culture.",
     "adversity_resilience": "Melbourne has weathered numerous challenges, from the devastating effects of the 1890s economic depression to the severe droughts of the 2000s. Each time, the city emerged stronger, with a resilient community spirit and a commitment to innovation and sustainability.",
-    "famous_people": [
-      {
-        "name": "Cate Blanchett",
-        "description": "Born in Melbourne, Cate Blanchett is an internationally acclaimed actress known for her versatile roles in both blockbusters and independent films.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Chris Hemsworth",
-        "description": "Though not born in Melbourne, Chris Hemsworth's career took significant strides while living in the city, becoming one of Hollywood's leading actors.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Germaine Greer",
-        "description": "A Melbourne native, Germaine Greer is a feminist icon and author, whose work has challenged societal norms and sparked global debates.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Melbourne's economy is a powerhouse of diversity, thriving on industries ranging from finance and manufacturing to IT and tourism. The city's innovation hubs and cultural festivals attract global talent and tourists, contributing significantly to its economic growth.",
     "tourism_attractions": "From the natural beauty of the Royal Botanic Gardens to the cultural richness of the National Gallery of Victoria and the bustling lanes of the Queen Victoria Market, Melbourne offers an array of attractions for every type of traveler.",
     "landmarks": [
@@ -3512,7 +3525,25 @@
     "life_in": {
       "cost_of_living": "Melbourne ranks 90th globally with cost of living index of 65.4, offering reasonable pricing for a major Australian city with rent index of 38.1 and strong purchasing power index of 151.4. Monthly rent averages $1,000-2,200, restaurant meals cost $12-30, and groceries are moderately expensive. Public transportation offers good value with extensive tram and train networks.",
       "quality_of_life": "Melbourne ranks 29th globally with quality of life index of 198.3, featuring excellent purchasing power (157.1), outstanding climate (94.3), and good healthcare (73.3). The city offers world-renowned coffee culture, arts scene, and sporting events. Consistently rated among the world's most livable cities with excellent balance of amenities and lifestyle opportunities."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Cate Blanchett",
+        "description": "Born in Melbourne, Cate Blanchett is an internationally acclaimed actress known for her versatile roles in both blockbusters and independent films.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Chris Hemsworth",
+        "description": "Though not born in Melbourne, Chris Hemsworth's career took significant strides while living in the city, becoming one of Hollywood's leading actors.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Germaine Greer",
+        "description": "A Melbourne native, Germaine Greer is a feminist icon and author, whose work has challenged societal norms and sparked global debates.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "addis-ababa",
@@ -3579,23 +3610,6 @@
     ],
     "history": "Founded by Emperor Menelik II in 1886, Addis Ababa, meaning 'New Flower' in Amharic, has blossomed from a modest hot spring settlement into the political and cultural heart of Africa, hosting the African Union.",
     "adversity_resilience": "Throughout its history, Addis Ababa has endured occupations and conflicts, most notably the Italian invasion in 1936. Its resilience shines through in its recovery and growth, symbolizing hope and unity for all of Ethiopia.",
-    "famous_people": [
-      {
-        "name": "Haile Selassie",
-        "description": "The last Emperor of Ethiopia, Haile Selassie's legacy in Addis Ababa includes his efforts to modernize the country and his role as a symbol of African independence.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Abebe Bikila",
-        "description": "A national hero, Abebe Bikila, is celebrated for winning an Olympic marathon gold medal while running barefoot, embodying the spirit and endurance of Ethiopia.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Bethlehem Tilahun Alemu",
-        "description": "Founder of SoleRebels, Bethlehem Tilahun Alemu transformed traditional Ethiopian tire-soled shoes into a global eco-friendly brand, showcasing Ethiopian innovation.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Addis Ababa's economy thrives on a mix of services, manufacturing, and construction, with its burgeoning tech scene and the presence of international organizations fueling its reputation as Africa's diplomatic capital.",
     "tourism_attractions": "From the bustling Mercato, one of Africa's largest open-air markets, to the serene beauty of the Entoto Hills, Addis Ababa offers a unique blend of history, culture, and nature.",
     "landmarks": [
@@ -3623,7 +3637,25 @@
     "life_in": {
       "cost_of_living": "Addis Ababa ranks 182nd globally with cost of living index of 42.7, offering affordable living with rent index of 19.6 and extremely low purchasing power index of 12.0. Monthly rent averages $200-600, restaurant meals cost $3-10, and groceries are very affordable by international standards. However, quality goods and services can be expensive relative to local income levels.",
       "quality_of_life": "Quality of life data for Addis Ababa shows developing infrastructure with altitude considerations (8,000+ feet elevation). The city serves as diplomatic capital of Africa with international presence. Healthcare and educational facilities are improving but vary significantly in quality and accessibility across different areas."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Haile Selassie",
+        "description": "The last Emperor of Ethiopia, Haile Selassie's legacy in Addis Ababa includes his efforts to modernize the country and his role as a symbol of African independence.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Abebe Bikila",
+        "description": "A national hero, Abebe Bikila, is celebrated for winning an Olympic marathon gold medal while running barefoot, embodying the spirit and endurance of Ethiopia.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Bethlehem Tilahun Alemu",
+        "description": "Founder of SoleRebels, Bethlehem Tilahun Alemu transformed traditional Ethiopian tire-soled shoes into a global eco-friendly brand, showcasing Ethiopian innovation.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "dakar",
@@ -3722,21 +3754,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Youssou N’Dour",
+        "description": "Grammy-winning musician, pioneer of the mbalax genre.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Patrick Vieira",
+        "description": "Former French football star and current manager of Crystal Palace FC.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Akons",
+        "description": "Global music star, producer, and entrepreneur.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "kinshasa",
@@ -3835,21 +3868,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Pépé Kallé",
+        "description": "Legendary soukous musician and bandleader.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Dikembe Mutombo",
+        "description": "NBA Hall of Famer and humanitarian, known for his shot-blocking and philanthropy.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Maître Gims",
+        "description": "Popular rapper and singer, known for hits like 'Bella'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "istanbul",
@@ -3917,23 +3951,6 @@
     ],
     "history": "Istanbul's tale is one of empires and sultans, conquests and glory. Once Byzantium, then Constantinople, and now Istanbul, this city has been the heart of civilizations, a crossroads of continents, and a melting pot of cultures for over two millennia.",
     "adversity_resilience": "From the devastating effects of the Fourth Crusade to the challenges of the 21st century, Istanbul has shown remarkable resilience. Its ability to adapt and flourish, preserving its rich heritage while embracing modernity, is a testament to the indomitable spirit of its people.",
-    "famous_people": [
-      {
-        "name": "Orhan Pamuk",
-        "description": "Nobel Prize-winning author Orhan Pamuk captures the essence of Istanbul, weaving its complexity and beauty into his novels.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Elif Şafak",
-        "description": "Elif Şafak is a celebrated writer who explores the depths of Istanbul's cultural identity, blending Eastern and Western narratives with lyrical prose.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Hagia Sophia",
-        "description": "A marvel of architectural genius, Hagia Sophia has stood as a symbol of wisdom and beauty, transitioning from church to mosque, and now a museum, echoing Istanbul's rich and diverse history.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Istanbul is the economic powerhouse of Turkey, bridging continents with its strategic location. From the bustling Grand Bazaar to leading technology startups, the city thrives on commerce, tourism, and innovation.",
     "tourism_attractions": "Istanbul enchants visitors with its historical grandeur, from the majestic Hagia Sophia and the spellbinding Blue Mosque to the bustling energy of the Grand Bazaar.",
     "landmarks": [
@@ -3961,7 +3978,25 @@
     "life_in": {
       "cost_of_living": "Istanbul ranks 186th globally with cost of living index of 41.4, offering affordable living with rent index of 21.5 and purchasing power index of 57.2. Monthly rent averages $300-800, restaurant meals cost $4-12, and groceries are reasonably priced. Public transportation is excellent value with comprehensive coverage across the massive metropolitan area.",
       "quality_of_life": "Istanbul ranks 195th globally with quality of life index of 122.0, balancing excellent climate (93.0) and decent healthcare (70.0) against challenges with traffic (51.3) and pollution (67.7). The city offers unique European-Asian location, rich history, and vibrant culture. However, traffic congestion and economic volatility affect daily life quality."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Orhan Pamuk",
+        "description": "Nobel Prize-winning author Orhan Pamuk captures the essence of Istanbul, weaving its complexity and beauty into his novels.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Elif Şafak",
+        "description": "Elif Şafak is a celebrated writer who explores the depths of Istanbul's cultural identity, blending Eastern and Western narratives with lyrical prose.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Hagia Sophia",
+        "description": "A marvel of architectural genius, Hagia Sophia has stood as a symbol of wisdom and beauty, transitioning from church to mosque, and now a museum, echoing Istanbul's rich and diverse history.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "dubai",
@@ -4071,7 +4106,8 @@
         "description": "A global beauty mogul, Huda Kattan's journey from makeup artist to CEO of Huda Beauty illustrates Dubai's entrepreneurial spirit and its role as a trendsetter in the beauty industry.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "riyadh",
@@ -4167,21 +4203,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "King Salman bin Abdulaziz",
+        "description": "Current King of Saudi Arabia.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Dina Shihabi",
+        "description": "Actress, known for roles in 'Jack Ryan' and 'Altered Carbon'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Sultan bin Salman Al Saud",
+        "description": "First Arab and Muslim astronaut in space.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "tehran",
@@ -4277,21 +4314,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Abbas Kiarostami",
+        "description": "Acclaimed filmmaker, known for 'Taste of Cherry' and 'Close-Up'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Mohammad Reza Pahlavi",
+        "description": "Last Shah of Iran.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Golshifteh Farahani",
+        "description": "Actress, known for 'Paterson' and 'The Nightingale'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "beijing",
@@ -4360,23 +4398,6 @@
     ],
     "history": "Beijing's story is one of imperial grandeur, invasions, and rebirths, dating back over three millennia. Once the seat of the Ming and Qing dynasties, it has witnessed the rise and fall of empires, serving as the stage for some of the most pivotal moments in Chinese history, including the Boxer Rebellion and the founding of the People's Republic of China in 1949.",
     "adversity_resilience": "From the ashes of war and revolution, Beijing has emerged as a symbol of China's unyielding spirit. The city has overcome numerous challenges, from foreign invasions to natural disasters, each time rebuilding with greater strength and unity, embodying the resilience and perseverance of its people.",
-    "famous_people": [
-      {
-        "name": "Confucius",
-        "description": "Though not born in Beijing, Confucius' teachings deeply influenced the city's philosophical and educational foundations, leaving a lasting legacy on Chinese culture.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Cai Lun",
-        "description": "Inventor of papermaking, Cai Lun's revolutionary creation in the Eastern Han Dynasty has left an indelible mark on Beijing's, and the world's, history.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Jet Li",
-        "description": "Born in Beijing, Jet Li is a martial arts icon and international film star who has brought Chinese martial arts to the global stage, showcasing the city's rich cultural heritage.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Beijing's economy is a dynamic blend of the old and the new, from traditional silk and handicrafts markets to cutting-edge technology and finance sectors. It's a city where ancient trade routes now meet modern highways of commerce, making it a leading global city in innovation, culture, and education.",
     "tourism_attractions": "From the ancient majesty of the Great Wall and the Forbidden City to the modern marvels of the Bird's Nest Stadium and the National Center for the Performing Arts, Beijing offers a journey through time, where millennia of history coexist with rapid modernization.",
     "landmarks": [
@@ -4404,7 +4425,25 @@
     "life_in": {
       "cost_of_living": "Beijing is 62.9% less expensive than New York, with rent 76.1% lower. Monthly costs for a family of four are about $2,168, excluding rent. A 900 sqft furnished apartment in an expensive area costs around $1,500–$2,500. Groceries and dining out are affordable, but imported goods are pricier.",
       "quality_of_life": "Beijing ranks 123rd globally for quality of life. It offers excellent healthcare and education, but air pollution and traffic are persistent issues. The city is culturally rich, with modern infrastructure and a dynamic expat community, though housing affordability remains a challenge."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Confucius",
+        "description": "Though not born in Beijing, Confucius' teachings deeply influenced the city's philosophical and educational foundations, leaving a lasting legacy on Chinese culture.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Cai Lun",
+        "description": "Inventor of papermaking, Cai Lun's revolutionary creation in the Eastern Han Dynasty has left an indelible mark on Beijing's, and the world's, history.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Jet Li",
+        "description": "Born in Beijing, Jet Li is a martial arts icon and international film star who has brought Chinese martial arts to the global stage, showcasing the city's rich cultural heritage.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "shanghai",
@@ -4473,23 +4512,6 @@
     ],
     "history": "From a small fishing village to a bustling global metropolis, Shanghai's history is a tale of transformation. It has been a commercial hub since the Ming dynasty, growing significantly as a port city in the 19th century under foreign concessions, and has since evolved into China's financial and cultural powerhouse.",
     "adversity_resilience": "Shanghai has weathered numerous adversities, from devastating floods to political upheavals. Its resilience is showcased in its ability to rebuild and modernize, transforming challenges into opportunities for growth and becoming a symbol of China's development.",
-    "famous_people": [
-      {
-        "name": "Lu Xun",
-        "description": "A leading figure of modern Chinese literature, his works are a profound critique of the society of his time and have significantly influenced Chinese culture.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Yao Ming",
-        "description": "An icon of Chinese basketball, Yao Ming's towering presence on the global stage has made him one of the most recognized athletes from China.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Zhang Ziyi",
-        "description": "Renowned for her roles in 'Crouching Tiger, Hidden Dragon' and 'Memoirs of a Geisha,' Zhang Ziyi has become an international symbol of Chinese cinema.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Shanghai, the dragon head of China's economy, thrives as a financial hub with the world's busiest container port. Its skyline, dotted with skyscrapers, is a testament to its economic might, housing numerous multinational corporations and fostering innovation in tech and manufacturing sectors.",
     "tourism_attractions": "Shanghai dazzles visitors with its juxtaposition of the ancient and the futuristic. The Bund offers a walk through history, while across the river, the Pudong skyline symbolizes China's rapid ascent. Traditional gardens and bustling markets add layers to the city's rich tapestry.",
     "landmarks": [
@@ -4517,7 +4539,25 @@
     "life_in": {
       "cost_of_living": "Shanghai is 61% less expensive than New York, with rent 74% lower. A 480 sqft furnished studio in the city center costs about $1,000–$1,500 monthly. Groceries and dining are affordable, but real estate prices have fallen by over 40% recently. Monthly costs for a family of four are around $2,000, excluding rent.",
       "quality_of_life": "Shanghai ranks 106th globally for quality of life. It boasts high safety (72.95) and healthcare (64.88) indices, but air pollution and traffic congestion are ongoing concerns. The city is a global financial hub with vibrant culture and excellent public transport."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Lu Xun",
+        "description": "A leading figure of modern Chinese literature, his works are a profound critique of the society of his time and have significantly influenced Chinese culture.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Yao Ming",
+        "description": "An icon of Chinese basketball, Yao Ming's towering presence on the global stage has made him one of the most recognized athletes from China.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Zhang Ziyi",
+        "description": "Renowned for her roles in 'Crouching Tiger, Hidden Dragon' and 'Memoirs of a Geisha,' Zhang Ziyi has become an international symbol of Chinese cinema.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "mumbai",
@@ -4611,7 +4651,7 @@
       }
     ],
     "sister_cities": [
-      "Los_Angeles_USA",
+      "los-angeles_USA",
       "Stuttgart_Germany",
       "Yokohama_Japan"
     ],
@@ -4621,21 +4661,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Amitabh Bachchan",
+        "description": "Legendary Bollywood actor, known as the 'Shahenshah of Bollywood'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "A.R. Rahman",
+        "description": "Oscar-winning composer, famous for 'Slumdog Millionaire' and 'Jai Ho'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Priyanka Chopra",
+        "description": "Global actress and former Miss World, known for 'Quantico' and 'The White Tiger'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "warsaw",
@@ -4704,23 +4745,6 @@
     ],
     "history": "Warsaw's narrative is one of phoenix-like resilience. Founded around the 12th century, it has been the heart of Polish culture and politics. Despite near-total destruction during World War II, the city was meticulously rebuilt, with the Old Town now a UNESCO World Heritage Site, symbolizing the city's indomitable spirit.",
     "adversity_resilience": "Warsaw's history of resilience is most vividly captured in its rebirth after WWII. Having faced near obliteration, its citizens rallied to reconstruct the city, brick by brick, preserving its historic soul amidst the scars of war, a testament to their unbreakable spirit.",
-    "famous_people": [
-      {
-        "name": "Frédéric Chopin",
-        "description": "The world-renowned composer and pianist, born in 1810 near Warsaw, left a lasting legacy with his emotional and technically demanding music, capturing the essence of Polish pride.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Marie Curie",
-        "description": "Born in Warsaw in 1867, Curie was a pioneering physicist and chemist who became the first woman to win a Nobel Prize and remains the only person to win in two different scientific fields.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Joseph Conrad",
-        "description": "Born into a Polish family in 1857, Conrad became one of the greatest novelists in the English language, weaving complex narratives that explored the depths of the human psyche and the ambiguities of morality.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Warsaw stands as a dynamic hub of economic activity in Central Europe, with a diverse economy spanning finance, technology, and manufacturing. Its skyline, punctuated by modern skyscrapers, symbolizes its rapid growth and the ambition of a city that bridges Western and Eastern Europe.",
     "tourism_attractions": "From the historical lanes of the Old Town to the Royal Castle and Lazienki Park's sprawling gardens, Warsaw invites visitors to explore its rich history, vibrant cultural scene, and the indomitable spirit of its people.",
     "landmarks": [
@@ -4748,7 +4772,25 @@
     "life_in": {
       "cost_of_living": "Warsaw’s cost of living is 40.8% lower than the US average. A 90m² apartment costs about $2,000–$2,500 monthly, with utilities adding $200–$300. Groceries and dining are affordable, and public transport is efficient. A single person’s monthly costs are around $843, excluding rent.",
       "quality_of_life": "Warsaw ranks 78th globally for quality of life, with a high safety index (74.72) and good healthcare (58.43). The city is known for its green spaces, cultural scene, and strong public transport. Air quality is generally good, and the city is increasingly smart and sustainable."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Frédéric Chopin",
+        "description": "The world-renowned composer and pianist, born in 1810 near Warsaw, left a lasting legacy with his emotional and technically demanding music, capturing the essence of Polish pride.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Marie Curie",
+        "description": "Born in Warsaw in 1867, Curie was a pioneering physicist and chemist who became the first woman to win a Nobel Prize and remains the only person to win in two different scientific fields.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Joseph Conrad",
+        "description": "Born into a Polish family in 1857, Conrad became one of the greatest novelists in the English language, weaving complex narratives that explored the depths of the human psyche and the ambiguities of morality.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "jerusalem",
@@ -4847,21 +4889,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Natalie Portman",
+        "description": "Oscar-winning actress, born in Jerusalem, known for 'Black Swan' and 'Jackie'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Golda Meir",
+        "description": "Former Prime Minister of Israel.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Eliezer Ben-Yehuda",
+        "description": "Reviver of the modern Hebrew language.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "rio-de-janeiro",
@@ -4931,23 +4974,6 @@
     ],
     "history": "From its discovery by Portuguese explorers in 1502 to its time as the capital of Brazil, Rio's history is a tale of beauty, struggle, and transformation. The city has witnessed the rise and fall of empires, the blend of African, European, and indigenous cultures, and the enduring spirit of its people.",
     "adversity_resilience": "Rio has faced challenges, from economic hardships to natural disasters, but its resilience shines through. The city's ability to host the 2016 Olympics amidst such trials is a testimony to the indomitable spirit of the Cariocas.",
-    "famous_people": [
-      {
-        "name": "Oscar Niemeyer",
-        "description": "A visionary architect whose designs shaped the modern skyline of Brazil and the world, leaving a legacy of beauty and innovation.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Carmen Miranda",
-        "description": "The Brazilian Bombshell who captivated the world with her extravagant costumes and vibrant performances, embodying the lively spirit of Rio.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Tom Jobim",
-        "description": "A composer and musician who, with his soothing melodies, became one of the fathers of bossa nova, serenading the soul of Rio through his songs.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Rio's economy thrives on tourism, oil, and entertainment industries, painting a picture of a city that's constantly bustling and evolving. The iconic Carnival alone injects vitality into the city's veins, attracting visitors and investments from around the globe.",
     "tourism_attractions": "From the sun-kissed beaches of Copacabana and Ipanema to the majestic Christ the Redeemer statue overlooking the city, Rio de Janeiro offers a feast for the senses to every traveler.",
     "landmarks": [
@@ -4975,7 +5001,25 @@
     "life_in": {
       "cost_of_living": "Rio’s cost of living is 50% lower than New York’s, with rent averaging $500–$1,200 for a 1-bedroom city center apartment. Groceries and dining are affordable, but safety and infrastructure costs can be high. Public transport is cheap, but car ownership is expensive due to taxes and insurance.",
       "quality_of_life": "Rio ranks moderately for quality of life, with vibrant culture, beaches, and nightlife. However, safety is a major concern, with high crime rates in some areas. Healthcare is accessible, but pollution and traffic congestion are persistent issues."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Oscar Niemeyer",
+        "description": "A visionary architect whose designs shaped the modern skyline of Brazil and the world, leaving a legacy of beauty and innovation.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Carmen Miranda",
+        "description": "The Brazilian Bombshell who captivated the world with her extravagant costumes and vibrant performances, embodying the lively spirit of Rio.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Tom Jobim",
+        "description": "A composer and musician who, with his soothing melodies, became one of the fathers of bossa nova, serenading the soul of Rio through his songs.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "karachi",
@@ -5078,21 +5122,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Muhammad Ali Jinnah",
+        "description": "Founder of Pakistan and the country's first Governor-General, known as 'Quaid-e-Azam' (Great Leader).",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Mahira Khan",
+        "description": "Acclaimed actress, famous for her roles in Pakistani dramas like 'Humsafar' and Bollywood film 'Raees'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Kumail Nanjiani",
+        "description": "Actor and comedian, known for 'The Big Sick' and Marvel's 'Eternals'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "singapore",
@@ -5164,23 +5209,6 @@
     ],
     "history": "Singapore's story is one of transformation, from a humble fishing village to a British colonial trading post, and finally to its emergence as a global financial hub. Its history is marked by hardship, resilience, and an unwavering spirit of independence, culminating in its sovereignty in 1965.",
     "adversity_resilience": "Throughout its history, Singapore has faced numerous challenges, including colonial rule, occupation during World War II, and separation from Malaysia. Despite these adversities, it has emerged as a prosperous nation, showcasing resilience, strategic urban planning, and an adaptive economy.",
-    "famous_people": [
-      {
-        "name": "Lee Kuan Yew",
-        "description": "Widely regarded as the founding father of modern Singapore, Lee Kuan Yew served as the country's Prime Minister for three decades, transforming it into a prosperous, world-renowned financial center.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Joseph Schooling",
-        "description": "Joseph Schooling made history at the 2016 Olympics by winning Singapore's first-ever gold medal in swimming, defeating the legendary Michael Phelps in the 100m butterfly event.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Stefanie Sun",
-        "description": "A Singaporean pop music icon, Stefanie Sun has won the hearts of many across Asia with her captivating voice and has become one of the most famous and influential figures in the Mandopop industry.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Singapore's economy is a thriving model of efficiency and innovation, known for its financial services, electronics manufacturing, and as a global hub for trade and logistics. Its strategic location and business-friendly environment have attracted numerous multinational corporations, making it a key player in the global economy.",
     "tourism_attractions": "From the futuristic Gardens by the Bay and the iconic Marina Bay Sands to the vibrant streets of Chinatown and Little India, Singapore offers a diverse range of attractions, blending urban sophistication with rich cultural enclaves.",
     "landmarks": [
@@ -5208,7 +5236,25 @@
     "life_in": {
       "cost_of_living": "Singapore is one of the world’s most expensive cities, with rent for a 1-bedroom city center apartment averaging $2,500–$4,000. Groceries and dining are costly, but public transport is efficient and affordable. Car ownership is prohibitively expensive due to high taxes.",
       "quality_of_life": "Singapore ranks among the top globally for quality of life, with excellent healthcare, safety, and infrastructure. The city is clean, green, and well-planned, with world-class education and low crime. However, the high cost of living and work-life balance are common concerns."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Lee Kuan Yew",
+        "description": "Widely regarded as the founding father of modern Singapore, Lee Kuan Yew served as the country's Prime Minister for three decades, transforming it into a prosperous, world-renowned financial center.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Joseph Schooling",
+        "description": "Joseph Schooling made history at the 2016 Olympics by winning Singapore's first-ever gold medal in swimming, defeating the legendary Michael Phelps in the 100m butterfly event.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Stefanie Sun",
+        "description": "A Singaporean pop music icon, Stefanie Sun has won the hearts of many across Asia with her captivating voice and has become one of the most famous and influential figures in the Mandopop industry.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "caracas",
@@ -5307,21 +5353,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Simón Bolívar",
+        "description": "Liberator of Venezuela and several South American countries from Spanish rule.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Oscar D’León",
+        "description": "Legendary salsa singer, known as 'El Sonero del Mundo'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Carolina Herrera",
+        "description": "World-renowned fashion designer, founder of the Carolina Herrera brand.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "havana",
@@ -5418,21 +5465,22 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Gloria Estefan",
+        "description": "Grammy-winning singer, known for hits like 'Rhythm Is Gonna Get You' and 'Congratulations'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Ana de Armas",
+        "description": "Actress, known for 'Blonde', 'Knives Out', and 'No Time to Die'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Camila Cabello",
+        "description": "Pop singer and former Fifth Harmony member, known for 'Havana' and 'Señorita'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": false
   },
   {
     "id": "kyiv",
@@ -5498,23 +5546,6 @@
     ],
     "history": "Kyiv's story is one of grandeur, resilience, and rebirth. Founded over 1,400 years ago, it blossomed into the cradle of Eastern Slavic civilization, weathering invasions, the Mongol yoke, and the trials of modern history to emerge as a vibrant, dynamic capital.",
     "adversity_resilience": "Throughout its tumultuous history, Kyiv has faced destruction, occupation, and revolution. Yet, its spirit remains unbroken, with each challenge met with unwavering strength and a determination to rebuild and flourish anew.",
-    "famous_people": [
-      {
-        "name": "Yulia Tymoshenko",
-        "description": "The iconic braided former Prime Minister of Ukraine is known for her role in the Orange Revolution and her resilience in the face of political challenges.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Andriy Shevchenko",
-        "description": "This legendary footballer, celebrated for his time at AC Milan and the Ukrainian national team, is a national hero and one of the greatest forwards of his generation.",
-        "image": "TO_BE_REPLACED"
-      },
-      {
-        "name": "Kazimir Malevich",
-        "description": "Born near Kyiv, Malevich was a pioneer of geometric abstract art and the originator of the avant-garde Suprematist movement.",
-        "image": "TO_BE_REPLACED"
-      }
-    ],
     "economy_industry": "Kyiv is the undisputed economic engine of Ukraine, a hub for IT, manufacturing, and service industries. It's a city that's rapidly modernizing, attracting investment, and fostering innovation, while still being deeply connected to its historical roots.",
     "tourism_attractions": "From the golden domes of St. Sophia's Cathedral to the bustling Independence Square, Kyiv offers a fascinating mix of historical treasures and vibrant, modern life.",
     "landmarks": [
@@ -5542,7 +5573,25 @@
     "life_in": {
       "cost_of_living": "Kyiv’s cost of living is 60% lower than New York’s, with rent for a 1-bedroom city center apartment averaging $400–$800. Groceries and dining are affordable, but ongoing conflict has increased some costs and reduced availability of certain goods.",
       "quality_of_life": "Kyiv’s quality of life has been severely impacted by war, with safety and infrastructure the top concerns. The city offers strong cultural and educational institutions, but air raid alerts, displacement, and economic uncertainty dominate daily life."
-    }
+    },
+    "famous_people": [
+      {
+        "name": "Yulia Tymoshenko",
+        "description": "The iconic braided former Prime Minister of Ukraine is known for her role in the Orange Revolution and her resilience in the face of political challenges.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Andriy Shevchenko",
+        "description": "This legendary footballer, celebrated for his time at AC Milan and the Ukrainian national team, is a national hero and one of the greatest forwards of his generation.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Kazimir Malevich",
+        "description": "Born near Kyiv, Malevich was a pioneer of geometric abstract art and the originator of the avant-garde Suprematist movement.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
   },
   {
     "id": "vienna",
@@ -5642,20 +5691,21 @@
     },
     "famous_people": [
       {
-        "name": "",
-        "description": "",
+        "name": "Wolfgang Amadeus Mozart",
+        "description": "Legendary composer, known for 'The Magic Flute', 'Eine kleine Nachtmusik', and 'Requiem'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Gustav Klimt",
+        "description": "Symbolist painter, famous for 'The Kiss' and 'Portrait of Adele Bloch-Bauer I'.",
         "image": "TO_BE_REPLACED"
       },
       {
-        "name": "",
-        "description": "",
+        "name": "Arnold Schwarzenegger",
+        "description": "Actor, bodybuilder, and former Governor of California, known for 'Terminator' and 'Predator'.",
         "image": "TO_BE_REPLACED"
       }
-    ]
+    ],
+    "spotted_by_locals_link": true
   }
 ]

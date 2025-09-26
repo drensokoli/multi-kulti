@@ -26,6 +26,22 @@ const CityModal: React.FC<CityModalProps> = ({
 }) => {
   if (!city) return null;
 
+  // Handle click outside
+  React.useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      const target = event.target as HTMLElement;
+      // Check if the click is outside the modal and not on another city marker
+      if (isOpen && !target.closest('[data-modal]') && !target.closest('[data-city-marker]')) {
+        onClose();
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [isOpen, onClose]);
+
   // Helper function to format population numbers
   const formatPopulation = (population: string): string => {
     // Remove any non-numeric characters except decimal points
@@ -243,7 +259,8 @@ const CityModal: React.FC<CityModalProps> = ({
     <>
       {/* Modal */}
       <div
-        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-50 transition-all duration-500 ease-out ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
+        data-modal
+        className={`fixed left-2 sm:left-4 md:left-6 top-1/2 mt-4 transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 transition-all duration-500 ease-out no-select ${isOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-full'
           }`}
         onClick={(e) => e.stopPropagation()}
       >
@@ -294,6 +311,46 @@ const CityModal: React.FC<CityModalProps> = ({
           {/* Content */}
           <div className="flex-1 overflow-y-auto p-4 sm:p-6">
             <div className="space-y-3 sm:space-y-4 pb-4">
+              {/* Spotted by Locals Button */}
+              {city.spotted_by_locals_link && (
+                <div className="bg-gradient-to-r from-green-500/20 to-emerald-500/20 backdrop-blur-sm border border-green-500/30 rounded-lg sm:rounded-xl p-3 sm:p-4">
+                  <a
+                    href={`https://www.spottedbylocals.com/${city.id.toLowerCase().replace(/\s+/g, '')}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-3 text-white hover:text-green-300 transition-colors duration-200 group"
+                  >
+                    <div className="flex-shrink-0">
+                      <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center overflow-hidden">
+                        <img 
+                          src="/img/spotted_by_locals.png" 
+                          alt="Spotted by Locals" 
+                          className="w-12 h-12 object-cover"
+                        />
+                      </div>
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-sm font-semibold group-hover:text-green-300 transition-colors duration-200">
+                        Planning on visiting?
+                      </h3>
+                      <p className="text-xs text-gray-300 group-hover:text-green-200 transition-colors duration-200">
+                        Discover local spots and hidden gems with Spotted by Locals
+                      </p>
+                    </div>
+                    <div className="flex-shrink-0">
+                      <svg 
+                        className="w-4 h-4 text-gray-400 group-hover:text-green-300 transition-colors duration-200" 
+                        fill="none" 
+                        stroke="currentColor" 
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                      </svg>
+                    </div>
+                  </a>
+                </div>
+              )}
+              
               {sections.map((section) => {
                 const IconComponent = section.icon;
                 return (

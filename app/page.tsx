@@ -103,6 +103,11 @@ export default function Home() {
     setZoomToCity(city);
     // Clear the zoom state after a short delay to allow for re-zooming to the same location
     setTimeout(() => setZoomToCity(null), 100);
+    // Open the city modal after the zoom animation completes (1200ms + small buffer)
+    setTimeout(() => {
+      setSelectedCity(city);
+      setIsPanelOpen(true);
+    }, 1300);
   };
 
   // if (isLoading) {
