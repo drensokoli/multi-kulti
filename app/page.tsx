@@ -5,9 +5,10 @@ import dynamic from 'next/dynamic';
 import type { City } from '@/types';
 import CityModal from '@/components/CityModal';
 import CompareView from '@/components/CompareView';
+import ComparisonModal from '@/components/ComparisonModal';
 import FloatingMessage from '@/components/FloatingMessage';
 import SearchBar from '@/components/SearchBar';
-import { Globe as GlobeIcon } from 'lucide-react';
+import { Globe as GlobeIcon, Moon, Sun } from 'lucide-react';
 
 // Dynamically import Globe to avoid SSR issues
 const Globe = dynamic(() => import('@/components/Globe'), {
@@ -23,6 +24,17 @@ const Globe = dynamic(() => import('@/components/Globe'), {
 });
 
 
+// Define the CityComparison interface
+interface CityComparison {
+  cities: string[];
+  overview: string;
+  population_diversity: string;
+  culture_lifestyle: string;
+  history_resilience: string;
+  modern_life_and_economy: string;
+  life_in_city: string;
+}
+
 export default function Home() {
   const [cities, setCities] = useState<City[]>([]);
   const [selectedCity, setSelectedCity] = useState<City | null>(null);
@@ -34,52 +46,106 @@ export default function Home() {
   const [floatingMessage, setFloatingMessage] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [zoomToCity, setZoomToCity] = useState<City | null>(null);
+  const [isNightMode, setIsNightMode] = useState(false);
+  
+  // New state for comparison modal
+  const [comparisonData, setComparisonData] = useState<CityComparison[]>([]);
+  const [currentComparison, setCurrentComparison] = useState<CityComparison | null>(null);
+  const [isComparisonModalOpen, setIsComparisonModalOpen] = useState(false);
+  
+  // Use refs to track current state for immediate access in click handlers
+  const compareModeRef = React.useRef(false);
+  const compareCity1Ref = React.useRef<City | null>(null);
 
-  // Load cities data
+  // Load cities and comparison data
   useEffect(() => {
-    const loadCities = async () => {
+    const loadData = async () => {
       try {
-        const response = await fetch('/data/cities.json');
-        const data = await response.json();
-        setCities(data);
+        const [citiesResponse, comparisonResponse] = await Promise.all([
+          fetch('/data/cities.json'),
+          fetch('/data/city_comparison.json')
+        ]);
+        
+        const citiesData = await citiesResponse.json();
+        const comparisonData = await comparisonResponse.json();
+        
+        setCities(citiesData);
+        setComparisonData(comparisonData);
       } catch (error) {
-        console.error('Error loading cities:', error);
+        console.error('Error loading data:', error);
       } finally {
         setIsLoading(false);
       }
     };
 
-    loadCities();
+    loadData();
   }, []);
 
+  // Function to find comparison data for two cities
+  const findComparison = (city1Id: string, city2Id: string): CityComparison | null => {
+    return comparisonData.find(comparison => {
+      const cities = comparison.cities;
+      return (cities.includes(city1Id) && cities.includes(city2Id));
+    }) || null;
+  };
+
   const handleCityClick = (city: City) => {
-    if (isCompareMode && compareCity1 && city.id !== compareCity1.id) {
+    // Use refs to get the current state immediately without waiting for React updates
+    const isInCompareMode = compareModeRef.current;
+    const firstCity = compareCity1Ref.current;
+    
+    if (isInCompareMode && firstCity && city.id !== firstCity.id) {
       // Second city selected for comparison
       setCompareCity2(city);
-      setIsCompareOpen(true);
+      
+      // Find comparison data
+      const comparison = findComparison(firstCity.id, city.id);
+      if (comparison) {
+        // Use new comparison modal
+        setCurrentComparison(comparison);
+        setIsComparisonModalOpen(true);
+      } else {
+        // Fallback to old comparison view
+        setIsCompareOpen(true);
+      }
+      
+      // Reset compare mode
       setIsCompareMode(false);
+      compareModeRef.current = false;
+      compareCity1Ref.current = null;
       setFloatingMessage(null);
-    } else if (isCompareMode && compareCity1 && city.id === compareCity1.id) {
+      return; // Important: prevent falling through to normal city selection
+    } else if (isInCompareMode && firstCity && city.id === firstCity.id) {
       // Same city clicked, show message
       setFloatingMessage("Please select a different city to compare");
-    } else {
-      // Close any open modals first
-      setIsPanelOpen(false);
-      setSelectedCity(null);
-      setIsCompareOpen(false);
-      setCompareCity1(null);
-      setCompareCity2(null);
-      
-      // Normal city selection - use same behavior as search bar
-      handleLocationSelect(city);
-      setIsCompareMode(false);
+      return; // Important: prevent falling through to normal city selection
     }
+    
+    // Normal city selection - close any open modals first
+    setIsPanelOpen(false);
+    setSelectedCity(null);
+    setIsCompareOpen(false);
+    setIsComparisonModalOpen(false);
+    setCompareCity1(null);
+    setCompareCity2(null);
+    setCurrentComparison(null);
+    setIsCompareMode(false);
+    compareModeRef.current = false;
+    compareCity1Ref.current = null;
+    
+    // Normal city selection - use same behavior as search bar
+    handleLocationSelect(city);
   };
 
   const handleCompare = (city: City) => {
     setCompareCity1(city);
     setCompareCity2(null);
     setIsCompareMode(true);
+    
+    // Update refs immediately for synchronous access
+    compareModeRef.current = true;
+    compareCity1Ref.current = city;
+    
     setIsPanelOpen(false);
     setFloatingMessage("Select another city to compare with " + city.name);
   };
@@ -95,6 +161,23 @@ export default function Home() {
     setCompareCity1(null);
     setCompareCity2(null);
     setFloatingMessage(null);
+    
+    // Reset refs
+    compareModeRef.current = false;
+    compareCity1Ref.current = null;
+  };
+
+  const handleCloseComparisonModal = () => {
+    setIsComparisonModalOpen(false);
+    setIsCompareMode(false);
+    setCompareCity1(null);
+    setCompareCity2(null);
+    setCurrentComparison(null);
+    setFloatingMessage(null);
+    
+    // Reset refs
+    compareModeRef.current = false;
+    compareCity1Ref.current = null;
   };
 
   const handleSelectSecondCity = (message: string) => {
@@ -105,8 +188,43 @@ export default function Home() {
     setFloatingMessage(null);
   };
 
+  const toggleTheme = () => {
+    setIsNightMode(!isNightMode);
+  };
+
   const handleLocationSelect = (city: City) => {
-    // Close current modal if open
+    // Check if we're in compare mode and have a first city selected
+    const isInCompareMode = compareModeRef.current;
+    const firstCity = compareCity1Ref.current;
+    
+    if (isInCompareMode && firstCity && city.id !== firstCity.id) {
+      // Second city selected for comparison
+      setCompareCity2(city);
+      
+      // Find comparison data
+      const comparison = findComparison(firstCity.id, city.id);
+      if (comparison) {
+        // Use new comparison modal
+        setCurrentComparison(comparison);
+        setIsComparisonModalOpen(true);
+      } else {
+        // Fallback to old comparison view
+        setIsCompareOpen(true);
+      }
+      
+      // Reset compare mode
+      setIsCompareMode(false);
+      compareModeRef.current = false;
+      compareCity1Ref.current = null;
+      setFloatingMessage(null);
+      return; // Important: prevent falling through to normal city selection
+    } else if (isInCompareMode && firstCity && city.id === firstCity.id) {
+      // Same city clicked, show message
+      setFloatingMessage("Please select a different city to compare");
+      return; // Important: prevent falling through to normal city selection
+    }
+    
+    // Normal city selection - close current modal if open
     if (isPanelOpen) {
       setIsPanelOpen(false);
       setSelectedCity(null);
@@ -117,6 +235,14 @@ export default function Home() {
       setIsCompareOpen(false);
       setCompareCity1(null);
       setCompareCity2(null);
+    }
+    
+    // Close comparison modal if open
+    if (isComparisonModalOpen) {
+      setIsComparisonModalOpen(false);
+      setCompareCity1(null);
+      setCompareCity2(null);
+      setCurrentComparison(null);
     }
     
     setZoomToCity(city);
@@ -131,13 +257,57 @@ export default function Home() {
 
   return (
     <main className="relative min-h-screen bg-black overflow-hidden no-select">
-      {/* Search Bar */}
-      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-40 w-full max-w-md px-4">
-        <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
+      {/* Top Bar with Search and Theme Toggle */}
+      <div className="fixed top-6 left-0 right-0 z-40 px-4">
+        {/* Mobile Layout */}
+        <div className="flex items-center justify-between md:hidden">
+          {/* Search Bar */}
+          <div className="flex-1 max-w-md">
+            <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
+          </div>
+          
+          {/* Theme Toggle */}
+          <div className="ml-4">
+            <button
+              onClick={toggleTheme}
+              className="bg-gray-900/80 backdrop-blur-lg rounded-full p-3 border border-gray-700 hover:bg-gray-800/90 transition-colors"
+              aria-label={isNightMode ? "Switch to day mode" : "Switch to night mode"}
+            >
+              {isNightMode ? (
+                <Sun className="w-6 h-6 text-yellow-400" />
+              ) : (
+                <Moon className="w-6 h-6 text-blue-300" />
+              )}
+            </button>
+          </div>
+        </div>
+        
+        {/* Desktop Layout */}
+        <div className="hidden md:block relative">
+          {/* Centered Search Bar */}
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-md">
+            <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
+          </div>
+          
+          {/* Top Right Theme Toggle */}
+          <div className="absolute right-0 top-0">
+            <button
+              onClick={toggleTheme}
+              className="bg-gray-900/80 backdrop-blur-lg rounded-full p-3 border border-gray-700 hover:bg-gray-800/90 transition-colors"
+              aria-label={isNightMode ? "Switch to day mode" : "Switch to night mode"}
+            >
+              {isNightMode ? (
+                <Sun className="w-6 h-6 text-yellow-400" />
+              ) : (
+                <Moon className="w-6 h-6 text-blue-300" />
+              )}
+            </button>
+          </div>
+        </div>
       </div>
 
       {/* Globe */}
-      <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} zoomToCity={zoomToCity} />
+      <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} zoomToCity={zoomToCity} isNightMode={isNightMode} />
 
       {/* City Modal */}
       <CityModal
@@ -158,6 +328,13 @@ export default function Home() {
           onSelectSecondCity={handleSelectSecondCity}
         />
       )}
+
+      {/* Comparison Modal */}
+      <ComparisonModal
+        comparison={currentComparison}
+        isOpen={isComparisonModalOpen}
+        onClose={handleCloseComparisonModal}
+      />
 
       {/* Floating Message */}
       <FloatingMessage

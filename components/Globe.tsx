@@ -18,13 +18,13 @@ interface GlobeProps {
   onCityClick: (city: any) => void;
   selectedCity: any | null;
   zoomToCity?: any | null;
+  isNightMode?: boolean;
 }
 
-const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomToCity }) => {
+const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomToCity, isNightMode = false }) => {
   const globeEl = useRef<any>();
   const globeInstance = useRef<any>();
   const [isGlobeReady, setIsGlobeReady] = useState(false);
-  const [isNightMode, setIsNightMode] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
 
   // Stable click handler to prevent globe re-initialization
@@ -169,19 +169,16 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
     };
   }, [cities, isMobile]);
 
-  const toggleTheme = () => {
-    const newTheme = !isNightMode;
-    setIsNightMode(newTheme);
-    
-    // Update globe texture without reinitializing
+  // Update globe texture when theme changes
+  useEffect(() => {
     if (globeInstance.current) {
       globeInstance.current.globeImageUrl(
-        newTheme 
+        isNightMode 
           ? '//unpkg.com/three-globe/example/img/earth-night.jpg' 
           : '//unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
       );
     }
-  };
+  }, [isNightMode]);
 
   // Zoom to location function
   const zoomToLocation = useCallback((city: City) => {
@@ -205,21 +202,6 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
   return (
     <div className="fixed inset-0 z-0 no-select">
       <div ref={globeEl} className="no-select" />
-
-      {/* Theme Toggle */}
-      <div className="fixed md:top-6 bottom-6 right-6 z-30">
-        <button
-          onClick={toggleTheme}
-          className="bg-gray-900/80 backdrop-blur-lg rounded-full p-3 border border-gray-700 hover:bg-gray-800/90 transition-colors"
-          aria-label={isNightMode ? "Switch to day mode" : "Switch to night mode"}
-        >
-          {isNightMode ? (
-            <Sun className="w-6 h-6 text-yellow-400" />
-          ) : (
-            <Moon className="w-6 h-6 text-blue-300" />
-          )}
-        </button>
-      </div>
 
       {!isGlobeReady && (
 

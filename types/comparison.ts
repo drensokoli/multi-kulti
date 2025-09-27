@@ -1,5 +1,15 @@
 import { City } from './index';
 
+export interface CityComparison {
+  cities: string[];
+  overview: string;
+  population_diversity: string;
+  culture_lifestyle: string;
+  history_resilience: string;
+  modern_life_and_economy: string;
+  life_in_city: string;
+}
+
 export interface ComparisonSection {
   key: keyof City;
   title: string;
