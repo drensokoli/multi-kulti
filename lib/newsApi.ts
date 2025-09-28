@@ -47,8 +47,8 @@ interface NewsCache {
   };
 }
 
-// Cache duration: 60 minutes (in milliseconds)
-const CACHE_DURATION = 60 * 60 * 1000;
+// Cache duration: 24 hours (in milliseconds)
+const CACHE_DURATION = 60 * 24 * 60 * 1000;
 
 // Get cache from localStorage
 const getCache = (): NewsCache => {
@@ -66,7 +66,9 @@ const getCache = (): NewsCache => {
 const setCache = (cache: NewsCache): void => {
   if (typeof window === 'undefined') return;
   try {
+    console.log('Saving cache to localStorage:', cache);
     localStorage.setItem('multi-kulti-news-cache', JSON.stringify(cache));
+    console.log('Cache saved successfully');
   } catch (error) {
     console.warn('Failed to save news cache:', error);
   }
@@ -88,13 +90,10 @@ export const fetchCityNews = async (cityName: string, countryName: string): Prom
   const cache = getCache();
   
   if (cache[cacheKey] && isCacheValid(cache[cacheKey].timestamp)) {
-    console.log('Using cached news for:', cityName, countryName);
     return cache[cacheKey].articles;
   }
 
   try {
-    console.log('Fetching news for:', cityName, countryName);
-    
     // Call our internal API route
     const response = await fetch(`/api/news?city=${encodeURIComponent(cityName)}&country=${encodeURIComponent(countryName)}`);
     
@@ -105,8 +104,6 @@ export const fetchCityNews = async (cityName: string, countryName: string): Prom
     const data = await response.json();
     
     if (data.articles) {
-      console.log('Fetched articles:', data.articles);
-      
       // Save to cache
       const updatedCache = { ...cache };
       updatedCache[cacheKey] = {
@@ -114,11 +111,9 @@ export const fetchCityNews = async (cityName: string, countryName: string): Prom
         timestamp: Date.now()
       };
       setCache(updatedCache);
-      console.log('Cached news for:', cityName, countryName);
       
       return data.articles;
     } else {
-      console.error('No articles in response:', data);
       return [];
     }
     
@@ -131,7 +126,7 @@ export const fetchCityNews = async (cityName: string, countryName: string): Prom
 export const formatNewsDate = (dateString: string): string => {
   const date = new Date(dateString);
   const now = new Date();
-  const diffInHours = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60));
+  const diffInHours = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 24 * 60));
   
   if (diffInHours < 1) {
     return 'Just now';

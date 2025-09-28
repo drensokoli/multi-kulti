@@ -46,6 +46,7 @@ const CityModal: React.FC<CityModalProps> = ({
 
   // Helper function to create Google search link
   const createGoogleSearchLink = (query: string) => {
+    if (!city) return '';
     const encodedQuery = encodeURIComponent(`${query} ${city.name} ${city.country}`);
     return `https://www.google.com/search?q=${encodedQuery}`;
   };
@@ -103,7 +104,7 @@ const CityModal: React.FC<CityModalProps> = ({
           setIsLoadingNews(false);
         });
     }
-  }, [city, isOpen]);
+  }, [city?.id, city?.name, city?.country, isOpen]);
 
   if (!city) return null;
 

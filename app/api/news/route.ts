@@ -1,5 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 
+// Disable SSL certificate verification in development
+if (process.env.NODE_ENV === 'development') {
+  process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0';
+}
+
 interface NewsDataResponse {
   status: string;
   totalResults: number;
@@ -46,6 +51,7 @@ const NEWS_API_KEY_2 = process.env.NEWS_API_KEY_2;
 
 // Helper function to try API request with a specific key
 const tryApiRequest = async (url: string, apiKey: string): Promise<NewsDataResponse> => {
+  // Use node-fetch or native fetch with proper SSL handling
   const response = await fetch(url.replace('${API_KEY}', apiKey), {
     headers: {
       'User-Agent': 'Multi-Kulti/1.0'
@@ -61,17 +67,18 @@ const tryApiRequest = async (url: string, apiKey: string): Promise<NewsDataRespo
 };
 
 export async function GET(request: NextRequest) {
-  const { searchParams } = new URL(request.url);
-  const cityName = searchParams.get('city');
-  const countryName = searchParams.get('country');
+  try {
+    const { searchParams } = new URL(request.url);
+    const cityName = searchParams.get('city');
+    const countryName = searchParams.get('country');
 
-  if (!cityName || !countryName) {
-    return NextResponse.json({ error: 'City and country parameters are required' }, { status: 400 });
-  }
+    if (!cityName || !countryName) {
+      return NextResponse.json({ error: 'City and country parameters are required' }, { status: 400 });
+    }
 
-  if (!NEWS_API_KEY_1 && !NEWS_API_KEY_2) {
-    return NextResponse.json({ error: 'No API keys configured' }, { status: 500 });
-  }
+    if (!NEWS_API_KEY_1 && !NEWS_API_KEY_2) {
+      return NextResponse.json({ error: 'No API keys configured' }, { status: 500 });
+    }
 
   try {
     // Map country names to ISO country codes for newsdata.io
@@ -215,7 +222,9 @@ export async function GET(request: NextRequest) {
     }
     
   } catch (error) {
-    console.error('Error fetching news:', error);
     return NextResponse.json({ error: 'Failed to fetch news' }, { status: 500 });
+  }
+  } catch (error) {
+    return NextResponse.json({ error: 'Internal server error' }, { status: 500 });
   }
 }

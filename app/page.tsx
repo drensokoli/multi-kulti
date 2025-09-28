@@ -78,7 +78,7 @@ export default function Home() {
         const savedTime = new Date(timestamp);
         
         // If saved data is less than 1 hour old, use it
-        if (now.getTime() - savedTime.getTime() < 60 * 60 * 1000) {
+        if (now.getTime() - savedTime.getTime() < 60 * 24 * 60 * 1000) {
           setIsNightMode(savedIsNight);
           setIsThemeDetected(true);
           return;
