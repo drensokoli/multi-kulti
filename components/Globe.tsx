@@ -188,7 +188,7 @@ const Globe: React.FC<GlobeProps> = ({ cities, onCityClick, selectedCity, zoomTo
         lat: parseFloat(city.lat),
         lng: parseFloat(city.lng),
         altitude: 0.8 // Zoom level (0.8 is closer zoom for better city view)
-      }, 1200); // Animation duration in milliseconds
+      }, 800); // Animation duration in milliseconds (faster zoom)
     }
   }, []);
 

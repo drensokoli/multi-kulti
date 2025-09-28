@@ -16,6 +16,7 @@ interface CityModalProps {
   onClose: () => void;
   onCompare: (city: City) => void;
   isCompareMode: boolean;
+  position?: 'left' | 'right';
 }
 
 const CityModal: React.FC<CityModalProps> = ({
@@ -23,7 +24,8 @@ const CityModal: React.FC<CityModalProps> = ({
   isOpen,
   onClose,
   onCompare,
-  isCompareMode
+  isCompareMode,
+  position = 'left'
 }) => {
   if (!city) return null;
 
@@ -320,10 +322,23 @@ const CityModal: React.FC<CityModalProps> = ({
       {isOpen && (
         <motion.div
           data-modal
-          className="fixed left-2 sm:left-4 md:left-6 mt-24 h-[70vh] md:h-full transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[40vw] lg:w-[35vw] xl:w-[30vw] max-w-2xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 no-select"
-          initial={{ opacity: 0, x: -400 }}
-          animate={{ opacity: 1, x: 0 }}
-          exit={{ opacity: 0, x: -400 }}
+          className={`fixed mt-24 h-[70vh] md:h-full transform -translate-y-1/2 w-[calc(100vw-1rem)] sm:w-[calc(100vw-2rem)] md:w-[70vw] lg:w-[60vw] xl:w-[30vw] max-w-4xl min-w-80 sm:min-w-96 max-h-[85vh] sm:max-h-[80vh] bg-black/20 backdrop-blur-xl border border-white/10 rounded-xl sm:rounded-2xl z-30 no-select ${
+            position === 'left' 
+              ? 'left-2 sm:left-4 md:left-6' 
+              : 'right-2 sm:right-4 md:right-6'
+          }`}
+          initial={{ 
+            opacity: 0, 
+            x: position === 'left' ? -400 : 400 
+          }}
+          animate={{ 
+            opacity: 1, 
+            x: 0 
+          }}
+          exit={{ 
+            opacity: 0, 
+            x: position === 'left' ? -400 : 400 
+          }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
           onClick={(e) => e.stopPropagation()}
         >

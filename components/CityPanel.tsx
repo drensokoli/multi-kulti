@@ -190,7 +190,7 @@ const CityPanel: React.FC<CityPanelProps> = ({
 
           {/* Content */}
           <div className="p-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 xl:grid-cols-2 gap-6">
               {sections.map((section) => {
                 const IconComponent = section.icon;
                 return (

@@ -4,7 +4,6 @@ import React, { useState, useEffect } from 'react';
 import dynamic from 'next/dynamic';
 import type { City } from '@/types';
 import CityModal from '@/components/CityModal';
-import CompareView from '@/components/CompareView';
 import ComparisonModal from '@/components/ComparisonModal';
 import FloatingMessage from '@/components/FloatingMessage';
 import SearchBar from '@/components/SearchBar';
@@ -48,10 +47,17 @@ export default function Home() {
   const [zoomToCity, setZoomToCity] = useState<City | null>(null);
   const [isNightMode, setIsNightMode] = useState(false);
   
+  // State for second city modal
+  const [selectedCity2, setSelectedCity2] = useState<City | null>(null);
+  const [isPanel2Open, setIsPanel2Open] = useState(false);
+  
   // New state for comparison modal
   const [comparisonData, setComparisonData] = useState<CityComparison[]>([]);
   const [currentComparison, setCurrentComparison] = useState<CityComparison | null>(null);
   const [isComparisonModalOpen, setIsComparisonModalOpen] = useState(false);
+  
+  // State to track when second city is being processed
+  const [isProcessingSecondCity, setIsProcessingSecondCity] = useState(false);
   
   // Use refs to track current state for immediate access in click handlers
   const compareModeRef = React.useRef(false);
@@ -97,22 +103,70 @@ export default function Home() {
     if (isInCompareMode && firstCity && city.id !== firstCity.id) {
       // Second city selected for comparison
       setCompareCity2(city);
+      setIsProcessingSecondCity(true); // Hide compare buttons immediately
       
-      // Find comparison data
-      const comparison = findComparison(firstCity.id, city.id);
-      if (comparison) {
-        // Use new comparison modal
-        setCurrentComparison(comparison);
-        setIsComparisonModalOpen(true);
+      // Check if we're on mobile/tablet (screen width < 1280px)
+      const isMobile = window.innerWidth < 1280;
+      
+      if (isMobile) {
+        // Mobile: Use original comparison modal
+        const comparison = findComparison(firstCity.id, city.id);
+        if (comparison) {
+          setCurrentComparison(comparison);
+          setIsComparisonModalOpen(true);
+          // Reset compare mode after comparison modal opens
+          setIsCompareMode(false);
+          compareModeRef.current = false;
+          compareCity1Ref.current = null;
+          setIsProcessingSecondCity(false);
+        } else {
+          // Fallback to old comparison view
+          setIsCompareOpen(true);
+          // Reset compare mode after comparison view opens
+          setIsCompareMode(false);
+          compareModeRef.current = false;
+          compareCity1Ref.current = null;
+          setIsProcessingSecondCity(false);
+        }
       } else {
-        // Fallback to old comparison view
-        setIsCompareOpen(true);
+        // Desktop: Use new three-modal layout
+        // Zoom to second city first
+        setZoomToCity(city);
+        // Clear the zoom state after a short delay to allow for re-zooming to the same location
+        setTimeout(() => setZoomToCity(null), 100);
+        
+        // Open second city modal after zoom animation completes (800ms + small buffer)
+        setTimeout(() => {
+          setSelectedCity2(city);
+          setIsPanel2Open(true);
+        }, 900);
+        
+        // Find comparison data
+        const comparison = findComparison(firstCity.id, city.id);
+        if (comparison) {
+          // Use new comparison modal - delay to sync with city2 modal animation
+          setCurrentComparison(comparison);
+          setTimeout(() => {
+            setIsComparisonModalOpen(true);
+            // Reset compare mode after comparison modal opens
+            setIsCompareMode(false);
+            compareModeRef.current = false;
+            compareCity1Ref.current = null;
+            setIsProcessingSecondCity(false);
+          }, 1200); // 900ms (zoom) + 300ms (modal animation)
+        } else {
+          // Fallback to old comparison view
+          setTimeout(() => {
+            setIsCompareOpen(true);
+            // Reset compare mode after comparison view opens
+            setIsCompareMode(false);
+            compareModeRef.current = false;
+            compareCity1Ref.current = null;
+            setIsProcessingSecondCity(false);
+          }, 1200);
+        }
       }
       
-      // Reset compare mode
-      setIsCompareMode(false);
-      compareModeRef.current = false;
-      compareCity1Ref.current = null;
       setFloatingMessage(null);
       return; // Important: prevent falling through to normal city selection
     } else if (isInCompareMode && firstCity && city.id === firstCity.id) {
@@ -123,7 +177,9 @@ export default function Home() {
     
     // Normal city selection - close any open modals first
     setIsPanelOpen(false);
+    setIsPanel2Open(false);
     setSelectedCity(null);
+    setSelectedCity2(null);
     setIsCompareOpen(false);
     setIsComparisonModalOpen(false);
     setCompareCity1(null);
@@ -146,13 +202,54 @@ export default function Home() {
     compareModeRef.current = true;
     compareCity1Ref.current = city;
     
-    setIsPanelOpen(false);
+    // Check if we're on mobile/tablet (screen width < 1280px)
+    const isMobile = window.innerWidth < 1280;
+    
+    if (isMobile) {
+      // Mobile: Close the first city modal (original behavior)
+      setIsPanelOpen(false);
+    }
+    // Desktop: Keep the first city modal open (new behavior)
+    
     setFloatingMessage("Select another city to compare with " + city.name);
   };
 
   const handleClosePanel = () => {
+    // Close all modals
     setIsPanelOpen(false);
+    setIsPanel2Open(false);
+    setIsComparisonModalOpen(false);
     setSelectedCity(null);
+    setSelectedCity2(null);
+    setCurrentComparison(null);
+    setCompareCity1(null);
+    setCompareCity2(null);
+    setIsCompareMode(false);
+    setFloatingMessage(null);
+    setIsProcessingSecondCity(false);
+    
+    // Reset refs
+    compareModeRef.current = false;
+    compareCity1Ref.current = null;
+  };
+
+  const handleClosePanel2 = () => {
+    // Close all modals
+    setIsPanelOpen(false);
+    setIsPanel2Open(false);
+    setIsComparisonModalOpen(false);
+    setSelectedCity(null);
+    setSelectedCity2(null);
+    setCurrentComparison(null);
+    setCompareCity1(null);
+    setCompareCity2(null);
+    setIsCompareMode(false);
+    setFloatingMessage(null);
+    setIsProcessingSecondCity(false);
+    
+    // Reset refs
+    compareModeRef.current = false;
+    compareCity1Ref.current = null;
   };
 
   const handleCloseCompare = () => {
@@ -174,6 +271,12 @@ export default function Home() {
     setCompareCity2(null);
     setCurrentComparison(null);
     setFloatingMessage(null);
+    
+    // Close both city modals when comparison modal closes
+    setIsPanelOpen(false);
+    setIsPanel2Open(false);
+    setSelectedCity(null);
+    setSelectedCity2(null);
     
     // Reset refs
     compareModeRef.current = false;
@@ -201,21 +304,49 @@ export default function Home() {
       // Second city selected for comparison
       setCompareCity2(city);
       
-      // Find comparison data
-      const comparison = findComparison(firstCity.id, city.id);
-      if (comparison) {
-        // Use new comparison modal
-        setCurrentComparison(comparison);
-        setIsComparisonModalOpen(true);
+      // Check if we're on mobile/tablet (screen width < 1280px)
+      const isMobile = window.innerWidth < 1280;
+      
+      if (isMobile) {
+        // Mobile: Use original comparison modal
+        const comparison = findComparison(firstCity.id, city.id);
+        if (comparison) {
+          setCurrentComparison(comparison);
+          setIsComparisonModalOpen(true);
+        } else {
+          // Fallback to old comparison view
+          setIsCompareOpen(true);
+        }
       } else {
-        // Fallback to old comparison view
-        setIsCompareOpen(true);
+        // Desktop: Use new three-modal layout
+        // Zoom to second city first
+        setZoomToCity(city);
+        // Clear the zoom state after a short delay to allow for re-zooming to the same location
+        setTimeout(() => setZoomToCity(null), 100);
+        
+        // Open second city modal after zoom animation completes (800ms + small buffer)
+        setTimeout(() => {
+          setSelectedCity2(city);
+          setIsPanel2Open(true);
+        }, 900);
+        
+        // Find comparison data
+        const comparison = findComparison(firstCity.id, city.id);
+        if (comparison) {
+          // Use new comparison modal - delay to sync with city2 modal animation
+          setCurrentComparison(comparison);
+          setTimeout(() => {
+            setIsComparisonModalOpen(true);
+          }, 1200); // 900ms (zoom) + 300ms (modal animation)
+        } else {
+          // Fallback to old comparison view
+          setTimeout(() => {
+            setIsCompareOpen(true);
+          }, 1200);
+        }
       }
       
-      // Reset compare mode
-      setIsCompareMode(false);
-      compareModeRef.current = false;
-      compareCity1Ref.current = null;
+      // Don't reset compare mode yet - keep buttons hidden until comparison modal opens
       setFloatingMessage(null);
       return; // Important: prevent falling through to normal city selection
     } else if (isInCompareMode && firstCity && city.id === firstCity.id) {
@@ -245,6 +376,12 @@ export default function Home() {
       setCurrentComparison(null);
     }
     
+    // Close second city modal if open
+    if (isPanel2Open) {
+      setIsPanel2Open(false);
+      setSelectedCity2(null);
+    }
+    
     setZoomToCity(city);
     // Clear the zoom state after a short delay to allow for re-zooming to the same location
     setTimeout(() => setZoomToCity(null), 100);
@@ -258,9 +395,9 @@ export default function Home() {
   return (
     <main className="relative min-h-screen bg-black overflow-hidden no-select">
       {/* Top Bar with Search and Theme Toggle */}
-      <div className="fixed top-6 left-0 right-0 z-40 px-4">
+      <div className="fixed top-6 left-0 right-0 z-50 px-4">
         {/* Mobile Layout */}
-        <div className="flex items-center justify-between md:hidden">
+        <div className="flex items-center justify-between xl:hidden">
           {/* Search Bar */}
           <div className="flex-1 max-w-md">
             <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
@@ -283,7 +420,7 @@ export default function Home() {
         </div>
         
         {/* Desktop Layout */}
-        <div className="hidden md:block relative">
+        <div className="hidden xl:block relative">
           {/* Centered Search Bar */}
           <div className="absolute left-1/2 transform -translate-x-1/2 w-full max-w-md">
             <SearchBar cities={cities} onLocationSelect={handleLocationSelect} />
@@ -309,25 +446,28 @@ export default function Home() {
       {/* Globe */}
       <Globe cities={cities} onCityClick={handleCityClick} selectedCity={selectedCity} zoomToCity={zoomToCity} isNightMode={isNightMode} />
 
-      {/* City Modal */}
+      {/* First City Modal (Left) */}
       <CityModal
         city={selectedCity}
         isOpen={isPanelOpen}
         onClose={handleClosePanel}
         onCompare={handleCompare}
-        isCompareMode={isCompareMode}
+        isCompareMode={isCompareMode || isComparisonModalOpen || isPanel2Open || isProcessingSecondCity} // Hide compare button when comparison modal is open or second city modal is open or processing second city
+        position="left"
       />
 
-      {/* Compare View */}
-      {compareCity1 && (
-        <CompareView
-          city1={compareCity1}
-          city2={compareCity2}
-          isOpen={isCompareOpen}
-          onClose={handleCloseCompare}
-          onSelectSecondCity={handleSelectSecondCity}
+      {/* Second City Modal (Right) - Desktop only */}
+      <div className="hidden xl:block">
+        <CityModal
+          city={selectedCity2}
+          isOpen={isPanel2Open}
+          onClose={handleClosePanel2}
+          onCompare={() => {}} // No compare button for second city
+          isCompareMode={isComparisonModalOpen || isPanelOpen || isProcessingSecondCity} // Hide compare button when comparison modal is open or first city modal is open or processing second city
+          position="right"
         />
-      )}
+      </div>
+
 
       {/* Comparison Modal */}
       <ComparisonModal
