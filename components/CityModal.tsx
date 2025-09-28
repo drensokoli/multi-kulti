@@ -1,14 +1,27 @@
 "use client";
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { 
   X, Users, Utensils, History, Shield, Building2, Mountain, GraduationCap, 
-  Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, Heart 
+  Globe2, Landmark, UsersRound, Music2, Trophy, Star, Sparkles, Heart, 
+  Newspaper, ExternalLink, Clock
 } from 'lucide-react';
 import type { City } from '@/types';
 import { getCountryFlag } from '@/lib/utils';
+import { fetchCityNews, formatNewsDate } from '@/lib/newsApi';
 
+
+interface NewsArticle {
+  title: string;
+  description: string;
+  url: string;
+  urlToImage: string | null;
+  publishedAt: string;
+  source: {
+    name: string;
+  };
+}
 
 interface CityModalProps {
   city: City | null;
@@ -27,7 +40,9 @@ const CityModal: React.FC<CityModalProps> = ({
   isCompareMode,
   position = 'left'
 }) => {
-  if (!city) return null;
+  const [newsArticles, setNewsArticles] = useState<NewsArticle[]>([]);
+  const [isLoadingNews, setIsLoadingNews] = useState(false);
+  const [newsError, setNewsError] = useState<string | null>(null);
 
   // Helper function to create Google search link
   const createGoogleSearchLink = (query: string) => {
@@ -70,6 +85,28 @@ const CityModal: React.FC<CityModalProps> = ({
     return num.toString();
   };
 
+  // Fetch news when city changes
+  useEffect(() => {
+    if (city && isOpen) {
+      setIsLoadingNews(true);
+      setNewsError(null);
+      
+      fetchCityNews(city.name, city.country)
+        .then(articles => {
+          setNewsArticles(articles);
+        })
+        .catch(error => {
+          console.error('Error fetching news:', error);
+          setNewsError('Failed to load news');
+        })
+        .finally(() => {
+          setIsLoadingNews(false);
+        });
+    }
+  }, [city, isOpen]);
+
+  if (!city) return null;
+
 
   const sections = [
     {
@@ -101,6 +138,75 @@ const CityModal: React.FC<CityModalProps> = ({
         </div>
       ),
       color: 'text-blue-400'
+    },
+    {
+      key: 'news',
+      title: 'Latest News',
+      icon: Newspaper,
+      content: (
+        <div className="space-y-3">
+          {isLoadingNews ? (
+            <div className="flex items-center justify-center py-4">
+              <div className="animate-spin rounded-full h-6 w-6 border-b-2 border-blue-400"></div>
+              <span className="ml-2 text-sm text-gray-400">Loading news...</span>
+            </div>
+          ) : newsError ? (
+            <div className="text-center py-4">
+              <p className="text-sm text-gray-500">{newsError}</p>
+            </div>
+          ) : newsArticles.length > 0 ? (
+            newsArticles.map((article, index) => (
+              <div key={index} className="bg-white/5 rounded-lg p-3 group">
+                <div className="flex items-start gap-3">
+                  {article.urlToImage && (
+                    <div className="flex-shrink-0 w-16 h-16 rounded-lg overflow-hidden">
+                      <img 
+                        src={article.urlToImage} 
+                        alt={article.title}
+                        className="w-full h-full object-cover"
+                        onError={(e) => {
+                          (e.target as HTMLImageElement).style.display = 'none';
+                        }}
+                      />
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <div className="flex items-start justify-between gap-2">
+                      <h4 className="font-medium text-sm text-white line-clamp-2 group-hover:text-blue-300 transition-colors">
+                        {article.title}
+                      </h4>
+                      <a 
+                        href={article.url} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity duration-200 text-gray-400 hover:text-blue-400"
+                      >
+                        <ExternalLink size={14} />
+                      </a>
+                    </div>
+                    {article.description && (
+                      <p className="text-gray-300 text-xs mt-1 line-clamp-2">
+                        {article.description}
+                      </p>
+                    )}
+                    <div className="flex items-center gap-2 mt-2 text-xs text-gray-400">
+                      <Clock size={12} />
+                      <span>{formatNewsDate(article.publishedAt)}</span>
+                      <span>•</span>
+                      <span>{article.source.name}</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            ))
+          ) : (
+            <div className="text-center py-4">
+              <p className="text-sm text-gray-500">No recent news found for this city</p>
+            </div>
+          )}
+        </div>
+      ),
+      color: 'text-orange-400'
     },
     {
       key: 'culture',

@@ -134,14 +134,20 @@ const ComparisonModal: React.FC<ComparisonModalProps> = ({
                       <ArrowLeftRight className="text-purple-400" size={20} />
                       <h1 className="text-xl sm:text-2xl font-bold text-white truncate">City Compare</h1>
                     </div>
-                    <div className="flex items-center gap-2 mb-3">
-                      <span className="text-base sm:text-lg text-gray-300">{city1Name}</span>
+                    <div className="flex items-center gap-2 mb-2">
+                      <span className="text-base sm:text-md text-gray-300">{city1Name}</span>
                       <span className="text-gray-500">&</span>
-                      <span className="text-base sm:text-lg text-gray-300">{city2Name}</span>
+                      <span className="text-base sm:text-md text-gray-300">{city2Name}</span>
                     </div>
-                    <p className="text-gray-400 text-xs leading-relaxed">
-                      Explore the unique character and shared experiences of these two cities
-                    </p>
+                    <div className="flex flex-col gap-1">
+                      <div className="flex items-center gap-2">
+                        <div className="w-2 h-2 bg-purple-400 rounded-full"></div>
+                        <span className="text-gray-400 text-xs">Side-by-side comparison</span>
+                      </div>
+                      <p className="text-gray-400 text-xs leading-relaxed">
+                        Explore the unique character and shared experiences of these two cities
+                      </p>
+                    </div>
                   </div>
                   <div className="flex gap-2 ml-4">
                     <button
@@ -168,8 +174,8 @@ const ComparisonModal: React.FC<ComparisonModalProps> = ({
                         <div className="space-y-2 sm:space-y-3">
                           {section.content.map((item, index) => (
                             <div key={index}>
-                              <h3 className="text-xs font-medium mb-1 text-gray-300">{item.subtitle}</h3>
-                              <p className="text-gray-300 text-xs leading-relaxed">{item.text}</p>
+                              <h3 className="text-sm font-medium mb-1 text-gray-300">{item.subtitle}</h3>
+                              <p className="text-gray-300 text-sm leading-relaxed">{item.text}</p>
                             </div>
                           ))}
                         </div>

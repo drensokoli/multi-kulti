@@ -11,7 +11,7 @@ const agent = new https.Agent({
 });
 
 const openai = new OpenAI({
-  apiKey: "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",
+  apiKey: "",
   httpAgent: agent,
 });
 
