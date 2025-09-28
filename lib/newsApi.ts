@@ -39,9 +39,6 @@ interface NewsDataResponse {
   }>;
 }
 
-const NEWS_API_KEY_1 = process.env.NEXT_PUBLIC_NEWS_API_KEY_1;
-const NEWS_API_KEY_2 = process.env.NEXT_PUBLIC_NEWS_API_KEY_2;
-
 // Cache interface
 interface NewsCache {
   [key: string]: {
@@ -85,28 +82,7 @@ const isCacheValid = (timestamp: number): boolean => {
   return Date.now() - timestamp < CACHE_DURATION;
 };
 
-// Helper function to try API request with a specific key
-const tryApiRequest = async (url: string, apiKey: string): Promise<NewsDataResponse> => {
-  const response = await fetch(url.replace('${API_KEY}', apiKey), {
-    headers: {
-      'User-Agent': 'Multi-Kulti/1.0'
-    }
-  });
-
-  if (!response.ok) {
-    const errorText = await response.text();
-    throw new Error(`API request failed: ${response.status} - ${errorText}`);
-  }
-
-  return response.json();
-};
-
 export const fetchCityNews = async (cityName: string, countryName: string): Promise<NewsArticle[]> => {
-  if (!NEWS_API_KEY_1 && !NEWS_API_KEY_2) {
-    console.warn('No News API keys found');
-    return [];
-  }
-
   // Check cache first
   const cacheKey = getCacheKey(cityName, countryName);
   const cache = getCache();
@@ -117,166 +93,32 @@ export const fetchCityNews = async (cityName: string, countryName: string): Prom
   }
 
   try {
-    // Map country names to ISO country codes for newsdata.io
-    const countryCodeMap: { [key: string]: string } = {
-      'Kosovo': 'xk',
-      'United States': 'us',
-      'United Kingdom': 'gb',
-      'Germany': 'de',
-      'France': 'fr',
-      'Italy': 'it',
-      'Spain': 'es',
-      'Netherlands': 'nl',
-      'Belgium': 'be',
-      'Switzerland': 'ch',
-      'Austria': 'at',
-      'Sweden': 'se',
-      'Norway': 'no',
-      'Denmark': 'dk',
-      'Finland': 'fi',
-      'Poland': 'pl',
-      'Czech Republic': 'cz',
-      'Hungary': 'hu',
-      'Romania': 'ro',
-      'Bulgaria': 'bg',
-      'Greece': 'gr',
-      'Turkey': 'tr',
-      'Russia': 'ru',
-      'Ukraine': 'ua',
-      'Japan': 'jp',
-      'South Korea': 'kr',
-      'China': 'cn',
-      'India': 'in',
-      'Australia': 'au',
-      'Canada': 'ca',
-      'Brazil': 'br',
-      'Argentina': 'ar',
-      'Mexico': 'mx',
-      'South Africa': 'za',
-      'Egypt': 'eg',
-      'Nigeria': 'ng',
-      'Kenya': 'ke',
-      'Morocco': 'ma',
-      'Tunisia': 'tn',
-      'Algeria': 'dz',
-      'Israel': 'il',
-      'Saudi Arabia': 'sa',
-      'United Arab Emirates': 'ae',
-      'Qatar': 'qa',
-      'Kuwait': 'kw',
-      'Bahrain': 'bh',
-      'Oman': 'om',
-      'Jordan': 'jo',
-      'Lebanon': 'lb',
-      'Syria': 'sy',
-      'Iraq': 'iq',
-      'Iran': 'ir',
-      'Afghanistan': 'af',
-      'Pakistan': 'pk',
-      'Bangladesh': 'bd',
-      'Sri Lanka': 'lk',
-      'Nepal': 'np',
-      'Bhutan': 'bt',
-      'Myanmar': 'mm',
-      'Thailand': 'th',
-      'Vietnam': 'vn',
-      'Cambodia': 'kh',
-      'Laos': 'la',
-      'Malaysia': 'my',
-      'Singapore': 'sg',
-      'Indonesia': 'id',
-      'Philippines': 'ph',
-      'Taiwan': 'tw',
-      'Hong Kong': 'hk',
-      'Macau': 'mo',
-      'New Zealand': 'nz',
-      'Fiji': 'fj',
-      'Papua New Guinea': 'pg',
-      'Chile': 'cl',
-      'Peru': 'pe',
-      'Colombia': 'co',
-      'Venezuela': 've',
-      'Ecuador': 'ec',
-      'Bolivia': 'bo',
-      'Paraguay': 'py',
-      'Uruguay': 'uy',
-      'Guyana': 'gy',
-      'Suriname': 'sr',
-      'French Guiana': 'gf'
-    };
-
-    const countryCode = countryCodeMap[countryName] || countryName.toLowerCase();
-    
-    // Use newsdata.io API with placeholder for key rotation
-    const url = `https://newsdata.io/api/1/latest?apikey=\${API_KEY}&q=${encodeURIComponent(cityName)}&country=${countryCode}&size=3`;
-    
     console.log('Fetching news for:', cityName, countryName);
-    console.log('Country code:', countryCode);
     
-    let data: NewsDataResponse | undefined;
-    let lastError: Error | null = null;
+    // Call our internal API route
+    const response = await fetch(`/api/news?city=${encodeURIComponent(cityName)}&country=${encodeURIComponent(countryName)}`);
     
-    // Try API key 1 first
-    if (NEWS_API_KEY_1) {
-      try {
-        console.log('Trying API key 1...');
-        data = await tryApiRequest(url, NEWS_API_KEY_1);
-        console.log('API key 1 successful');
-      } catch (error) {
-        console.warn('API key 1 failed:', error);
-        lastError = error as Error;
-      }
+    if (!response.ok) {
+      throw new Error(`API request failed: ${response.status}`);
     }
     
-    // If API key 1 failed or doesn't exist, try API key 2
-    if (!data && NEWS_API_KEY_2) {
-      try {
-        console.log('Trying API key 2...');
-        data = await tryApiRequest(url, NEWS_API_KEY_2);
-        console.log('API key 2 successful');
-      } catch (error) {
-        console.warn('API key 2 failed:', error);
-        lastError = error as Error;
-      }
-    }
+    const data = await response.json();
     
-    // If both keys failed, throw the last error
-    if (!data) {
-      throw lastError || new Error('All API keys failed');
-    }
-    
-    console.log('News API response:', data);
-    
-    if (data.status === 'success') {
-      const articles: NewsArticle[] = data.results.map(article => ({
-        title: article.title,
-        description: article.description,
-        url: article.link,
-        urlToImage: article.image_url,
-        publishedAt: article.pubDate,
-        source: {
-          name: article.source_id
-        }
-      })).filter(article => 
-        article.title && 
-        article.url && 
-        !article.title.includes('[Removed]')
-      );
-      
-      console.log('Mapped articles:', articles);
+    if (data.articles) {
+      console.log('Fetched articles:', data.articles);
       
       // Save to cache
       const updatedCache = { ...cache };
       updatedCache[cacheKey] = {
-        articles,
+        articles: data.articles,
         timestamp: Date.now()
       };
       setCache(updatedCache);
       console.log('Cached news for:', cityName, countryName);
       
-      return articles;
+      return data.articles;
     } else {
-      console.error('News API returned error status:', data.status);
+      console.error('No articles in response:', data);
       return [];
     }
     
