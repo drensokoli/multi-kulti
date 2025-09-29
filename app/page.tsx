@@ -7,6 +7,7 @@ import CityModal from '@/components/CityModal';
 import ComparisonModal from '@/components/ComparisonModal';
 import FloatingMessage from '@/components/FloatingMessage';
 import SearchBar from '@/components/SearchBar';
+import Footer from '@/components/Footer';
 import { Globe as GlobeIcon, Moon, Sun, MapPin, MoreVertical, X } from 'lucide-react';
 
 // Dynamically import Globe to avoid SSR issues
@@ -701,6 +702,9 @@ export default function Home() {
         message={floatingMessage}
         onDismiss={handleDismissMessage}
       />
+
+      {/* Footer */}
+      <Footer />
     </main>
   );
 }
