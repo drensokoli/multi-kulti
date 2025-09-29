@@ -7,11 +7,15 @@
     "lat": "59.3293",
     "lng": "18.0686",
     "fun_fact": "Stockholm is built on 14 islands connected by 57 bridges, earning it the nickname \"Venice of the North.\" The city has more museums per capita than any other city in the world, and its medieval old town, Gamla Stan, features buildings dating back to the 13th century with narrow cobblestone streets barely wide enough for modern cars.",
-    "images": ["https://plus.unsplash.com/premium_photo-1697729828023-35f1eb84db3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1697729828023-35f1eb84db3e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Swedish Krona",
-      "symbol": "kr, SEK" 
+      "symbol": "kr, SEK"
     },
     "city_size": "188",
     "population_size": "975,551",
@@ -117,11 +121,15 @@
     "lat": "42.6629",
     "lng": "21.1655",
     "fun_fact": "Prishtina is home to the youngest population in Europe, with over 60% of residents under 35 years old. The city features a controversial statue of Bill Clinton on Bill Clinton Boulevard, honoring the former US president for his role in Kosovo's independence. Despite being Europe's youngest capital, archaeological evidence shows continuous settlement for over 10,000 years.",
-    "images": ["https://prishtinainsight.com/wp-content/uploads/2022/08/IMG-8230.jpg"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://prishtinainsight.com/wp-content/uploads/2022/08/IMG-8230.jpg"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "572",
     "population_size": "200,000",
@@ -226,11 +234,15 @@
     "lat": "43.8563",
     "lng": "18.4131",
     "fun_fact": "Sarajevo hosted the 1984 Winter Olympics and is where World War I began with the assassination of Archduke Franz Ferdinand in 1914. The city uniquely blends four major religions within walking distance - you can visit a mosque, Catholic cathedral, Orthodox church, and synagogue all within a few blocks of each other in the old town.",
-    "images": ["https://webassets.transavia.com/78ae936f-d39d-01b0-c3ef-dc738304142f/472cea8d-c842-4343-8c2f-1e5ee7f43acd/Sarajevo.jpg?w=2200&h=1375&fm=jpg&auto=format"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://webassets.transavia.com/78ae936f-d39d-01b0-c3ef-dc738304142f/472cea8d-c842-4343-8c2f-1e5ee7f43acd/Sarajevo.jpg?w=2200&h=1375&fm=jpg&auto=format"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Convertible Mark",
-      "symbol": "KM, BAM" 
+      "symbol": "KM, BAM"
     },
     "city_size": "141.5",
     "population_size": "275,524",
@@ -338,11 +350,15 @@
     "lat": "41.3275",
     "lng": "19.8187",
     "fun_fact": "Tirana's buildings were painted in vibrant colors by artist-turned-mayor Edi Rama in the early 2000s to combat post-communist depression and urban decay. The city center features a massive pyramid built as a museum for communist dictator Enver Hoxha, which locals now use as an unconventional climbing structure and event space.",
-    "images": ["https://albaniannight.com/wp-content/uploads/2025/01/4_Incredible_Hikes-e1737650301509.jpeg"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://albaniannight.com/wp-content/uploads/2025/01/4_Incredible_Hikes-e1737650301509.jpeg"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Albanian lek",
-      "symbol": "L, ALL" 
+      "symbol": "L, ALL"
     },
     "city_size": "41.8",
     "population_size": "418,495",
@@ -446,11 +462,15 @@
     "lat": "52.5200",
     "lng": "13.4050",
     "fun_fact": "Berlin has more bridges than Venice - over 1,700 compared to Venice's 400. The city's underground bunker system is so extensive that it's estimated to contain enough space to house the entire population. East Berlin's TV Tower was designed to be atheist, but sunlight creates a cross reflection on its sphere, which West Berliners nicknamed \"the Pope's revenge.\"",
-    "images": ["https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/2560px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg/2560px-Museumsinsel_Berlin_Juli_2021_1_%28cropped%29_b.jpg"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "891.8",
     "population_size": "3,600,000",
@@ -556,11 +576,15 @@
     "lat": "48.8566",
     "lng": "2.3522",
     "fun_fact": "Paris has more dog waste on its streets than any other major city, employing special green-uniformed cleaning crews with motorcycles. The Louvre was originally a fortress and royal palace before becoming the world's most visited museum. Beneath the city lies a network of catacombs holding the remains of over 6 million people in carefully arranged bone displays.",
-    "images": ["https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1024"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://www.royalcaribbean.com/media-assets/pmc/content/dam/shore-x/paris-le-havre-leh/lh17-paris-sightseeing-without-lunch/stock-photo-skyline-of-paris-with-eiffel-tower-at-sunset-in-paris-france-eiffel-tower-is-one-of-the-most-752725282.jpg?w=1024"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "105",
     "population_size": "2,100,000",
@@ -666,11 +690,15 @@
     "lat": "51.5074",
     "lng": "-0.1278",
     "fun_fact": "London's Underground system is older than the country of Italy - the first line opened in 1863. The city has four World Heritage Sites and more languages spoken than any other city globally (over 300). Big Ben actually refers to the bell inside the clock tower, not the tower itself, which is officially called Elizabeth Tower.",
-    "images": ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f5/de/london.jpg?w=1400&h=1400&s=1"],
-    "timezones": ["British Summer Time, GMT+1"],
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/33/f5/de/london.jpg?w=1400&h=1400&s=1"
+    ],
+    "timezones": [
+      "British Summer Time, GMT+1"
+    ],
     "currency": {
       "name": "Pound Sterling",
-      "symbol": "£, GBP" 
+      "symbol": "£, GBP"
     },
     "city_size": "1,572",
     "population_size": "9,000,000",
@@ -777,11 +805,15 @@
     "lat": "41.9028",
     "lng": "12.4964",
     "fun_fact": "Rome has a cat sanctuary in the ruins of Largo di Torre Argentina, where Julius Caesar was assassinated, housing over 300 cats cared for by volunteers. The city contains an entire country within it (Vatican City) and has more fountains than any other city in the world - over 2,000, including the famous Trevi Fountain where tourists throw €3,000 daily.",
-    "images": ["https://media.istockphoto.com/id/1382341359/photo/rome-italy-view-towards-the-colosseum.jpg?s=612x612&w=0&k=20&c=BaaiJU9SBB3Ed-yFzLUWeIFosYoeUASfHfrrO4HrhuM="],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://media.istockphoto.com/id/1382341359/photo/rome-italy-view-towards-the-colosseum.jpg?s=612x612&w=0&k=20&c=BaaiJU9SBB3Ed-yFzLUWeIFosYoeUASfHfrrO4HrhuM="
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "1,285",
     "population_size": "2,800,000",
@@ -884,11 +916,15 @@
     "lat": "40.4168",
     "lng": "-3.7038",
     "fun_fact": "Madrid is the highest capital city in Europe at 2,100 feet above sea level and has more sunny days per year than almost any other European capital. The city's Prado Museum houses the world's largest collection of Spanish art, and Madrid's metro system is the second longest in Europe with stations featuring unique artwork and archaeological displays.",
-    "images": ["https://plus.unsplash.com/premium_photo-1697730214411-90916c40f30d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1697730214411-90916c40f30d?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "604.3",
     "population_size": "3,300,000",
@@ -995,11 +1031,15 @@
     "lat": "55.7558",
     "lng": "37.6173",
     "fun_fact": "Moscow's metro system doubles as an underground art museum, with stations featuring chandeliers, mosaics, and marble that Stalin called \"palaces for the people.\" The city has more billionaires than any other city except New York, and the Kremlin walls contain 20 towers, each with its own unique history and architectural style dating back to the 15th century.",
-    "images": ["https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180221133754/iStock-155388926.jpg"],
-    "timezones": ["Moscow Standard Time, GMT+3"],
+    "images": [
+      "https://d2rdhxfof4qmbb.cloudfront.net/wp-content/uploads/20180221133754/iStock-155388926.jpg"
+    ],
+    "timezones": [
+      "Moscow Standard Time, GMT+3"
+    ],
     "currency": {
       "name": "Russian Ruble",
-      "symbol": "₽, RUB" 
+      "symbol": "₽, RUB"
     },
     "city_size": "2,511",
     "population_size": "12,600,000",
@@ -1105,11 +1145,15 @@
     "lat": "35.6895",
     "lng": "139.6917",
     "fun_fact": "Tokyo has more Michelin-starred restaurants than Paris and New York combined - over 400 establishments. The city's Tsukiji Fish Market handles 660,000 tons of seafood annually, and Tokyo Station has so many underground passages and exits that people regularly get lost for hours in what locals call the \"dungeon\" beneath the building.",
-    "images": ["https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1390815938?_a=BAVAZGID0"],
-    "timezones": ["Japan Standard Time, GMT+9"],
+    "images": [
+      "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/gettyimages-1390815938?_a=BAVAZGID0"
+    ],
+    "timezones": [
+      "Japan Standard Time, GMT+9"
+    ],
     "currency": {
       "name": "Japanese Yen",
-      "symbol": "¥, JPY" 
+      "symbol": "¥, JPY"
     },
     "city_size": "2,194",
     "population_size": "13,000,000",
@@ -1213,11 +1257,15 @@
     "lat": "37.5665",
     "lng": "126.9780",
     "fun_fact": "Seoul has the world's largest subway system by annual ridership, carrying over 2.5 billion passengers yearly through stations featuring virtual stores where you can shop by scanning QR codes. The city transforms the Cheonggyecheon stream into a beautiful urban oasis that runs through downtown, and 85% of residents live in high-rise apartments, creating a unique vertical cityscape.",
-    "images": ["https://www.agoda.com/wp-content/uploads/2024/08/Namsan-Tower-during-autumn-in-Seoul-South-Korea-1244x700.jpg"],
-    "timezones": ["Korea Standard Time, GMT+9"],
+    "images": [
+      "https://www.agoda.com/wp-content/uploads/2024/08/Namsan-Tower-during-autumn-in-Seoul-South-Korea-1244x700.jpg"
+    ],
+    "timezones": [
+      "Korea Standard Time, GMT+9"
+    ],
     "currency": {
       "name": "South Korean Won",
-      "symbol": "₩, KRW" 
+      "symbol": "₩, KRW"
     },
     "city_size": "605.21",
     "population_size": "9,700,000",
@@ -1323,11 +1371,15 @@
     "lat": "28.7041",
     "lng": "77.1025",
     "fun_fact": "Delhi serves as India's capital but is actually a union territory containing two cities: New Delhi (the planned capital) and Old Delhi (the historic Mughal city). The city's Red Fort took 10 years to build and contains a secret underground tunnel system. Delhi's air pollution is so severe that breathing it for one day equals smoking 25 cigarettes.",
-    "images": ["https://cdn.getyourguide.com/img/location/533591d4b943b.jpeg/99.jpg"],
-    "timezones": ["India Standard Time, GMT+5:30"],
+    "images": [
+      "https://cdn.getyourguide.com/img/location/533591d4b943b.jpeg/99.jpg"
+    ],
+    "timezones": [
+      "India Standard Time, GMT+5:30"
+    ],
     "currency": {
       "name": "Indian Rupee",
-      "symbol": "₹, INR" 
+      "symbol": "₹, INR"
     },
     "city_size": "1,484.0",
     "population_size": "31,000,000",
@@ -1436,11 +1488,15 @@
     "lat": "13.7563",
     "lng": "100.5018",
     "fun_fact": "Bangkok's full ceremonial name contains 169 letters, making it the longest city name in the world according to Guinness World Records. The city is built on marshland and sinks 2-5 centimeters annually, earning it the nickname \"Venice of the East\" for its extensive canal system. Over 35,000 street food vendors serve some of the world's best cuisine at incredibly affordable prices.",
-    "images": ["https://static.independent.co.uk/2025/01/03/14/newFile-12.jpg"],
-    "timezones": ["Indochina Time, GMT+7"],
+    "images": [
+      "https://static.independent.co.uk/2025/01/03/14/newFile-12.jpg"
+    ],
+    "timezones": [
+      "Indochina Time, GMT+7"
+    ],
     "currency": {
       "name": "Thai Baht",
-      "symbol": "฿, THB" 
+      "symbol": "฿, THB"
     },
     "city_size": "1,568.7",
     "population_size": "10,539,000",
@@ -1543,11 +1599,15 @@
     "lat": "40.7128",
     "lng": "-74.0060",
     "fun_fact": "New York's Central Park is larger than the principality of Monaco and was entirely man-made, requiring the relocation of 1,600 residents. The city has over 13,000 yellow taxis, and its subway system never closes - it's one of only four metro systems worldwide that operates 24/7. More languages are spoken in Queens than anywhere else on Earth.",
-    "images": ["https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/new-york/shutterstock_2142178205_yxfbc3?_a=BAVAZGE70"],
-    "timezones": ["Eastern Daylight Time, GMT-4"],
+    "images": [
+      "https://res.cloudinary.com/dtljonz0f/image/upload/c_auto,ar_4:3,w_3840,g_auto/f_auto/q_auto/v1/gc-v1/new-york/shutterstock_2142178205_yxfbc3?_a=BAVAZGE70"
+    ],
+    "timezones": [
+      "Eastern Daylight Time, GMT-4"
+    ],
     "currency": {
       "name": "United States Dollar",
-      "symbol": "$, USD" 
+      "symbol": "$, USD"
     },
     "city_size": "783.8",
     "population_size": "8,336,817",
@@ -1654,11 +1714,15 @@
     "lat": "34.0522",
     "lng": "-118.2437",
     "fun_fact": "Los Angeles has more cars than people - approximately 6.4 million vehicles for 4 million residents, creating the world's most complex freeway system with over 527 miles of interstate highways. The city's Hollywood sign originally read \"Hollywoodland\" and was built as a real estate advertisement in 1923, intended to last only 18 months but becoming an eternal icon.",
-    "images": ["https://images.unsplash.com/photo-1580655653885-65763b2597d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Pacific Daylight Time, GMT-7"],
+    "images": [
+      "https://images.unsplash.com/photo-1580655653885-65763b2597d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Pacific Daylight Time, GMT-7"
+    ],
     "currency": {
       "name": "United States Dollar",
-      "symbol": "$, USD" 
+      "symbol": "$, USD"
     },
     "city_size": "1,302",
     "population_size": "4,000,000",
@@ -1765,11 +1829,15 @@
     "lat": "37.7749",
     "lng": "-122.4194",
     "fun_fact": "San Francisco's famous cable cars are the world's last manually operated cable car system and are considered moving national monuments. The city sits on over 40 hills, with Lombard Street featuring eight hairpin turns in a single block, making it \"the most crooked street in the world.\" Alcatraz Island's prison was considered escape-proof due to frigid waters and strong currents.",
-    "images": ["https://www.sftravel.com/sites/default/files/styles/horizontal_3_2/public/2022-10/cable-cars-downtown-san-francisco.jpg.webp?itok=GiWB7QY4"],
-    "timezones": ["Pacific Daylight Time, GMT-7"],
+    "images": [
+      "https://www.sftravel.com/sites/default/files/styles/horizontal_3_2/public/2022-10/cable-cars-downtown-san-francisco.jpg.webp?itok=GiWB7QY4"
+    ],
+    "timezones": [
+      "Pacific Daylight Time, GMT-7"
+    ],
     "currency": {
       "name": "United States Dollar",
-      "symbol": "$, USD" 
+      "symbol": "$, USD"
     },
     "city_size": "121.4",
     "population_size": "883,305",
@@ -1878,11 +1946,15 @@
     "lat": "43.65107",
     "lng": "-79.347015",
     "fun_fact": "Toronto's underground PATH system spans 30 kilometers, connecting 371 shops and services, making it possible to walk from the lake to the northern downtown core entirely underground during harsh winters. The city's CN Tower was the world's tallest freestanding structure for 34 years and can be seen from 100 miles away on clear days, serving as both communications tower and tourist attraction.",
-    "images": ["https://plus.unsplash.com/premium_photo-1694475481348-7cbe417be129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Eastern Daylight Time, GMT-4"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1694475481348-7cbe417be129?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Eastern Daylight Time, GMT-4"
+    ],
     "currency": {
       "name": "Canadian Dollar",
-      "symbol": "CA$, CAD" 
+      "symbol": "CA$, CAD"
     },
     "city_size": "630.2",
     "population_size": "2,930,000",
@@ -1990,11 +2062,15 @@
     "lat": "19.4326",
     "lng": "-99.1332",
     "fun_fact": "Mexico City is built on the ruins of the Aztec capital Tenochtitlan and sits on a lakebed, causing it to sink 10 inches annually in some areas. The city has more museums than any other city in the world - over 150 - and its metro system is the second largest in North America, serving over 5 million daily passengers through stations decorated with pre-Columbian artifacts.",
-    "images": ["https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/Mexico-City-GettyImages-638921947?_a=BAVAZGID0"],
-    "timezones": ["Central Daylight Time, GMT-5"],
+    "images": [
+      "https://res.cloudinary.com/aenetworks/image/upload/c_fill,ar_2,w_3840,h_1920,g_auto/dpr_auto/f_auto/q_auto:eco/v1/Mexico-City-GettyImages-638921947?_a=BAVAZGID0"
+    ],
+    "timezones": [
+      "Central Daylight Time, GMT-5"
+    ],
     "currency": {
       "name": "Mexican Peso",
-      "symbol": "$, MXN" 
+      "symbol": "$, MXN"
     },
     "city_size": "1,485",
     "population_size": "9,000,000",
@@ -2100,11 +2176,15 @@
     "lat": "41.8781",
     "lng": "-87.6298",
     "fun_fact": "Chicago's downtown area is called \"The Loop\" because of the elevated train tracks that form a rectangular loop around the central business district. The city invented the skyscraper after the Great Fire of 1871, and its Willis Tower (formerly Sears Tower) has glass boxes extending from the 103rd floor where visitors can look straight down 1,353 feet to the street below.",
-    "images": ["https://parametric-architecture.com/wp-content/uploads/2024/10/Chicago-Architecture-2-1.webp"],
-    "timezones": ["Central Daylight Time, GMT-5"],
+    "images": [
+      "https://parametric-architecture.com/wp-content/uploads/2024/10/Chicago-Architecture-2-1.webp"
+    ],
+    "timezones": [
+      "Central Daylight Time, GMT-5"
+    ],
     "currency": {
       "name": "United States Dollar",
-      "symbol": "$, USD" 
+      "symbol": "$, USD"
     },
     "city_size": "606.1",
     "population_size": "2,700,000",
@@ -2211,11 +2291,15 @@
     "lat": "-34.603722",
     "lng": "-58.381592",
     "fun_fact": "Buenos Aires has more bookstores per capita than any other city in the world and was designated UNESCO's World Book Capital in 2011. The city is known as the \"Paris of South America\" for its European architecture, and its subway system features vintage wooden cars from the early 1900s still in operation on some lines, making it a moving museum.",
-    "images": ["https://plus.unsplash.com/premium_photo-1697729901052-fe8900e24993?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Argentina Time, GMT-3"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1697729901052-fe8900e24993?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Argentina Time, GMT-3"
+    ],
     "currency": {
       "name": "Argentine Peso",
-      "symbol": "$, ARS" 
+      "symbol": "$, ARS"
     },
     "city_size": "203",
     "population_size": "15,153,729",
@@ -2321,11 +2405,15 @@
     "lat": "-12.0464",
     "lng": "-77.0428",
     "fun_fact": "Lima receives less than 1 inch of rainfall per year despite being located on the coast, making it one of the world's driest capitals. The city's historic center contains over 1,600 balconies dating from colonial times, and its cuisine has been declared a UNESCO Intangible Cultural Heritage, with restaurants serving guinea pig (cuy) as a traditional delicacy alongside world-renowned ceviche.",
-    "images": ["https://images.unsplash.com/photo-1531968455001-5c5272a41129?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Peru Time, GMT-5"],
+    "images": [
+      "https://images.unsplash.com/photo-1531968455001-5c5272a41129?q=80&w=2106&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Peru Time, GMT-5"
+    ],
     "currency": {
       "name": "Sol",
-      "symbol": "S/, PEN" 
+      "symbol": "S/, PEN"
     },
     "city_size": "2,672.3",
     "population_size": "9,751,717",
@@ -2430,11 +2518,15 @@
     "lat": "4.7110",
     "lng": "-74.0721",
     "fun_fact": "Bogotá sits 8,660 feet above sea level, making it one of the highest capital cities in the world, where newcomers often experience altitude sickness. Every Sunday, the city closes 75 miles of roads to cars for \"Ciclovía,\" creating the world's largest weekly car-free event where over 2 million people bike, walk, and exercise through the streets.",
-    "images": ["https://plus.unsplash.com/premium_photo-1697729999190-4cd4ae78be26?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Colombia Time, GMT-5"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1697729999190-4cd4ae78be26?q=80&w=2533&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Colombia Time, GMT-5"
+    ],
     "currency": {
       "name": "Colombian Peso",
-      "symbol": "$, COP" 
+      "symbol": "$, COP"
     },
     "city_size": "1,587",
     "population_size": "11,000,000",
@@ -2540,11 +2632,15 @@
     "lat": "-33.4489",
     "lng": "-70.6693",
     "fun_fact": "Santiago is surrounded by two mountain ranges - the Andes to the east and the Chilean Coastal Range to the west - creating a natural bowl that traps smog but provides spectacular views. The city's metro system is the most extensive in South America, and on clear days, you can see Aconcagua, the highest peak in the Americas, from downtown Santiago's skyscrapers.",
-    "images": ["https://images.unsplash.com/photo-1689850543263-01a52ccc6943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Chile Summer Time, GMT-3"],
+    "images": [
+      "https://images.unsplash.com/photo-1689850543263-01a52ccc6943?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Chile Summer Time, GMT-3"
+    ],
     "currency": {
       "name": "Chilean Peso",
-      "symbol": "$, CLP" 
+      "symbol": "$, CLP"
     },
     "city_size": "641",
     "population_size": "6,310,000",
@@ -2650,11 +2746,15 @@
     "lat": "30.033333",
     "lng": "31.233334",
     "fun_fact": "Cairo is home to the only remaining Wonder of the Ancient World - the Great Pyramid of Giza - and has the largest urban population in Africa with over 20 million people in the metropolitan area. The city's Al-Azhar University, founded in 970 AD, is considered the oldest continuously operating university in the world and remains a leading center of Islamic learning.",
-    "images": ["https://imagedelivery.net/1AkWDvw1F7luzpOSXoOCTw/a7359077-fa31-495d-f1ca-8e4694fc4500/w=1024"],
-    "timezones": ["Eastern European Time, GMT+2"],
+    "images": [
+      "https://imagedelivery.net/1AkWDvw1F7luzpOSXoOCTw/a7359077-fa31-495d-f1ca-8e4694fc4500/w=1024"
+    ],
+    "timezones": [
+      "Eastern European Time, GMT+2"
+    ],
     "currency": {
       "name": "Egyptian Pound",
-      "symbol": "E£, EGP" 
+      "symbol": "E£, EGP"
     },
     "city_size": "606",
     "population_size": "9,500,000",
@@ -2758,11 +2858,15 @@
     "lat": "-26.2041",
     "lng": "28.0473",
     "fun_fact": "Johannesburg is the world's largest city not built on a river, lake, or coastline, instead growing around gold mines discovered in 1886. The city sits 5,751 feet above sea level and contains the world's largest man-made urban forest with over 10 million trees. Despite being inland, it's Africa's wealthiest city and produces 16% of South Africa's GDP.",
-    "images": ["https://afar.brightspotcdn.com/dims4/default/1e142d1/2147483647/strip/false/crop/4000x2422+0+0/resize/1486x900!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fe7%2Fe7%2F776a9bd74ce7a2d716cd9b9ec717%2Fsimon-hurry-h-l45tsmgm-unsplash.jpg"],
-    "timezones": ["South Africa Standard Time, GMT+2"],
+    "images": [
+      "https://afar.brightspotcdn.com/dims4/default/1e142d1/2147483647/strip/false/crop/4000x2422+0+0/resize/1486x900!/quality/90/?url=https%3A%2F%2Fk3-prod-afar-media.s3.us-west-2.amazonaws.com%2Fbrightspot%2Fe7%2Fe7%2F776a9bd74ce7a2d716cd9b9ec717%2Fsimon-hurry-h-l45tsmgm-unsplash.jpg"
+    ],
+    "timezones": [
+      "South Africa Standard Time, GMT+2"
+    ],
     "currency": {
       "name": "South African Rand",
-      "symbol": "R, ZAR" 
+      "symbol": "R, ZAR"
     },
     "city_size": "1644.96",
     "population_size": "5,635,127",
@@ -2873,11 +2977,15 @@
     "lat": "-1.286389",
     "lng": "36.817223",
     "fun_fact": "Nairobi is the only capital city in the world with a national park within its borders - Nairobi National Park - where you can see lions, rhinos, and giraffes with the city's skyscrapers in the background. The city serves as the safari capital of East Africa, and its name comes from the Maasai phrase \"Enkare Nairobi,\" meaning \"cold water,\" referring to a local river.",
-    "images": ["https://samburunationalreservekenya.com/wp-content/uploads/2022/06/Nairobi-National-Park-700x450-1.jpg"],
-    "timezones": ["East Africa Time, GMT+3"],
+    "images": [
+      "https://samburunationalreservekenya.com/wp-content/uploads/2022/06/Nairobi-National-Park-700x450-1.jpg"
+    ],
+    "timezones": [
+      "East Africa Time, GMT+3"
+    ],
     "currency": {
       "name": "Kenyan Shilling",
-      "symbol": "KSh, KES" 
+      "symbol": "KSh, KES"
     },
     "city_size": "696",
     "population_size": "4,397,000",
@@ -2984,11 +3092,15 @@
     "lat": "6.5244",
     "lng": "3.3792",
     "fun_fact": "Lagos is Africa's fastest-growing megacity and is projected to become the world's largest city by 2100 with over 85 million residents. The city is built on islands and marshland connected by bridges, and its Third Mainland Bridge is the longest bridge in Africa at 11.8 kilometers. Despite traffic challenges, Lagos generates 30% of Nigeria's GDP and is a major Nollywood film production center.",
-    "images": ["https://news.delta.com/sites/default/files/2025-01/adobestock_359316984.jpeg"],
-    "timezones": ["West Africa Time, GMT+1"],
+    "images": [
+      "https://news.delta.com/sites/default/files/2025-01/adobestock_359316984.jpeg"
+    ],
+    "timezones": [
+      "West Africa Time, GMT+1"
+    ],
     "currency": {
       "name": "Nigerian Naira",
-      "symbol": "₦, NGN" 
+      "symbol": "₦, NGN"
     },
     "city_size": "1,171",
     "population_size": "15,000,000",
@@ -3096,11 +3208,15 @@
     "lat": "33.5731",
     "lng": "-7.5898",
     "fun_fact": "Casablanca contains the world's largest mosque by minaret height - the Hassan II Mosque - with a minaret reaching 689 feet and room for 105,000 worshippers. The mosque is one of only two mosques in Morocco open to non-Muslims for tours. The city's name means \"white house\" in Spanish, though it was originally called Anfa before Portuguese colonization.",
-    "images": ["https://media.cntravellerme.com/photos/66eab8accb09222ae632adb6/16:9/w_2560%2Cc_limit/521329326"],
-    "timezones": ["Western European Time, GMT+0"],
+    "images": [
+      "https://media.cntravellerme.com/photos/66eab8accb09222ae632adb6/16:9/w_2560%2Cc_limit/521329326"
+    ],
+    "timezones": [
+      "Western European Time, GMT+0"
+    ],
     "currency": {
       "name": "Moroccan Dirham",
-      "symbol": "MAD, MAD" 
+      "symbol": "MAD, MAD"
     },
     "city_size": "220",
     "population_size": "3,710,000",
@@ -3207,11 +3323,15 @@
     "lat": "-33.8688",
     "lng": "151.2093",
     "fun_fact": "Sydney Harbour Bridge is nicknamed \"The Coathanger\" and contains 6 million rivets, while the Sydney Opera House's distinctive shell design was inspired by orange segments. The city has over 100 beaches within its metropolitan area, and its harbor is deeper than New York's, making it one of the world's finest natural harbors with more waterfront than San Francisco, Hong Kong, and New York combined.",
-    "images": ["https://content.r9cdn.net/rimg/dimg/12/98/b1e36771-city-2258-163f4d7f814.jpg?crop=true&width=1020&height=498"],
-    "timezones": ["Australian Eastern Daylight Time, GMT+11"],
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/12/98/b1e36771-city-2258-163f4d7f814.jpg?crop=true&width=1020&height=498"
+    ],
+    "timezones": [
+      "Australian Eastern Daylight Time, GMT+11"
+    ],
     "currency": {
       "name": "Australian Dollar",
-      "symbol": "A$, AUD" 
+      "symbol": "A$, AUD"
     },
     "city_size": "12,368",
     "population_size": "5,300,000",
@@ -3318,11 +3438,15 @@
     "lat": "-37.8136",
     "lng": "144.9631",
     "fun_fact": "Melbourne has the world's largest tram network with over 250 kilometers of track and is famous for its laneway culture, featuring street art that changes constantly as artists paint over previous works. The city hosts the Australian Open tennis tournament and was the world's richest city during the 1850s gold rush, leaving behind spectacular Victorian architecture throughout its center.",
-    "images": ["https://images.unsplash.com/photo-1545044846-351ba102b6d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Australian Eastern Daylight Time, GMT+11"],
+    "images": [
+      "https://images.unsplash.com/photo-1545044846-351ba102b6d5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Australian Eastern Daylight Time, GMT+11"
+    ],
     "currency": {
       "name": "Australian Dollar",
-      "symbol": "A$, AUD" 
+      "symbol": "A$, AUD"
     },
     "city_size": "9,993",
     "population_size": "5,000,000",
@@ -3429,11 +3553,15 @@
     "lat": "9.03",
     "lng": "38.74",
     "fun_fact": "Addis Ababa means \"new flower\" in Amharic and is Africa's diplomatic capital, hosting the headquarters of the African Union and the United Nations Economic Commission for Africa. The city sits at 7,726 feet above sea level, making it one of the highest capitals in the world, and serves as the gateway to Ethiopia, one of only two African countries never colonized by Europeans.",
-    "images": ["https://plus.unsplash.com/premium_photo-1697729902269-70f031f22531?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["East Africa Time, GMT+3"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1697729902269-70f031f22531?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "East Africa Time, GMT+3"
+    ],
     "currency": {
       "name": "Ethiopian Birr",
-      "symbol": "Br, ETB" 
+      "symbol": "Br, ETB"
     },
     "city_size": "527",
     "population_size": "4,790,000",
@@ -3537,11 +3665,15 @@
     "lat": "14.6928",
     "lng": "-17.4467",
     "fun_fact": "Dakar is the westernmost point of the African continent and served as the finish line for the famous Paris-Dakar Rally until 2008. The city is built on the Cap-Vert peninsula and is famous for its vibrant markets, particularly the Sandaga Market, and as the birthplace of the music genre mbalax, which blends traditional Wolof music with jazz, soul, and rock influences.",
-    "images": ["https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/07/01201735/Ngor-island-in-Dakar-Senegal-1600x900.jpg"],
-    "timezones": ["Greenwich Mean Time, GMT+0"],
+    "images": [
+      "https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/07/01201735/Ngor-island-in-Dakar-Senegal-1600x900.jpg"
+    ],
+    "timezones": [
+      "Greenwich Mean Time, GMT+0"
+    ],
     "currency": {
       "name": "West African CFA franc",
-      "symbol": "CFA, XOF" 
+      "symbol": "CFA, XOF"
     },
     "city_size": "82.38 sq",
     "population_size": "1,056,009",
@@ -3647,11 +3779,15 @@
     "lat": "-4.441931",
     "lng": "15.266293",
     "fun_fact": "Kinshasa is the world's largest French-speaking city, larger than Paris, and sits directly across the Congo River from Brazzaville, making them the world's second-closest pair of capital cities after Rome and Vatican City. The city is home to over 15 million people and is known for its vibrant music scene that gave birth to soukous, influential throughout Africa.",
-    "images": ["https://www.v-20.org/wp-content/uploads/2020/10/shutterstock_capital_democractic-republic-of-congo_kinshasa-s-min.jpeg"],
-    "timezones": ["West Africa Time, GMT+1"],
+    "images": [
+      "https://www.v-20.org/wp-content/uploads/2020/10/shutterstock_capital_democractic-republic-of-congo_kinshasa-s-min.jpeg"
+    ],
+    "timezones": [
+      "West Africa Time, GMT+1"
+    ],
     "currency": {
       "name": "Congolese franc",
-      "symbol": "FC, CDF" 
+      "symbol": "FC, CDF"
     },
     "city_size": "9,965",
     "population_size": "14,700,000",
@@ -3757,11 +3893,15 @@
     "lat": "41.0082",
     "lng": "28.9784",
     "fun_fact": "Istanbul is the only city in the world that spans two continents - Europe and Asia - connected by two suspension bridges and an underwater tunnel. The city has been the capital of three great empires (Roman, Byzantine, and Ottoman) and contains more than 3,000 ancient shops in the Grand Bazaar, one of the world's oldest covered markets, which has been operating since 1461.",
-    "images": ["https://images.unsplash.com/photo-1571941646730-3ad5b00997ef?q=80&w=3291&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Turkey Time, GMT+3"],
+    "images": [
+      "https://images.unsplash.com/photo-1571941646730-3ad5b00997ef?q=80&w=3291&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Turkey Time, GMT+3"
+    ],
     "currency": {
       "name": "Turkish Lira",
-      "symbol": "₺, TRY" 
+      "symbol": "₺, TRY"
     },
     "city_size": "5,343",
     "population_size": "15,000,000",
@@ -3866,11 +4006,15 @@
     "lat": "25.276987",
     "lng": "55.296249",
     "fun_fact": "Dubai's Burj Khalifa is the world's tallest building at 828 meters with 163 floors above ground, and the city contains 25% of the world's construction cranes as it continues rapid development. The Palm Jumeirah artificial island is visible from space and required 94 million cubic meters of sand to construct, while Dubai's metro is the world's longest fully automated train system.",
-    "images": ["https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Gulf Standard Time, GMT+4"],
+    "images": [
+      "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?q=80&w=2400&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Gulf Standard Time, GMT+4"
+    ],
     "currency": {
       "name": "United Arab Emirates Dirham",
-      "symbol": "AED, AED" 
+      "symbol": "AED, AED"
     },
     "city_size": "4,114",
     "population_size": "3,300,000",
@@ -3973,11 +4117,15 @@
     "lat": "24.7136",
     "lng": "46.6753",
     "fun_fact": "Riyadh sits in the heart of the Arabian Peninsula and is one of the world's fastest-growing cities, expanding from 150,000 residents in 1960 to over 7 million today. The city is home to the world's largest continuous sand desert (Rub' al Khali) on its outskirts and contains the King Fahd National Library, which houses one of the world's largest collections of Islamic manuscripts and texts.",
-    "images": ["https://upload.wikimedia.org/wikipedia/commons/5/5a/Riyadh_North_Skyline_.jpg"],
-    "timezones": ["Arabian Standard Time, GMT+3"],
+    "images": [
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Riyadh_North_Skyline_.jpg"
+    ],
+    "timezones": [
+      "Arabian Standard Time, GMT+3"
+    ],
     "currency": {
       "name": "Saudi Riyal",
-      "symbol": "SAR, SAR" 
+      "symbol": "SAR, SAR"
     },
     "city_size": "1,913",
     "population_size": "7,600,000",
@@ -4080,11 +4228,15 @@
     "lat": "35.6892",
     "lng": "51.3890",
     "fun_fact": "Tehran sits at the foot of the Alborz Mountains and is one of the world's most polluted cities due to its geography and heavy traffic from over 4 million cars. The city contains the world's largest hand-woven carpet in the Sheikh Lotfollah Mosque and is home to the Golestan Palace, a UNESCO World Heritage site representing the artistic achievements of the Qajar dynasty.",
-    "images": ["https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/54/cd/c1/caption.jpg?w=900&h=900&s=1"],
-    "timezones": ["Iran Standard Time, GMT+3:30"],
+    "images": [
+      "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/17/54/cd/c1/caption.jpg?w=900&h=900&s=1"
+    ],
+    "timezones": [
+      "Iran Standard Time, GMT+3:30"
+    ],
     "currency": {
       "name": "Iranian Rial",
-      "symbol": "﷼, IRR" 
+      "symbol": "﷼, IRR"
     },
     "city_size": "730",
     "population_size": "8,400,000",
@@ -4187,11 +4339,15 @@
     "lat": "39.9042",
     "lng": "116.4074",
     "fun_fact": "Beijing has served as China's capital for over 800 years and contains the Forbidden City, the world's largest palace complex with 9,999 rooms (Chinese emperors believed only heaven could have 10,000 rooms). The city's subway system is the world's busiest by annual ridership, carrying over 4 billion passengers yearly, and Beijing is surrounded by the Great Wall, which took over 2,000 years to build.",
-    "images": ["https://dam.mediacorp.sg/image/upload/s--TbrEJVD_--/c_crop,h_843,w_1500,x_0,y_141/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/cna/image/2025/01/27/hero-beijing-sunset_1820395709.jpg?itok=vYcvnQpF"],
-    "timezones": ["China Standard Time, GMT+8"],
+    "images": [
+      "https://dam.mediacorp.sg/image/upload/s--TbrEJVD_--/c_crop,h_843,w_1500,x_0,y_141/c_fill,g_auto,h_676,w_1200/f_auto,q_auto/v1/mediacorp/cna/image/2025/01/27/hero-beijing-sunset_1820395709.jpg?itok=vYcvnQpF"
+    ],
+    "timezones": [
+      "China Standard Time, GMT+8"
+    ],
     "currency": {
       "name": "Renminbi",
-      "symbol": "¥, CNY" 
+      "symbol": "¥, CNY"
     },
     "city_size": "16,411",
     "population_size": "21,000,000",
@@ -4297,11 +4453,15 @@
     "lat": "31.2304",
     "lng": "121.4737",
     "fun_fact": "Shanghai's Bund waterfront features 52 buildings representing various architectural styles from the 1930s, while across the Huangpu River, Pudong district has risen from farmland to a futuristic skyline in just 30 years. The city's Maglev train reaches 430 km/h, making it the world's fastest commercial train, covering 30 kilometers from the airport to downtown in just 8 minutes.",
-    "images": ["https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg"],
-    "timezones": ["China Standard Time, GMT+8"],
+    "images": [
+      "https://cdn.britannica.com/08/187508-050-D6FB5173/Shanghai-Tower-Gensler-San-Francisco-world-Oriental-2015.jpg"
+    ],
+    "timezones": [
+      "China Standard Time, GMT+8"
+    ],
     "currency": {
       "name": "Renminbi",
-      "symbol": "¥, CNY" 
+      "symbol": "¥, CNY"
     },
     "city_size": "6,340.5",
     "population_size": "24,000,000",
@@ -4407,11 +4567,15 @@
     "lat": "19.0760",
     "lng": "72.8777",
     "fun_fact": "Mumbai is built on seven islands that were connected through land reclamation projects, and it produces over 1,000 Bollywood films annually, earning it the nickname \"City of Dreams.\" The city's Chhatrapati Shivaji Terminus railway station serves over 3 million passengers daily, making it one of the world's busiest, while the Dabbawala lunch delivery system achieves 99.9% accuracy without using modern technology.",
-    "images": ["https://farm4.staticflickr.com/3919/15012790117_39732003d4_b.jpg"],
-    "timezones": ["India Standard Time, GMT+5:30"],
+    "images": [
+      "https://farm4.staticflickr.com/3919/15012790117_39732003d4_b.jpg"
+    ],
+    "timezones": [
+      "India Standard Time, GMT+5:30"
+    ],
     "currency": {
       "name": "Indian Rupee",
-      "symbol": "₹, INR" 
+      "symbol": "₹, INR"
     },
     "city_size": "603.4",
     "population_size": "20,000,000",
@@ -4522,11 +4686,15 @@
     "lat": "52.2297",
     "lng": "21.0122",
     "fun_fact": "Warsaw was 85% destroyed during World War II and was meticulously rebuilt using detailed paintings by Italian artist Bernardo Bellotto from the 18th century, earning its historic center UNESCO World Heritage status. The city's Palace of Culture and Science was a \"gift\" from Stalin and remains Poland's tallest building, while Warsaw's uprising in 1944 lasted 63 days against Nazi occupation.",
-    "images": ["https://images.unsplash.com/photo-1573157268794-d13e94d325e6?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://images.unsplash.com/photo-1573157268794-d13e94d325e6?q=80&w=1035&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Polish złoty",
-      "symbol": "zł, PLN" 
+      "symbol": "zł, PLN"
     },
     "city_size": "517.24",
     "population_size": "1,800,000",
@@ -4632,11 +4800,15 @@
     "lat": "31.7683",
     "lng": "35.2137",
     "fun_fact": "Jerusalem is sacred to three major religions - Judaism, Christianity, and Islam - and has been continuously inhabited for over 3,000 years, making it one of the world's oldest cities. The Western Wall's stones weigh up to 600 tons each, and the city contains over 2,000 archaeological sites. Despite its ancient history, Jerusalem has more museums per capita than any other city in the world.",
-    "images": ["https://i0.wp.com/www.touristisrael.com/wp-content/uploads/2014/04/sunset-jerusalem-hills-israel.jpg?resize=1024%2C683&ssl=1"],
-    "timezones": ["Israel Daylight Time, GMT+3"],
+    "images": [
+      "https://i0.wp.com/www.touristisrael.com/wp-content/uploads/2014/04/sunset-jerusalem-hills-israel.jpg?resize=1024%2C683&ssl=1"
+    ],
+    "timezones": [
+      "Israel Daylight Time, GMT+3"
+    ],
     "currency": {
       "name": "New Israeli Shekel",
-      "symbol": "₪, ILS" 
+      "symbol": "₪, ILS"
     },
     "city_size": "125.156",
     "population_size": "936,425",
@@ -4742,11 +4914,15 @@
     "lat": "-22.906847",
     "lng": "-43.172896",
     "fun_fact": "Rio de Janeiro's Christ the Redeemer statue stands 98 feet tall atop Corcovado Mountain and was voted one of the New Seven Wonders of the World in 2007. The city's Carnival is the world's largest party, attracting 2 million people daily during the five-day celebration, while Copacabana Beach stretches 4 kilometers and hosts the world's largest New Year's Eve celebration with over 2 million attendees.",
-    "images": ["https://www.mauriciotravels.com/wp-content/uploads/2023/10/rio.jpg"],
-    "timezones": ["Brasília Summer Time, GMT-2"],
+    "images": [
+      "https://www.mauriciotravels.com/wp-content/uploads/2023/10/rio.jpg"
+    ],
+    "timezones": [
+      "Brasília Summer Time, GMT-2"
+    ],
     "currency": {
       "name": "Brazilian Real",
-      "symbol": "R$, BRL" 
+      "symbol": "R$, BRL"
     },
     "city_size": "1,255",
     "population_size": "6,700,000",
@@ -4853,11 +5029,15 @@
     "lat": "24.8607",
     "lng": "67.0011",
     "fun_fact": "Karachi is Pakistan's largest city and was the country's original capital, serving as a major port that handles 60% of Pakistan's cargo. The city is home to over 20 million people, making it one of the world's largest urban areas, and contains the mausoleum of Pakistan's founder, Muhammad Ali Jinnah, in a striking white marble structure that serves as a national monument.",
-    "images": ["https://knip.yisolutions.net/wp-content/uploads/2022/10/people-square.jpeg"],
-    "timezones": ["Pakistan Standard Time, GMT+5"],
+    "images": [
+      "https://knip.yisolutions.net/wp-content/uploads/2022/10/people-square.jpeg"
+    ],
+    "timezones": [
+      "Pakistan Standard Time, GMT+5"
+    ],
     "currency": {
       "name": "Pakistani Rupee",
-      "symbol": "₨, PKR" 
+      "symbol": "₨, PKR"
     },
     "city_size": "3,780",
     "population_size": "14,900,000",
@@ -4967,11 +5147,15 @@
     "lat": "1.3521",
     "lng": "103.8198",
     "fun_fact": "Singapore is both a city and a country, making it one of only three city-states in the world along with Monaco and Vatican City. The city-state has the world's tallest indoor waterfall in Jewel Changi Airport, falling 130 feet through a glass dome, and maintains some of the world's strictest laws, including hefty fines for chewing gum, which is illegal to sell but not to possess.",
-    "images": ["https://www.webuildvalue.com/wp-content/uploads/2021/12/Aerial-view-of-Singapore.jpg"],
-    "timezones": ["Singapore Standard Time, GMT+8"],
+    "images": [
+      "https://www.webuildvalue.com/wp-content/uploads/2021/12/Aerial-view-of-Singapore.jpg"
+    ],
+    "timezones": [
+      "Singapore Standard Time, GMT+8"
+    ],
     "currency": {
       "name": "Singapore Dollar",
-      "symbol": "S$, SGD" 
+      "symbol": "S$, SGD"
     },
     "city_size": "728.6",
     "population_size": "5,700,000",
@@ -5080,11 +5264,15 @@
     "lat": "10.4806",
     "lng": "-66.9036",
     "fun_fact": "Caracas sits in a valley 3,000 feet above sea level and is surrounded by mountains, including Avila National Park, which can be reached by cable car for panoramic city views. The city is the birthplace of Simón Bolívar, the liberator of much of South America, and despite economic challenges, it contains impressive modern architecture including the world's tallest slum, the Tower of David, a 45-story abandoned skyscraper.",
-    "images": ["https://content.r9cdn.net/rimg/dimg/cf/40/a5abdc30-city-990-1658b9a405e.jpg?width=1366&height=768&xhint=2112&yhint=1018&crop=true"],
-    "timezones": ["Venezuelan Standard Time, GMT-4"],
+    "images": [
+      "https://content.r9cdn.net/rimg/dimg/cf/40/a5abdc30-city-990-1658b9a405e.jpg?width=1366&height=768&xhint=2112&yhint=1018&crop=true"
+    ],
+    "timezones": [
+      "Venezuelan Standard Time, GMT-4"
+    ],
     "currency": {
       "name": "Venezuelan bolívar",
-      "symbol": "Bs., VES" 
+      "symbol": "Bs., VES"
     },
     "city_size": "777",
     "population_size": "2,925,000",
@@ -5190,11 +5378,15 @@
     "lat": "23.1136",
     "lng": "-82.3666",
     "fun_fact": "Havana's historic center, Old Havana, is a UNESCO World Heritage Site containing over 900 buildings from the 16th to 19th centuries, making it one of the best-preserved colonial cities in the Americas. The city is famous for its vintage American cars from the 1950s, still running due to ingenious Cuban mechanical innovations, and the Malecón seawall stretches 8 kilometers along the coast.",
-    "images": ["https://as1.ftcdn.net/v2/jpg/01/91/62/58/1000_F_191625810_jRDTR6KA6lqBj707UrNqIgfoxCd2N1Ax.jpg"],
-    "timezones": ["Cuba Daylight Time, GMT-4"],
+    "images": [
+      "https://as1.ftcdn.net/v2/jpg/01/91/62/58/1000_F_191625810_jRDTR6KA6lqBj707UrNqIgfoxCd2N1Ax.jpg"
+    ],
+    "timezones": [
+      "Cuba Daylight Time, GMT-4"
+    ],
     "currency": {
       "name": "Cuban Peso",
-      "symbol": "$, CUP" 
+      "symbol": "$, CUP"
     },
     "city_size": "728.26",
     "population_size": "2,100,000",
@@ -5298,11 +5490,15 @@
     "lat": "50.4501",
     "lng": "30.5234",
     "fun_fact": "Kyiv is over 1,500 years old, making it older than London, Paris, or Berlin, and is known as the \"Mother of Russian Cities\" as the birthplace of the medieval Kyivan Rus' state. The city contains the Kiev Pechersk Lavra monastery complex with underground cave systems holding naturally mummified monks, and Saint Sophia's Cathedral features 13 golden domes representing Christ and the 12 apostles.",
-    "images": ["https://ukraine.ua/wp-content/uploads/2023/02/maksym-diachenko-xkfWHbjlKhI-unsplash-%D1%84%D1%96%D0%BD%D0%B0%D0%BB.jpg"],
-    "timezones": ["Eastern European Summer Time, GMT+3"],
+    "images": [
+      "https://ukraine.ua/wp-content/uploads/2023/02/maksym-diachenko-xkfWHbjlKhI-unsplash-%D1%84%D1%96%D0%BD%D0%B0%D0%BB.jpg"
+    ],
+    "timezones": [
+      "Eastern European Summer Time, GMT+3"
+    ],
     "currency": {
       "name": "Ukrainian hryvnia",
-      "symbol": "₴, UAH" 
+      "symbol": "₴, UAH"
     },
     "city_size": "839",
     "population_size": "2,800,000",
@@ -5405,11 +5601,15 @@
     "lat": "48.2082",
     "lng": "16.3738",
     "fun_fact": "Vienna has been ranked the world's most livable city multiple times and contains more imperial palaces than any other city, including Schönbrunn Palace with 1,441 rooms. The city's coffeehouse culture is so significant it's listed as a UNESCO Intangible Cultural Heritage, and Vienna is the only capital city in the world that produces significant quantities of wine within its city limits, with over 1,700 acres of vineyards.",
-    "images": ["https://plus.unsplash.com/premium_photo-1716932567535-6bb42a3f38ff?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"],
-    "timezones": ["Central European Summer Time, GMT+2"],
+    "images": [
+      "https://plus.unsplash.com/premium_photo-1716932567535-6bb42a3f38ff?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    ],
+    "timezones": [
+      "Central European Summer Time, GMT+2"
+    ],
     "currency": {
       "name": "Euro",
-      "symbol": "€, EUR" 
+      "symbol": "€, EUR"
     },
     "city_size": "414.6",
     "population_size": "1,900,000",
@@ -5503,6 +5703,120 @@
       {
         "name": "Arnold Schwarzenegger",
         "description": "Actor, bodybuilder, and former Governor of California, known for 'Terminator' and 'Predator'.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "spotted_by_locals_link": true
+  },
+  {
+    "id": "belgrade",
+    "name": "Belgrade",
+    "country": "Serbia",
+    "flag": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Flag_of_Serbia.svg",
+    "lat": "44.7866",
+    "lng": "20.4489",
+    "fun_fact": "Belgrade is famously known as the city that never sleeps, buzzing with festivals, arts, and nightlife.",
+    "images": [
+      "https://ychef.files.bbci.co.uk/2000x1499/p0btlm66.jpeg"
+    ],
+    "timezones": [
+      "Central European Time (CET)"
+    ],
+    "currency": {
+      "name": "Serbian dinar",
+      "symbol": "RSD"
+    },
+    "city_size": "359.96 km²",
+    "population_size": "1.23 million",
+    "population_diversity": "Belgrade is a cultural nexus where the East meets the West, home to Serbs, Hungarians, Roma, and many other ethnic groups, each adding a unique thread to the city's vibrant tapestry.",
+    "languages": [
+      "Serbian"
+    ],
+    "religions": [
+      "Orthodox Christianity",
+      "Islam",
+      "Catholicism",
+      "Protestantism"
+    ],
+    "culture": {
+      "traditional_arts": "Belgrade's art scene is a dynamic blend of traditional Eastern European influences and contemporary creativity, evident in its thriving galleries and bustling street art.",
+      "traditional_music": "The soul of Belgrade can be heard in its traditional music, from the soul-stirring tones of the tamburitza to the lively beats of turbo-folk, a sound that defines the city's audacious spirit.",
+      "traditional_clothing": "Traditional Serbian attire, known as 'nošnja', showcases intricate designs and vibrant colors, a visual celebration of the nation's rich history and cultural identity.",
+      "traditional_beliefs": "Belgrade's spiritual landscape is woven with tales of folklore and mythology, where ancient Slavic gods and Christian saints coexist in the collective memory of its people."
+    },
+    "traditional_foods": [
+      {
+        "name": "Ćevapi",
+        "description": "A beloved Balkan delicacy, ćevapi are small, grilled minced meat sausages, often served with onions, sour cream, and ajvar, encapsulating the hearty essence of Serbian cuisine.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Sarma",
+        "description": "Sarma, fermented cabbage leaves stuffed with a tantalizing mixture of meat and rice, slow-cooked to perfection, is a warming dish that carries the legacy of Serbian hospitality.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Ajvar",
+        "description": "This savory spread made from red bell peppers, eggplant, and garlic, known as 'Serbian caviar', is a staple of Serbian tables, celebrated for its smoky flavor and versatility.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "traditional_drinks": [
+      {
+        "name": "Rakija",
+        "description": "Rakija, a potent fruit brandy, is the spirit of Serbian conviviality and craftsmanship, distilled with pride and enjoyed with fervor at gatherings.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Turkish Coffee",
+        "description": "Turkish coffee, deeply embedded in Belgrade's café culture, is savored not just for its robust flavor but as a ritual of friendship and conversation.",
+        "image": "TO_BE_REPLACED"
+      }
+    ],
+    "history": "Belgrade's tumultuous history is a saga of resilience, standing at the confluence of the Danube and Sava rivers as a strategic gem coveted by empires. From Roman Singidunum to the frontline of the Ottoman and Austro-Hungarian tug-of-war, its fortresses whisper tales of defiance and survival.",
+    "adversity_resilience": "Belgrade has risen from the ashes of countless sieges and wars, notably during the NATO bombings in 1999. Its resilient spirit is mirrored in the reconstruction of its historic sites and the vibrancy of its people, who champion peace and unity amid adversity.",
+    "economy_industry": "Once a powerhouse of Yugoslav industry, Belgrade is reinventing itself as a tech startup hub, with a flourishing IT sector. Traditional manufacturing coexists with a burgeoning service industry, making the city a dynamic economic engine of Serbia.",
+    "tourism_attractions": "From the historic Belgrade Fortress offering panoramic views of the confluence of two rivers to the bohemian Skadarlija street, alive with music and folklore, Belgrade invites explorers to its lively streets, verdant parks, and river islands teeming with festivities.",
+    "landmarks": [
+      {
+        "name": "Belgrade Fortress",
+        "description": "This ancient fortress stands as a testament to Belgrade's strategic importance through millennia, offering breathtaking vistas and a journey through the layers of the city's tumultuous history.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/96/Belgrade_Fortress_panoramic_view.jpg"
+      },
+      {
+        "name": "Saint Sava Temple",
+        "description": "One of the largest Orthodox churches in the world, its magnificent dome and serene white marble façade symbolize the spiritual heart of the Serbian people.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/3/3d/Hram_Svetog_Save%2C_Beograd.jpg"
+      },
+      {
+        "name": "Knez Mihailova Street",
+        "description": "This vibrant pedestrian zone is the cultural and commercial backbone of Belgrade, lined with historic buildings, chic cafes, and boutiques, bustling with life day and night.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Belgrade_Knez_Mihailova.jpg"
+      }
+    ],
+    "sister_cities": [
+      "chicago",
+      "shanghai",
+      "tel_aviv"
+    ],
+    "life_in": {
+      "cost_of_living": "Belgrade offers an affordable European lifestyle, with costs significantly lower than in western capitals, making it attractive for expats and digital nomads seeking quality of life without the hefty price tag.",
+      "quality_of_life": "Despite its turbulent past, Belgrade thrives as a city of youth and vitality. Its parks, rivers, and recreational spaces, coupled with the warmth of its inhabitants, make for a compelling urban experience."
+    },
+    "famous_people": [
+      {
+        "name": "Novak Djokovic",
+        "description": "One of the greatest tennis players of all time, Djokovic's extraordinary career is a source of national pride and an inspiration to the youth of Serbia.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Ivo Andrić",
+        "description": "Nobel Prize-winning author Ivo Andrić is celebrated for his novels and short stories that vividly depict the complex history and culture of the Balkans.",
+        "image": "TO_BE_REPLACED"
+      },
+      {
+        "name": "Marina Abramović",
+        "description": "A pioneering performance artist known for her challenging and thought-provoking work, Abramović has pushed the boundaries of art and self-expression.",
         "image": "TO_BE_REPLACED"
       }
     ],

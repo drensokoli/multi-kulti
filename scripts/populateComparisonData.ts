@@ -11,7 +11,7 @@ const agent = new https.Agent({
 });
 
 const openai = new OpenAI({
-  apiKey: "",
+  apiKey: "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",
   httpAgent: agent,
 });
 
@@ -161,7 +161,8 @@ async function main() {
     "Caracas",
     "Havana",
     "Kyiv",
-    "Vienna"
+    "Vienna",
+    "Belgrade"
   ];
   
   const comparisonsPath = path.join(process.cwd(), 'public/data/city_comparison.json');

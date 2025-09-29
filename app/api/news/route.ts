@@ -166,7 +166,8 @@ export async function GET(request: NextRequest) {
       'Uruguay': 'uy',
       'Guyana': 'gy',
       'Suriname': 'sr',
-      'French Guiana': 'gf'
+      'French Guiana': 'gf',
+      'Serbia': 'rs'
     };
 
     const countryCode = countryCodeMap[countryName] || countryName.toLowerCase();

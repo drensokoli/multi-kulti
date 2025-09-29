@@ -73,7 +73,7 @@ const agent = new https.Agent({
 });
 
 const openai = new OpenAI({
-  apiKey: "",
+  apiKey: "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",
   httpAgent: agent,
 });
 
@@ -87,6 +87,7 @@ async function generateCityData(cityName: string): Promise<CityData> {
   "flag": "",
   "lat": "",
   "lng": "",
+  "fun_fact": "",
   "images": ["", "", ""],
   "timezones": [""],
   "currency": {
@@ -135,23 +136,6 @@ async function generateCityData(cityName: string): Promise<CityData> {
   ],
   "history": "",
   "adversity_resilience": "",
-  "famous_people": [
-    {
-      "name": "",
-      "description": "",
-      "image": ""
-    },
-    {
-      "name": "",
-      "description": "",
-      "image": ""
-    },
-    {
-      "name": "",
-      "description": "",
-      "image": ""
-    }
-  ],
   "economy_industry": "",
   "tourism_attractions": "",
   "landmarks": [
@@ -175,7 +159,25 @@ async function generateCityData(cityName: string): Promise<CityData> {
   "life_in": {
     "cost_of_living": "",
     "quality_of_life": ""
-  }
+  },
+  "famous_people": [
+    {
+      "name": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": ""
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": ""
+    }
+  ],
+  "spotted_by_locals_link": false
 }
 
 Fill in all fields with engaging, vivid information about ${cityName} that captures the reader's interest while remaining accurate. Make the content feel like a story rather than just facts.
@@ -187,6 +189,7 @@ Word count guidelines for longer texts:
 - adversity_resilience: ~100 words - Share compelling stories of how the city overcame challenges
 - economy_industry: ~100 words - Describe the economic landscape in an interesting way
 - life_in fields (cost/quality): ~50 words each - Give readers a accurate data and a real feel for daily life based on good sources
+- Do not use phrase "melting pot" or "melting pot of cultures"
 
 For descriptions (foods/drinks/landmarks/people):
 - Use 2 sentences to describe the food/drink/landmark/person
@@ -319,7 +322,7 @@ async function main() {
     "Seoul",
     "Delhi",
     "Bangkok",
-    "New York City",
+    "New York",
     "Los Angeles",
     "San Francisco",
     "Toronto",
@@ -355,7 +358,8 @@ async function main() {
     "Havana",
     "Kyiv",
     "Vienna",
-    "Stockholm"
+    "Stockholm",
+    "Belgrade"
   ];
 
   const outputPath = path.join(process.cwd(), 'public/data/cities.json');
