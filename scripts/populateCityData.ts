@@ -358,8 +358,7 @@ async function main() {
     "Havana",
     "Kyiv",
     "Vienna",
-    "Stockholm",
-    "Belgrade"
+    "Stockholm"
   ];
 
   const outputPath = path.join(process.cwd(), 'public/data/cities.json');

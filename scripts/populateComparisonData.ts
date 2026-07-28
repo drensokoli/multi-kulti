@@ -161,8 +161,7 @@ async function main() {
     "Caracas",
     "Havana",
     "Kyiv",
-    "Vienna",
-    "Belgrade"
+    "Vienna"
   ];
   
   const comparisonsPath = path.join(process.cwd(), 'public/data/city_comparison.json');
